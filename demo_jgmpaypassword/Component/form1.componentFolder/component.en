@@ -1,0 +1,38 @@
+<EntityConfig version="2.0">
+  <Entitys>
+    <Entity TemplateId="" TemplateCode="" Code="MyEntity" Name="MyEntity" EntityType="" TableOrQueryCode="">
+      <Columns>
+        <Column>
+          <Code>input_pwd</Code>
+          <Name>input_pwd</Name>
+          <DataType>char</DataType>
+          <Length>6</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>stored_pwd</Code>
+          <Name>stored_pwd</Name>
+          <DataType>char</DataType>
+          <Length>6</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+      </Columns>
+      <Datas>
+        <row>
+          <Fields>
+            <Field Code="input_pwd"><![CDATA[0]]></Field>
+            <Field Code="stored_pwd"><![CDATA[123456]]></Field>
+          </Fields>
+        </row>
+      </Datas>
+      <Events>
+        <EntityEvent Code="OnLoaded" Value="" />
+      </Events>
+    </Entity>
+  </Entitys>
+  <Relations />
+</EntityConfig>

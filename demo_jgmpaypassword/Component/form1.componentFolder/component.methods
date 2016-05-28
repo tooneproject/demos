@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Created: 2016-04-24 23:29:39-->
+<Methods>
+  <Method Code="JGMPayPassword1_OnFinished" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <MethodChain><![CDATA[
+  <evaluateRule code="BRCode1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="SetControlPropertys" ruleName="控件属性设置" instanceCode="BRCode1" instanceName="控件属性设置" isNeedLog="False" isEnabled="True">
+        <Condition><![CDATA[]]></Condition>
+        <RuleConfig><![CDATA[{"condition":[{"items":[{"controlCode":"JGMPayPassword1","propertyCode":"ValidPassword","values":"Compare([MyEntity].[input_pwd],[MyEntity].[stored_pwd],True)","valuetype":"1"}],"name":"True"}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><ConditionID>425228b622234907bb8d83ac5fff6b15</ConditionID><ControlCode>#WC(JGMPayPassword1)#</ControlCode><PropertyName>JGMPayPassword1.ValidPassword(密码验证结果)</PropertyName><PropertyCode>ValidPassword</PropertyCode><PropertyValue>Compare([#E(MyEntity)#].[#EF(MyEntity.input_pwd)#],[#E(MyEntity)#].[#EF(MyEntity.stored_pwd)#],True)</PropertyValue><PropertyType>1</PropertyType><valuetype>1</valuetype></dtMaster><dtCondition><ID>425228b622234907bb8d83ac5fff6b15</ID><Name>True</Name></dtCondition></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGMPayPassword1_OnMoreOper" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <MethodChain><![CDATA[
+  <evaluateRule code="BRCode1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True">
+        <Condition><![CDATA[]]></Condition>
+        <RuleConfig><![CDATA[{"showType":"0","simpleChinesePrompt":{"msgnote":"ConcatStr(\"点击忘记密码， 当前输入的密码是\",[MyEntity].[input_pwd],\"  预留的密码是\",[MyEntity].[stored_pwd])","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>ConcatStr("点击忘记密码， 当前输入的密码是",[#E(MyEntity)#].[#EF(MyEntity.input_pwd)#],"  预留的密码是",[#E(MyEntity)#].[#EF(MyEntity.stored_pwd)#])</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+</Methods>

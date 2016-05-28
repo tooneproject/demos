@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<EntityGraphConfig version="2.0">
+  <Graphs>
+    <GraphNodeFormat>
+      <Type>Entity</Type>
+      <Code>MyEntity</Code>
+      <Top>166</Top>
+      <Left>225</Left>
+      <Width>148</Width>
+      <Height>137.999924</Height>
+      <Background />
+      <BorderColor />
+      <FontSize>0</FontSize>
+      <FontColor />
+      <IsCollapsed>false</IsCollapsed>
+    </GraphNodeFormat>
+  </Graphs>
+</EntityGraphConfig>

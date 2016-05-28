@@ -1,0 +1,211 @@
+<Deploy>
+  <LastDeployTime>2016-05-19 23:21:26</LastDeployTime>
+  <LastDeployData><![CDATA[<?xml version="1.0"?>
+<component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" code="test_demo_paypassword" name="password_demo" desc="">
+  <windows>
+    <window type="2" code="form1" name="form1" desc="">
+      <propertys>
+        <property name="Width" code="Width">337</property>
+        <property name="Height" code="Height">600</property>
+        <property name="HeightSet" code="HeightSet">StaticHeight</property>
+        <property name="LayoutType" code="LayoutType">None</property>
+        <property name="BackColor" code="BackColor" />
+        <property name="Name" code="Name">form1</property>
+        <property name="CustomGridValue" code="CustomGridValue" />
+        <property name="Code" code="Code">form1</property>
+      </propertys>
+      <controls>
+        <control code="JGMPanel1" name="面板" type="JGMPanel" desc="Toone-1450149902000">
+          <propertys>
+            <property name="背景色" code="BackColor" />
+            <property name="控件编码" code="Code">JGMPanel1</property>
+            <property name="宽度比例" code="DisplayScale">12</property>
+            <property name="使能" code="Enabled">True</property>
+            <property name="高度" code="Height">600</property>
+            <property name="图片Code" code="ImageObject" />
+            <property name="背景图片" code="ImageValue" />
+            <property name="布局方向" code="LayoutDirection">vertical</property>
+            <property name="左边距" code="Left">0</property>
+            <property name="百分比高度" code="PercentHeight">100%</property>
+            <property name="百分比宽度" code="PercentWidth">100%</property>
+            <property name="布局间距" code="Spacing">0, 0, 0, 0</property>
+            <property name="界面顺序号" code="TabIndex">1</property>
+            <property name="上边距" code="Top">0</property>
+            <property name="宽度" code="Width">337</property>
+          </propertys>
+          <controls>
+            <control code="JGMPayPassword1" name="支付密码" type="JGMPayPassword" desc="Toone-1463671069000">
+              <propertys>
+                <property name="控件名称" code="Code">JGMPayPassword1</property>
+                <property name="字段名称" code="ColumnName">input_pwd</property>
+                <property name="显示比例" code="DisplayScale">12</property>
+                <property name="错误提示信息" code="InvalidPasswordMessage">密码错误！</property>
+                <property name="密码位数" code="MaxLength">6</property>
+                <property name="更多操作文本" code="MoreActionText">忘记密码？</property>
+                <property name="输入完成事件" code="OnFinished">JGMPayPassword1_OnFinished</property>
+                <property name="更多操作事件" code="OnMoreOper">JGMPayPassword1_OnMoreOper</property>
+                <property name="外边距" code="Spacing">0,0,0,0</property>
+                <property name="实体名" code="TableName">MyEntity</property>
+                <property name="密码验证结果" code="ValidPassword">false</property>
+              </propertys>
+              <controls />
+              <events>
+                <event code="OnFinished" name="输入完成事件">
+                  <evaluateRule code="test_demo_paypassword.form1.JGMPayPassword1_OnFinished" />
+                </event>
+                <event code="OnMoreOper" name="更多操作事件">
+                  <evaluateRule code="test_demo_paypassword.form1.JGMPayPassword1_OnMoreOper" />
+                </event>
+              </events>
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>MyEntity</dataSource>
+                  <dataMembers>
+                    <dataMember name="字段名称" code="ColumnName">input_pwd</dataMember>
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+          </controls>
+          <events />
+          <dataBindings>
+            <dataBinding>
+              <dataMembers />
+            </dataBinding>
+          </dataBindings>
+        </control>
+      </controls>
+      <events>
+        <event code="FormLoadAction" name="窗体加载事件">
+          <evaluateRule />
+        </event>
+        <event code="FormCloseAction" name="窗体关闭事件">
+          <evaluateRule />
+        </event>
+      </events>
+      <logics>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMPayPassword1_OnFinished" name="JGMPayPassword1_输入完成事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="SetControlPropertys" ruleName="控件属性设置" instanceCode="BRCode1" instanceName="控件属性设置" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"condition":[{"items":[{"controlCode":"JGMPayPassword1","propertyCode":"ValidPassword","values":"Compare([MyEntity].[input_pwd],[MyEntity].[stored_pwd],True)","valuetype":"1"}],"name":"True"}]}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="test_demo_paypassword.form1.JGMPayPassword1_OnFinished" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "test_demo_paypassword","windowCode": "form1","ruleSetCode": "JGMPayPassword1_OnFinished"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMPayPassword1_OnMoreOper" name="JGMPayPassword1_更多操作事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"ConcatStr(\"点击忘记密码， 当前输入的密码是\",[MyEntity].[input_pwd],\"  预留的密码是\",[MyEntity].[stored_pwd])","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="test_demo_paypassword.form1.JGMPayPassword1_OnMoreOper" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "test_demo_paypassword","windowCode": "form1","ruleSetCode": "JGMPayPassword1_OnMoreOper"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+      </logics>
+      <entitys>
+        <entity code="MyEntity" name="MyEntity" chineseName="MyEntity">
+          <entityFields>
+            <entityField code="input_pwd" name="input_pwd" chineseName="input_pwd" type="char" length="6" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="stored_pwd" name="stored_pwd" chineseName="stored_pwd" type="char" length="6" precision="" defaultValue="">
+              <expression />
+            </entityField>
+          </entityFields>
+          <entityDefRows>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="input_pwd">0</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="stored_pwd">123456</entityFieldDefVal>
+            </entityDefRow>
+          </entityDefRows>
+          <events>
+            <event code="OnLoaded" name="实体加载事件" />
+          </events>
+        </entity>
+      </entitys>
+      <dataBindings>
+        <dataBinding>
+          <dataSource>#E(MyEntity)#</dataSource>
+        </dataBinding>
+      </dataBindings>
+      <windowVariants>
+        <variables />
+        <dataTypes />
+      </windowVariants>
+      <windowOutputs>
+        <variables />
+        <dataTypes />
+      </windowOutputs>
+      <expressions>
+        <expression content="Compare([MyEntity].[input_pwd],[MyEntity].[stored_pwd],True)" type="client" />
+        <expression content="True" type="client" />
+        <expression content="ConcatStr(&quot;点击忘记密码， 当前输入的密码是&quot;,[MyEntity].[input_pwd],&quot;  预留的密码是&quot;,[MyEntity].[stored_pwd])" type="client" />
+      </expressions>
+    </window>
+  </windows>
+  <logics />
+  <models />
+  <variants />
+  <options />
+  <querys />
+  <resourcePackages />
+  <expressions />
+  <metaInfos>
+    <metaInfo type="model">
+      <modelMetas />
+    </metaInfo>
+  </metaInfos>
+  <menuItems />
+  <resources />
+  <manifest>
+    <bundle-info>
+      <symbolic-name>test_demo_paypassword</symbolic-name>
+      <bundle-name>password_demo</bundle-name>
+      <bundle-version>1.0.0</bundle-version>
+      <bundle-type>RuntimeSchema</bundle-type>
+      <provider />
+      <description />
+      <lastModified>1463671286000</lastModified>
+    </bundle-info>
+    <interface>
+      <apis />
+      <spis />
+    </interface>
+    <dependencies />
+    <imports>
+      <import componentCode="com.toone.v3.platform-widget-bootstrap_mobile-JGMPanel" componentName="面板" />
+      <import componentCode="com.toone.v3.platform-Webrule_SetControlPropertys" componentName="控件属性设置" />
+      <import componentCode="com.toone.v3.platform-Webrule_ShowMessage" componentName="显示设置的提示信息" />
+      <import componentCode="com.toone.v3.platform-Webfunc_Compare" componentName="比较函数" />
+      <import componentCode="com.toone.v3.platform-Webfunc_ConcatStr" componentName="字符串合并" />
+    </imports>
+  </manifest>
+</component>]]></LastDeployData>
+</Deploy>

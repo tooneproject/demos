@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Created: 2016-04-24 22:53:01-->
+<Methods>
+  <Method Remark="" Name="JGMPayPassword1_输入完成事件" FileName="JGMPayPassword1_OnFinished.method" Code="JGMPayPassword1_OnFinished" MethodDir="ControlMethod" />
+  <Method Remark="" Name="JGMPayPassword1_更多操作事件" FileName="JGMPayPassword1_OnMoreOper.method" Code="JGMPayPassword1_OnMoreOper" MethodDir="ControlMethod" />
+</Methods>
