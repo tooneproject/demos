@@ -1,0 +1,21 @@
+﻿<form type="1003" mobiletype="Phone" code="pie2" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[337]]></property>
+    <property name="Height"><![CDATA[600]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[#E(model)#]]></property>
+    <property name="FormLoadAction"><![CDATA[]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[White]]></property>
+    <property name="Name"><![CDATA[14饼图3D]]></property>
+    <property name="CustomGridValue"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGMPanel Code="JGMPanel1" Direction="False" DisplayScale="12" Dock="Fill" Height="600" LayoutDirection="vertical" PercentHeight="100%" PercentWidth="100%" TabIndex="1" Width="337">
+      <JGMChart Code="JGMChart1" GraphSettings="{&quot;PluginID&quot;:&quot;FusionChart&quot;,&quot;PluginName&quot;:&quot;Fusion图表&quot;,&quot;ChartID&quot;:&quot;1014&quot;,&quot;chartName&quot;:&quot;饼3D&quot;,&quot;chartType&quot;:&quot;Pie&quot;,&quot;is3D&quot;:&quot;true&quot;,&quot;path&quot;:&quot;fusionchart/FusionchartFactory&quot;,&quot;palette&quot;:&quot;1&quot;,&quot;size&quot;:{&quot;high&quot;:&quot;400&quot;,&quot;width&quot;:&quot;600&quot;},&quot;title&quot;:{&quot;font&quot;:&quot;黑体&quot;,&quot;fontSize&quot;:&quot;11&quot;,&quot;fontColor&quot;:&quot;#000000&quot;,&quot;alpha&quot;:&quot;0&quot;,&quot;bgColor&quot;:null,&quot;bold&quot;:&quot;0&quot;,&quot;italic&quot;:&quot;0&quot;,&quot;strikeout&quot;:&quot;0&quot;,&quot;underline&quot;:&quot;0&quot;,&quot;title&quot;:&quot;访问来源&quot;},&quot;subtitle&quot;:{&quot;font&quot;:&quot;黑体&quot;,&quot;fontSize&quot;:&quot;10&quot;,&quot;fontColor&quot;:&quot;#000000&quot;,&quot;alpha&quot;:&quot;0&quot;,&quot;bgColor&quot;:null,&quot;bold&quot;:&quot;0&quot;,&quot;italic&quot;:&quot;0&quot;,&quot;strikeout&quot;:&quot;0&quot;,&quot;underline&quot;:&quot;0&quot;,&quot;title&quot;:&quot;饼3D&quot;},&quot;inCanvas&quot;:{&quot;font&quot;:&quot;黑体&quot;,&quot;fontSize&quot;:&quot;9&quot;,&quot;fontColor&quot;:&quot;#000000&quot;,&quot;alpha&quot;:&quot;100&quot;,&quot;bgColor&quot;:null,&quot;bold&quot;:&quot;0&quot;,&quot;italic&quot;:&quot;0&quot;,&quot;strikeout&quot;:&quot;0&quot;,&quot;underline&quot;:&quot;0&quot;},&quot;outCanvas&quot;:{&quot;font&quot;:&quot;黑体&quot;,&quot;fontSize&quot;:&quot;9&quot;,&quot;fontColor&quot;:&quot;#000000&quot;,&quot;alpha&quot;:&quot;100&quot;,&quot;bgColor&quot;:null,&quot;bold&quot;:&quot;0&quot;,&quot;italic&quot;:&quot;0&quot;,&quot;strikeout&quot;:&quot;0&quot;,&quot;underline&quot;:&quot;0&quot;},&quot;xAxis&quot;:{&quot;Title&quot;:null,&quot;font&quot;:null,&quot;fontSize&quot;:&quot;0&quot;,&quot;fontColor&quot;:null,&quot;labelDisplay&quot;:null,&quot;slantLabels&quot;:null,&quot;bold&quot;:&quot;0&quot;,&quot;italic&quot;:&quot;0&quot;,&quot;strikeout&quot;:&quot;0&quot;,&quot;underline&quot;:&quot;0&quot;},&quot;yAxis&quot;:{&quot;Title&quot;:null,&quot;font&quot;:null,&quot;fontSize&quot;:&quot;0&quot;,&quot;fontColor&quot;:null,&quot;labelDisplay&quot;:null,&quot;slantLabels&quot;:null,&quot;bold&quot;:&quot;0&quot;,&quot;italic&quot;:&quot;0&quot;,&quot;strikeout&quot;:&quot;0&quot;,&quot;underline&quot;:&quot;0&quot;},&quot;DataInfo&quot;:{&quot;type&quot;:&quot;Entity&quot;,&quot;name&quot;:&quot;#E(model)#&quot;,&quot;value&quot;:&quot;#E(model)#&quot;},&quot;DataColumns&quot;:{&quot;value&quot;:[&quot;#EF(model.name)#&quot;,&quot;#EF(model.value)#&quot;]},&quot;serie&quot;:{&quot;isVar&quot;:&quot;true&quot;,&quot;name&quot;:&quot;访问来源&quot;,&quot;value&quot;:&quot;#EF(model.name)#&quot;},&quot;x&quot;:{&quot;isVar&quot;:&quot;false&quot;,&quot;name&quot;:null,&quot;value&quot;:&quot;#EF(model.)#&quot;},&quot;y&quot;:{&quot;name&quot;:&quot;数值1&quot;,&quot;code&quot;:&quot;#EF(model.value)#&quot;,&quot;stack&quot;:&quot;false&quot;}}" Left="3" PercentHeight="29.2%" PercentWidth="98.2%" TableName="#E(model)#" Top="3" Width="331" />
+    </JGMPanel>
+  </controls>
+  <outputs />
+  <inputs />
+</form>

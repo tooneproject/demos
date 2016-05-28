@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Created: 2015-11-02 0:06:08-->
+<Methods>
+  <Method Code="onChartClick" Type="Client" InterfaceType="Local" RestrictType="Private" />
+</Methods>

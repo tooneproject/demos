@@ -1,0 +1,64 @@
+<EntityConfig version="2.0">
+  <Entitys>
+    <Entity TemplateId="" TemplateCode="" Code="model" Name="model" EntityType="" TableOrQueryCode="">
+      <Columns>
+        <Column>
+          <Code>name</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <FieldLength>255</FieldLength>
+          <FieldPrecision></FieldPrecision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <MappingField></MappingField>
+        </Column>
+        <Column>
+          <Code>value</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <FieldLength>255</FieldLength>
+          <FieldPrecision></FieldPrecision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <MappingField></MappingField>
+        </Column>
+      </Columns>
+      <Datas>
+        <row>
+          <Fields>
+            <Field Code="name"><![CDATA[直接访问]]></Field>
+            <Field Code="value"><![CDATA[334]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="name"><![CDATA[邮件营销]]></Field>
+            <Field Code="value"><![CDATA[310]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="name"><![CDATA[联盟广告]]></Field>
+            <Field Code="value"><![CDATA[234]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="name"><![CDATA[视频广告]]></Field>
+            <Field Code="value"><![CDATA[135]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="name"><![CDATA[搜索引擎]]></Field>
+            <Field Code="value"><![CDATA[1548]]></Field>
+          </Fields>
+        </row>
+      </Datas>
+      <Events>
+        <EntityEvent Code="OnLoaded" Value="" />
+      </Events>
+    </Entity>
+  </Entitys>
+  <Relations />
+</EntityConfig>

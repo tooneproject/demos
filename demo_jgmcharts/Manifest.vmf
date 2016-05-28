@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ManifestInfor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ComponentInfor>
+    <ComponentCode>demo</ComponentCode>
+    <ComponentName>演示案例</ComponentName>
+    <IsExist>false</IsExist>
+    <ComponentVersion>1.0.0</ComponentVersion>
+  </ComponentInfor>
+  <MetaInfors>
+    <metaInfo type="model">
+      <modelMetas />
+    </metaInfo>
+  </MetaInfors>
+  <InterfaceInfor>
+    <apis />
+    <spis />
+  </InterfaceInfor>
+</ManifestInfor>

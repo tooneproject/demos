@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Component code="demo" name="演示案例" version="1.0.0" type="Business" category="">
+  <Provider><![CDATA[]]></Provider>
+  <Description><![CDATA[]]></Description>
+  <References />
+</Component>

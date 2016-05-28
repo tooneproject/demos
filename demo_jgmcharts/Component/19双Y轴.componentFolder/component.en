@@ -1,0 +1,174 @@
+<EntityConfig version="2.0">
+  <Entitys>
+    <Entity TemplateId="" TemplateCode="" Code="projects" Name="projects" EntityType="" TableOrQueryCode="">
+      <Columns>
+        <Column>
+          <Code>orgName</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <FieldLength>255</FieldLength>
+          <FieldPrecision></FieldPrecision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <MappingField></MappingField>
+        </Column>
+        <Column>
+          <Code>theMonth</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <FieldLength>255</FieldLength>
+          <FieldPrecision></FieldPrecision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <MappingField></MappingField>
+        </Column>
+        <Column>
+          <Code>plan</Code>
+          <Name></Name>
+          <DataType>integer</DataType>
+          <FieldLength>50</FieldLength>
+          <FieldPrecision></FieldPrecision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <MappingField></MappingField>
+        </Column>
+        <Column>
+          <Code>progress</Code>
+          <Name></Name>
+          <DataType>number</DataType>
+          <FieldLength>50</FieldLength>
+          <FieldPrecision>4</FieldPrecision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <MappingField></MappingField>
+        </Column>
+      </Columns>
+      <Datas>
+        <row>
+          <Fields>
+            <Field Code="orgName"><![CDATA[港珠澳大桥]]></Field>
+            <Field Code="theMonth"><![CDATA[201101]]></Field>
+            <Field Code="plan"><![CDATA[80]]></Field>
+            <Field Code="progress"><![CDATA[0.3]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="orgName"><![CDATA[京珠高速]]></Field>
+            <Field Code="theMonth"><![CDATA[201101]]></Field>
+            <Field Code="plan"><![CDATA[120]]></Field>
+            <Field Code="progress"><![CDATA[0.03]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="orgName"><![CDATA[港珠澳大桥]]></Field>
+            <Field Code="theMonth"><![CDATA[201102]]></Field>
+            <Field Code="plan"><![CDATA[140]]></Field>
+            <Field Code="progress"><![CDATA[0.5]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="orgName"><![CDATA[京珠高速]]></Field>
+            <Field Code="theMonth"><![CDATA[201102]]></Field>
+            <Field Code="plan"><![CDATA[170]]></Field>
+            <Field Code="progress"><![CDATA[0.15]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="orgName"><![CDATA[港珠澳大桥]]></Field>
+            <Field Code="theMonth"><![CDATA[201103]]></Field>
+            <Field Code="plan"><![CDATA[200]]></Field>
+            <Field Code="progress"><![CDATA[0.12]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="orgName"><![CDATA[京珠高速]]></Field>
+            <Field Code="theMonth"><![CDATA[201103]]></Field>
+            <Field Code="plan"><![CDATA[240]]></Field>
+            <Field Code="progress"><![CDATA[0.24]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="orgName"><![CDATA[港珠澳大桥]]></Field>
+            <Field Code="theMonth"><![CDATA[201104]]></Field>
+            <Field Code="plan"><![CDATA[280]]></Field>
+            <Field Code="progress"><![CDATA[0.05]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="orgName"><![CDATA[京珠高速]]></Field>
+            <Field Code="theMonth"><![CDATA[201104]]></Field>
+            <Field Code="plan"><![CDATA[320]]></Field>
+            <Field Code="progress"><![CDATA[0.25]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="orgName"><![CDATA[港珠澳大桥]]></Field>
+            <Field Code="theMonth"><![CDATA[201105]]></Field>
+            <Field Code="plan"><![CDATA[370]]></Field>
+            <Field Code="progress"><![CDATA[0.2]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="orgName"><![CDATA[京珠高速]]></Field>
+            <Field Code="theMonth"><![CDATA[201105]]></Field>
+            <Field Code="plan"><![CDATA[420]]></Field>
+            <Field Code="progress"><![CDATA[0.3]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="orgName"><![CDATA[深中通道]]></Field>
+            <Field Code="theMonth"><![CDATA[201101]]></Field>
+            <Field Code="plan"><![CDATA[0]]></Field>
+            <Field Code="progress"><![CDATA[0.4]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="orgName"><![CDATA[深中通道]]></Field>
+            <Field Code="theMonth"><![CDATA[201102]]></Field>
+            <Field Code="plan"><![CDATA[300]]></Field>
+            <Field Code="progress"><![CDATA[0.32]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="orgName"><![CDATA[深中通道]]></Field>
+            <Field Code="theMonth"><![CDATA[201103]]></Field>
+            <Field Code="plan"><![CDATA[200]]></Field>
+            <Field Code="progress"><![CDATA[0.45]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="orgName"><![CDATA[深中通道]]></Field>
+            <Field Code="theMonth"><![CDATA[201104]]></Field>
+            <Field Code="plan"><![CDATA[350]]></Field>
+            <Field Code="progress"><![CDATA[0.42]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="orgName"><![CDATA[深中通道]]></Field>
+            <Field Code="theMonth"><![CDATA[201105]]></Field>
+            <Field Code="plan"><![CDATA[500]]></Field>
+            <Field Code="progress"><![CDATA[0.22]]></Field>
+          </Fields>
+        </row>
+      </Datas>
+      <Events>
+        <EntityEvent Code="OnLoaded" Value="" />
+      </Events>
+    </Entity>
+  </Entitys>
+  <Relations />
+</EntityConfig>

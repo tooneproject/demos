@@ -1,0 +1,86 @@
+<EntityConfig version="2.0">
+  <Entitys>
+    <Entity TemplateId="" TemplateCode="" Code="contract" Name="contract" EntityType="" TableOrQueryCode="">
+      <Columns>
+        <Column>
+          <Code>organ</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <FieldLength>255</FieldLength>
+          <FieldPrecision></FieldPrecision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <MappingField></MappingField>
+        </Column>
+        <Column>
+          <Code>gc</Code>
+          <Name></Name>
+          <DataType>integer</DataType>
+          <FieldLength>50</FieldLength>
+          <FieldPrecision></FieldPrecision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <MappingField></MappingField>
+        </Column>
+        <Column>
+          <Code>lw</Code>
+          <Name></Name>
+          <DataType>integer</DataType>
+          <FieldLength>50</FieldLength>
+          <FieldPrecision></FieldPrecision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <MappingField></MappingField>
+        </Column>
+        <Column>
+          <Code>cl</Code>
+          <Name></Name>
+          <DataType>integer</DataType>
+          <FieldLength>50</FieldLength>
+          <FieldPrecision></FieldPrecision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <MappingField></MappingField>
+        </Column>
+      </Columns>
+      <Datas>
+        <row>
+          <Fields>
+            <Field Code="organ"><![CDATA[华北区]]></Field>
+            <Field Code="gc"><![CDATA[385]]></Field>
+            <Field Code="lw"><![CDATA[150]]></Field>
+            <Field Code="cl"><![CDATA[250]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="organ"><![CDATA[华南区]]></Field>
+            <Field Code="gc"><![CDATA[85]]></Field>
+            <Field Code="lw"><![CDATA[100]]></Field>
+            <Field Code="cl"><![CDATA[50]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="organ"><![CDATA[华东区]]></Field>
+            <Field Code="gc"><![CDATA[65]]></Field>
+            <Field Code="lw"><![CDATA[200]]></Field>
+            <Field Code="cl"><![CDATA[35]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="organ"><![CDATA[东北区]]></Field>
+            <Field Code="gc"><![CDATA[85]]></Field>
+            <Field Code="lw"><![CDATA[200]]></Field>
+            <Field Code="cl"><![CDATA[80]]></Field>
+          </Fields>
+        </row>
+      </Datas>
+      <Events>
+        <EntityEvent Code="OnLoaded" Value="" />
+      </Events>
+    </Entity>
+  </Entitys>
+  <Relations />
+</EntityConfig>
