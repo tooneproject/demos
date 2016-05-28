@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Created: 2015-11-16 20:40:04-->
+<Methods>
+  <Method Remark="" Name="JGMListView1_单击事件" FileName="JGMListView1_OnClick.method" Code="JGMListView1_OnClick" MethodDir="ControlMethod" />
+  <Method Remark="" Name="JGMListView1_值加载事件" FileName="JGMListView1_OnValueLoaded.method" Code="JGMListView1_OnValueLoaded" MethodDir="ControlMethod" />
+  <Method Remark="" Name="JGMListView1_记录切换事件" FileName="JGMListView1_OnDataChanged.method" Code="JGMListView1_OnDataChanged" MethodDir="ControlMethod" />
+</Methods>

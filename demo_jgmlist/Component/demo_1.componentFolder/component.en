@@ -1,0 +1,88 @@
+<EntityConfig version="2.0">
+  <Entitys>
+    <Entity TemplateId="" TemplateCode="" Code="MenuItems" Name="MenuItems" EntityType="" TableOrQueryCode="">
+      <Columns>
+        <Column>
+          <Code>name</Code>
+          <Name>name</Name>
+          <DataType>char</DataType>
+          <FieldLength>255</FieldLength>
+          <FieldPrecision></FieldPrecision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <MappingField></MappingField>
+        </Column>
+        <Column>
+          <Code>g</Code>
+          <Name>g</Name>
+          <DataType>char</DataType>
+          <FieldLength>255</FieldLength>
+          <FieldPrecision></FieldPrecision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+          <MappingField></MappingField>
+        </Column>
+      </Columns>
+      <Datas>
+        <row>
+          <Fields>
+            <Field Code="name"><![CDATA[飞行模式]]></Field>
+            <Field Code="g"><![CDATA[网络]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="name"><![CDATA[无线局域网]]></Field>
+            <Field Code="g"><![CDATA[网络]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="name"><![CDATA[蓝牙]]></Field>
+            <Field Code="g"><![CDATA[网络]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="name"><![CDATA[蜂窝移动网点]]></Field>
+            <Field Code="g"><![CDATA[网络]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="name"><![CDATA[个人热点]]></Field>
+            <Field Code="g"><![CDATA[网络]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="name"><![CDATA[运营商]]></Field>
+            <Field Code="g"><![CDATA[网络]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="name"><![CDATA[通知]]></Field>
+            <Field Code="g"><![CDATA[消息]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="name"><![CDATA[控制中心]]></Field>
+            <Field Code="g"><![CDATA[消息]]></Field>
+          </Fields>
+        </row>
+        <row>
+          <Fields>
+            <Field Code="name"><![CDATA[勿扰模式]]></Field>
+            <Field Code="g"><![CDATA[消息]]></Field>
+          </Fields>
+        </row>
+      </Datas>
+      <Events>
+        <EntityEvent Code="OnLoaded" Value="" />
+      </Events>
+    </Entity>
+  </Entitys>
+  <Relations />
+</EntityConfig>

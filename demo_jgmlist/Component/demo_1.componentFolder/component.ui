@@ -1,0 +1,22 @@
+﻿<form type="1003" mobiletype="Phone" code="demo_1" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[337]]></property>
+    <property name="Height"><![CDATA[600]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[#E(MenuItems)#]]></property>
+    <property name="FormLoadAction"><![CDATA[]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[246, 246, 246]]></property>
+    <property name="Name"><![CDATA[demo_1]]></property>
+    <property name="CustomGridValue"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGMListView Code="JGMListView1" Height="600" PercentHeight="100%" PercentWidth="100%" TableName="#E(MenuItems)#" Width="337">
+      <listview_row_tempate Code="listview_row_tempate1" ColumnName="#EF(MenuItems.name)#" PercentHeight="16.7%" PercentWidth="100%" TableName="#E(MenuItems)#" Top="30" Width="337" />
+      <listview_group_tempate Code="listview_group_tempate1" ColumnName="#EF(MenuItems.g)#" PercentHeight="5%" PercentWidth="100%" TableName="#E(MenuItems)#" Width="337" />
+    </JGMListView>
+  </controls>
+  <outputs />
+  <inputs />
+</form>

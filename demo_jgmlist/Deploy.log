@@ -1,0 +1,1274 @@
+<Deploy>
+  <LastDeployTime>2015-12-04 23:20:49</LastDeployTime>
+  <LastDeployData><![CDATA[<?xml version="1.0"?>
+<component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" code="list_view_demo" name="列表演示案例" desc="">
+  <windows>
+    <window type="2" code="demo_1" name="demo_1" desc="">
+      <propertys>
+        <property name="Width" code="Width">337</property>
+        <property name="Height" code="Height">600</property>
+        <property name="HeightSet" code="HeightSet">StaticHeight</property>
+        <property name="LayoutType" code="LayoutType">None</property>
+        <property name="BackColor" code="BackColor">246, 246, 246</property>
+        <property name="Name" code="Name">demo_1</property>
+        <property name="CustomGridValue" code="CustomGridValue" />
+        <property name="Code" code="Code">demo_1</property>
+      </propertys>
+      <controls>
+        <control code="JGMListView1" name="可扩展列表视图" type="JGMListView" desc="Toone-1447471583000">
+          <propertys>
+            <property name="控件编码" code="Code">JGMListView1</property>
+            <property name="泊靠" code="Dock">Fill</property>
+            <property name="高度" code="Height">600</property>
+            <property name="显示分组" code="IsGroups">True</property>
+            <property name="是否多选" code="IsMultiSelect">False</property>
+            <property name="左边距" code="Left">0</property>
+            <property name="单击事件" code="OnClick" />
+            <property name="记录切换事件" code="OnDataChanged" />
+            <property name="值加载事件" code="OnValueLoaded" />
+            <property name="百分比高度" code="PercentHeight">100%</property>
+            <property name="百分比宽度" code="PercentWidth">100%</property>
+            <property name="实体名" code="TableName">MenuItems</property>
+            <property name="上边距" code="Top">0</property>
+            <property name="宽度" code="Width">337</property>
+          </propertys>
+          <controls>
+            <control code="listview_row_tempate1" name="列表视图行模版" type="listview_row_tempate" desc="Toone-1447311675000">
+              <propertys>
+                <property name="控件名称" code="Code">listview_row_tempate1</property>
+                <property name="字段" code="ColumnName">name</property>
+                <property name="泊靠" code="Dock">Top</property>
+                <property name="高度" code="Height">100</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="百分比高度" code="PercentHeight">16.7%</property>
+                <property name="百分比宽度" code="PercentWidth">100%</property>
+                <property name="实体名" code="TableName">MenuItems</property>
+                <property name="上边距" code="Top">30</property>
+                <property name="宽度" code="Width">337</property>
+              </propertys>
+              <controls />
+              <events />
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>MenuItems</dataSource>
+                  <dataMembers>
+                    <dataMember name="字段" code="ColumnName">name</dataMember>
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+            <control code="listview_group_tempate1" name="列表视图分组模版" type="listview_group_tempate" desc="Toone-1447311675000">
+              <propertys>
+                <property name="控件名称" code="Code">listview_group_tempate1</property>
+                <property name="字段" code="ColumnName">g</property>
+                <property name="显示比例" code="DisplayScale" />
+                <property name="泊靠" code="Dock">Top</property>
+                <property name="高度" code="Height">30</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="百分比高度" code="PercentHeight">5%</property>
+                <property name="百分比宽度" code="PercentWidth">100%</property>
+                <property name="外边距" code="Spacing">0,0,0,0</property>
+                <property name="实体名" code="TableName">MenuItems</property>
+                <property name="上边距" code="Top">0</property>
+                <property name="宽度" code="Width">337</property>
+              </propertys>
+              <controls />
+              <events />
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>MenuItems</dataSource>
+                  <dataMembers>
+                    <dataMember name="字段" code="ColumnName">g</dataMember>
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+          </controls>
+          <events>
+            <event code="OnValueLoaded" name="值加载事件">
+              <evaluateRule />
+            </event>
+            <event code="OnClick" name="单击事件">
+              <evaluateRule />
+            </event>
+            <event code="OnDataChanged" name="记录切换事件">
+              <evaluateRule />
+            </event>
+          </events>
+          <dataBindings>
+            <dataBinding>
+              <dataSource>MenuItems</dataSource>
+              <dataMembers />
+            </dataBinding>
+          </dataBindings>
+        </control>
+      </controls>
+      <events>
+        <event code="FormLoadAction" name="窗体加载事件">
+          <evaluateRule />
+        </event>
+        <event code="FormCloseAction" name="窗体关闭事件">
+          <evaluateRule />
+        </event>
+      </events>
+      <logics>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMListView1_OnClick" name="JGMListView1_单击事件">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode_OnClick" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode_OnClick" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition>True</condition>
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"BR_VAR_PARENT.msg","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext>
+                <variables>
+                  <variable code="msg" name="msg" type="char" desc="" initValue="点击事件" />
+                </variables>
+                <dataTypes />
+              </routeContext>
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMListView1_OnValueLoaded" name="JGMListView1_值加载事件">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"BR_VAR_PARENT.msg","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext>
+                <variables>
+                  <variable code="msg" name="msg" type="char" desc="" initValue="数据加载事件" />
+                </variables>
+                <dataTypes />
+              </routeContext>
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMListView1_OnDataChanged" name="JGMListView1_记录切换事件">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"BR_VAR_PARENT.msg","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext>
+                <variables>
+                  <variable code="msg" name="msg" type="char" desc="" initValue="记录切换事件" />
+                </variables>
+                <dataTypes />
+              </routeContext>
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+      </logics>
+      <entitys>
+        <entity code="MenuItems" name="MenuItems" chineseName="MenuItems">
+          <entityFields>
+            <entityField code="name" name="name" chineseName="name" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="g" name="g" chineseName="g" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+          </entityFields>
+          <entityDefRows>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="name">飞行模式</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="g">网络</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="name">无线局域网</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="g">网络</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="name">蓝牙</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="g">网络</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="name">蜂窝移动网点</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="g">网络</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="name">个人热点</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="g">网络</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="name">运营商</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="g">网络</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="name">通知</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="g">消息</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="name">控制中心</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="g">消息</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="name">勿扰模式</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="g">消息</entityFieldDefVal>
+            </entityDefRow>
+          </entityDefRows>
+          <events>
+            <event code="OnLoaded" name="实体加载事件" />
+          </events>
+        </entity>
+      </entitys>
+      <dataBindings>
+        <dataBinding>
+          <dataSource>#E(MenuItems)#</dataSource>
+        </dataBinding>
+      </dataBindings>
+      <windowVariants>
+        <variables />
+        <dataTypes />
+      </windowVariants>
+      <windowOutputs>
+        <variables />
+        <dataTypes />
+      </windowOutputs>
+      <expressions>
+        <expression content="True" type="client" />
+        <expression content="BR_VAR_PARENT.msg" type="client" />
+        <expression content="BR_VAR_PARENT.msg" type="client" />
+        <expression content="BR_VAR_PARENT.msg" type="client" />
+      </expressions>
+    </window>
+    <window type="2" code="demo_2" name="demo_2" desc="">
+      <propertys>
+        <property name="Width" code="Width">337</property>
+        <property name="Height" code="Height">600</property>
+        <property name="HeightSet" code="HeightSet">StaticHeight</property>
+        <property name="LayoutType" code="LayoutType">None</property>
+        <property name="BackColor" code="BackColor">246, 246, 246</property>
+        <property name="Name" code="Name">demo_2</property>
+        <property name="CustomGridValue" code="CustomGridValue" />
+        <property name="Code" code="Code">demo_2</property>
+      </propertys>
+      <controls>
+        <control code="JGMListView1" name="可扩展列表视图" type="JGMListView" desc="Toone-1447471583000">
+          <propertys>
+            <property name="控件编码" code="Code">JGMListView1</property>
+            <property name="泊靠" code="Dock">Fill</property>
+            <property name="高度" code="Height">600</property>
+            <property name="显示分组" code="IsGroups">True</property>
+            <property name="是否多选" code="IsMultiSelect">True</property>
+            <property name="左边距" code="Left">0</property>
+            <property name="单击事件" code="OnClick">JGMListView1_OnClick</property>
+            <property name="记录切换事件" code="OnDataChanged">JGMListView1_OnDataChanged</property>
+            <property name="值加载事件" code="OnValueLoaded">JGMListView1_OnValueLoaded</property>
+            <property name="百分比高度" code="PercentHeight">100%</property>
+            <property name="百分比宽度" code="PercentWidth">100%</property>
+            <property name="实体名" code="TableName">NameList</property>
+            <property name="上边距" code="Top">0</property>
+            <property name="宽度" code="Width">337</property>
+          </propertys>
+          <controls>
+            <control code="listview_row_tempate1" name="列表视图行模版" type="listview_row_tempate" desc="Toone-1447311675000">
+              <propertys>
+                <property name="控件名称" code="Code">listview_row_tempate1</property>
+                <property name="字段" code="ColumnName">name</property>
+                <property name="泊靠" code="Dock">Top</property>
+                <property name="高度" code="Height">100</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="百分比高度" code="PercentHeight">16.7%</property>
+                <property name="百分比宽度" code="PercentWidth">100%</property>
+                <property name="实体名" code="TableName">NameList</property>
+                <property name="上边距" code="Top">30</property>
+                <property name="宽度" code="Width">337</property>
+              </propertys>
+              <controls />
+              <events />
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>NameList</dataSource>
+                  <dataMembers>
+                    <dataMember name="字段" code="ColumnName">name</dataMember>
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+            <control code="listview_group_tempate1" name="列表视图分组模版" type="listview_group_tempate" desc="Toone-1447311675000">
+              <propertys>
+                <property name="控件名称" code="Code">listview_group_tempate1</property>
+                <property name="字段" code="ColumnName">group_key</property>
+                <property name="显示比例" code="DisplayScale" />
+                <property name="泊靠" code="Dock">Top</property>
+                <property name="高度" code="Height">30</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="百分比高度" code="PercentHeight">5%</property>
+                <property name="百分比宽度" code="PercentWidth">100%</property>
+                <property name="外边距" code="Spacing">0,0,0,0</property>
+                <property name="实体名" code="TableName">NameList</property>
+                <property name="上边距" code="Top">0</property>
+                <property name="宽度" code="Width">337</property>
+              </propertys>
+              <controls />
+              <events />
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>NameList</dataSource>
+                  <dataMembers>
+                    <dataMember name="字段" code="ColumnName">group_key</dataMember>
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+          </controls>
+          <events>
+            <event code="OnValueLoaded" name="值加载事件">
+              <evaluateRule code="list_view_demo.demo_2.JGMListView1_OnValueLoaded" />
+            </event>
+            <event code="OnClick" name="单击事件">
+              <evaluateRule code="list_view_demo.demo_2.JGMListView1_OnClick" />
+            </event>
+            <event code="OnDataChanged" name="记录切换事件">
+              <evaluateRule code="list_view_demo.demo_2.JGMListView1_OnDataChanged" />
+            </event>
+          </events>
+          <dataBindings>
+            <dataBinding>
+              <dataSource>NameList</dataSource>
+              <dataMembers />
+            </dataBinding>
+          </dataBindings>
+        </control>
+      </controls>
+      <events>
+        <event code="FormLoadAction" name="窗体加载事件">
+          <evaluateRule />
+        </event>
+        <event code="FormCloseAction" name="窗体关闭事件">
+          <evaluateRule />
+        </event>
+      </events>
+      <logics>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMListView1_OnClick" name="JGMListView1_单击事件">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode_OnClick" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode_OnClick" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition>True</condition>
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"BR_VAR_PARENT.msg","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext>
+                <variables>
+                  <variable code="msg" name="msg" type="char" desc="" initValue="点击事件" />
+                </variables>
+                <dataTypes />
+              </routeContext>
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="list_view_demo.demo_2.JGMListView1_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "list_view_demo","windowCode": "demo_2","ruleSetCode": "JGMListView1_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMListView1_OnValueLoaded" name="JGMListView1_值加载事件">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"BR_VAR_PARENT.msg","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext>
+                <variables>
+                  <variable code="msg" name="msg" type="char" desc="" initValue="数据加载事件" />
+                </variables>
+                <dataTypes />
+              </routeContext>
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="list_view_demo.demo_2.JGMListView1_OnValueLoaded" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "list_view_demo","windowCode": "demo_2","ruleSetCode": "JGMListView1_OnValueLoaded"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMListView1_OnDataChanged" name="JGMListView1_记录切换事件">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"BR_VAR_PARENT.msg","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext>
+                <variables>
+                  <variable code="msg" name="msg" type="char" desc="" initValue="记录切换事件" />
+                </variables>
+                <dataTypes />
+              </routeContext>
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="list_view_demo.demo_2.JGMListView1_OnDataChanged" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "list_view_demo","windowCode": "demo_2","ruleSetCode": "JGMListView1_OnDataChanged"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+      </logics>
+      <entitys>
+        <entity code="NameList" name="NameList" chineseName="NameList">
+          <entityFields>
+            <entityField code="group_key" name="group_key" chineseName="group_key" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="name" name="name" chineseName="name" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="id" name="id" chineseName="id" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="imgUri" name="imgUri" chineseName="imgUri" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="tips" name="tips" chineseName="tips" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+          </entityFields>
+          <entityDefRows>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">C</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">陈公博</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">1</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">C</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">陈绍宽</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">2</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">G</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">顾祝同</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">3</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">H</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">何应钦</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">4</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">国防部长</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">J</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">蒋百里</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">5</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">L</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">林森</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">6</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">国民党元老</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">L</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">林蔚</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">7</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">X</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">徐永昌</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">8</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">陆军总长</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">Z</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">张群</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">9</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">Z</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">周至柔</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">10</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">空军总长</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">B</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">白崇禧</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">11</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">桂系军师</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">Z</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">张灵甫</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">12</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">少壮将领</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">H</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">胡琏</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">13</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">集团军司令</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">H</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">黄百韬</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">14</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">兵团司令</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">L</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">廖耀湘</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">15</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">军长</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">D</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">杜聿明</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">16</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">装甲先锋</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">W</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">王耀武</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">17</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">军长</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">Q</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">邱清泉</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">18</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">F</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">方先觉</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">19</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">F</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">傅作义</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">20</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">X</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">薛岳</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">21</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">H</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">胡宗南</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">22</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">战区司令</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">H</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">黄维</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">23</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">G</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">关麟征</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">24</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">S</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">孙立人</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">25</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">名将新星</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">S</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">宋哲元</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">26</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">W</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">卫立煌</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">27</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">集团军司令</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">Z</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">张自忠</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">28</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">一级上将</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">C</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">陈明仁</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">29</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">C</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">程潜</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">30</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">省长</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">J</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">蒋介石</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">31</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">委座</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">X</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">徐源泉</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">32</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">Y</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">于学忠</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">33</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">L</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">李弥</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">34</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">L</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">李宗仁</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">35</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips">桂系领袖</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">Z</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">张发奎</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">36</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">C</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">陈诚</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">37</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">S</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">宋希濂</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">38</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">T</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">汤恩伯</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">39</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">F</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">冯玉祥</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">40</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">Z</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">张学良</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">41</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="tips" />
+            </entityDefRow>
+          </entityDefRows>
+          <events>
+            <event code="OnLoaded" name="实体加载事件" />
+          </events>
+        </entity>
+      </entitys>
+      <dataBindings>
+        <dataBinding>
+          <dataSource>#E(NameList)#</dataSource>
+        </dataBinding>
+      </dataBindings>
+      <windowVariants>
+        <variables />
+        <dataTypes />
+      </windowVariants>
+      <windowOutputs>
+        <variables />
+        <dataTypes />
+      </windowOutputs>
+      <expressions>
+        <expression content="True" type="client" />
+        <expression content="BR_VAR_PARENT.msg" type="client" />
+        <expression content="BR_VAR_PARENT.msg" type="client" />
+        <expression content="BR_VAR_PARENT.msg" type="client" />
+      </expressions>
+    </window>
+    <window type="2" code="demo_3" name="demo_3" desc="">
+      <propertys>
+        <property name="Width" code="Width">337</property>
+        <property name="Height" code="Height">600</property>
+        <property name="HeightSet" code="HeightSet">StaticHeight</property>
+        <property name="LayoutType" code="LayoutType">None</property>
+        <property name="BackColor" code="BackColor">246, 246, 246</property>
+        <property name="Name" code="Name">demo_3</property>
+        <property name="CustomGridValue" code="CustomGridValue" />
+        <property name="Code" code="Code">demo_3</property>
+      </propertys>
+      <controls>
+        <control code="JGMListView1" name="可扩展列表视图" type="JGMListView" desc="Toone-1447471583000">
+          <propertys>
+            <property name="控件编码" code="Code">JGMListView1</property>
+            <property name="泊靠" code="Dock">Fill</property>
+            <property name="高度" code="Height">600</property>
+            <property name="显示分组" code="IsGroups">False</property>
+            <property name="是否多选" code="IsMultiSelect">True</property>
+            <property name="左边距" code="Left">0</property>
+            <property name="单击事件" code="OnClick" />
+            <property name="记录切换事件" code="OnDataChanged" />
+            <property name="值加载事件" code="OnValueLoaded" />
+            <property name="百分比高度" code="PercentHeight">100%</property>
+            <property name="百分比宽度" code="PercentWidth">100%</property>
+            <property name="实体名" code="TableName">NameList</property>
+            <property name="上边距" code="Top">0</property>
+            <property name="宽度" code="Width">337</property>
+          </propertys>
+          <controls>
+            <control code="listview_row_tempate1" name="列表视图行模版" type="listview_row_tempate" desc="Toone-1447311675000">
+              <propertys>
+                <property name="控件名称" code="Code">listview_row_tempate1</property>
+                <property name="字段" code="ColumnName">name</property>
+                <property name="泊靠" code="Dock">Top</property>
+                <property name="高度" code="Height">100</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="百分比高度" code="PercentHeight">16.7%</property>
+                <property name="百分比宽度" code="PercentWidth">100%</property>
+                <property name="实体名" code="TableName">NameList</property>
+                <property name="上边距" code="Top">30</property>
+                <property name="宽度" code="Width">337</property>
+              </propertys>
+              <controls />
+              <events />
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>NameList</dataSource>
+                  <dataMembers>
+                    <dataMember name="字段" code="ColumnName">name</dataMember>
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+            <control code="listview_group_tempate1" name="列表视图分组模版" type="listview_group_tempate" desc="Toone-1447311675000">
+              <propertys>
+                <property name="控件名称" code="Code">listview_group_tempate1</property>
+                <property name="字段" code="ColumnName">group_key</property>
+                <property name="显示比例" code="DisplayScale" />
+                <property name="泊靠" code="Dock">Top</property>
+                <property name="高度" code="Height">30</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="百分比高度" code="PercentHeight">5%</property>
+                <property name="百分比宽度" code="PercentWidth">100%</property>
+                <property name="外边距" code="Spacing">0,0,0,0</property>
+                <property name="实体名" code="TableName">NameList</property>
+                <property name="上边距" code="Top">0</property>
+                <property name="宽度" code="Width">337</property>
+              </propertys>
+              <controls />
+              <events />
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>NameList</dataSource>
+                  <dataMembers>
+                    <dataMember name="字段" code="ColumnName">group_key</dataMember>
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+          </controls>
+          <events>
+            <event code="OnValueLoaded" name="值加载事件">
+              <evaluateRule />
+            </event>
+            <event code="OnClick" name="单击事件">
+              <evaluateRule />
+            </event>
+            <event code="OnDataChanged" name="记录切换事件">
+              <evaluateRule />
+            </event>
+          </events>
+          <dataBindings>
+            <dataBinding>
+              <dataSource>NameList</dataSource>
+              <dataMembers />
+            </dataBinding>
+          </dataBindings>
+        </control>
+      </controls>
+      <events>
+        <event code="FormLoadAction" name="窗体加载事件">
+          <evaluateRule />
+        </event>
+        <event code="FormCloseAction" name="窗体关闭事件">
+          <evaluateRule />
+        </event>
+      </events>
+      <logics>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMListView1_OnClick" name="JGMListView1_单击事件">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode_OnClick" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode_OnClick" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition>True</condition>
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"BR_VAR_PARENT.msg","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext>
+                <variables>
+                  <variable code="msg" name="msg" type="char" desc="" initValue="点击事件" />
+                </variables>
+                <dataTypes />
+              </routeContext>
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMListView1_OnValueLoaded" name="JGMListView1_值加载事件">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"BR_VAR_PARENT.msg","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext>
+                <variables>
+                  <variable code="msg" name="msg" type="char" desc="" initValue="数据加载事件" />
+                </variables>
+                <dataTypes />
+              </routeContext>
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMListView1_OnDataChanged" name="JGMListView1_记录切换事件">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"BR_VAR_PARENT.msg","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext>
+                <variables>
+                  <variable code="msg" name="msg" type="char" desc="" initValue="记录切换事件" />
+                </variables>
+                <dataTypes />
+              </routeContext>
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+      </logics>
+      <entitys>
+        <entity code="NameList" name="NameList" chineseName="NameList">
+          <entityFields>
+            <entityField code="group_key" name="group_key" chineseName="group_key" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="name" name="name" chineseName="name" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="id" name="id" chineseName="id" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="imgUri" name="imgUri" chineseName="imgUri" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+          </entityFields>
+          <entityDefRows>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">C</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">陈公博</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">1</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">C</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">陈绍宽</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">2</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">G</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">顾祝同</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">3</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">H</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">何应钦</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">4</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">J</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">蒋百里</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">5</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">L</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">林森</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">6</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">L</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">林蔚</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">7</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">X</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">徐永昌</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">8</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">Z</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">张群</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">9</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">Z</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">周至柔</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">10</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">B</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">白崇禧</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">11</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">Z</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">张灵甫</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">12</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">H</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">胡琏</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">13</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">H</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">黄百韬</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">14</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">L</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">廖耀湘</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">15</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">D</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">杜聿明</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">16</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">W</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">王耀武</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">17</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">Q</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">邱清泉</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">18</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">F</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">方先觉</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">19</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">F</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">傅作义</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">20</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">X</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">薛岳</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">21</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">H</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">胡宗南</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">22</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">H</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">黄维</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">23</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">G</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">关麟征</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">24</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">S</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">孙立人</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">25</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">S</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">宋哲元</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">26</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">W</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">卫立煌</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">27</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">Z</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">张自忠</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">28</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">C</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">陈明仁</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">29</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">C</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">程潜</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">30</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">J</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">蒋介石</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">31</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">X</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">徐源泉</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">32</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">Y</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">于学忠</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">33</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">L</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">李弥</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">34</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">L</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">李宗仁</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">35</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">Z</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">张发奎</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">36</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">C</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">陈诚</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">37</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">S</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">宋希濂</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">38</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">T</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">汤恩伯</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">39</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">F</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">冯玉祥</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">40</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="group_key">Z</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="name">张学良</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="id">41</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="imgUri">./itop/common/images/Under_construction2.jpg</entityFieldDefVal>
+            </entityDefRow>
+          </entityDefRows>
+          <events>
+            <event code="OnLoaded" name="实体加载事件" />
+          </events>
+        </entity>
+      </entitys>
+      <dataBindings>
+        <dataBinding>
+          <dataSource>#E(NameList)#</dataSource>
+        </dataBinding>
+      </dataBindings>
+      <windowVariants>
+        <variables />
+        <dataTypes />
+      </windowVariants>
+      <windowOutputs>
+        <variables />
+        <dataTypes />
+      </windowOutputs>
+      <expressions>
+        <expression content="True" type="client" />
+        <expression content="BR_VAR_PARENT.msg" type="client" />
+        <expression content="BR_VAR_PARENT.msg" type="client" />
+        <expression content="BR_VAR_PARENT.msg" type="client" />
+      </expressions>
+    </window>
+  </windows>
+  <logics />
+  <models />
+  <variants />
+  <options />
+  <taskplans />
+  <querys />
+  <resourcePackages />
+  <expressions />
+  <metaInfos>
+    <metaInfo type="window">
+      <windowMetas />
+    </metaInfo>
+    <metaInfo type="model">
+      <modelMetas />
+    </metaInfo>
+  </metaInfos>
+  <menuItems />
+  <resources />
+  <manifest>
+    <bundle-info>
+      <symbolic-name>list_view_demo</symbolic-name>
+      <bundle-name>列表演示案例</bundle-name>
+      <bundle-version>1.0.0</bundle-version>
+      <bundle-type>RuntimeSchema</bundle-type>
+      <provider />
+      <description />
+      <lastModified>1449242449000</lastModified>
+    </bundle-info>
+    <interface>
+      <apis />
+      <spis />
+    </interface>
+    <dependencies />
+  </manifest>
+</component>]]></LastDeployData>
+</Deploy>

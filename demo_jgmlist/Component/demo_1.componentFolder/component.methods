@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Created: 2015-11-16 20:49:41-->
+<Methods>
+  <Method Code="JGMListView1_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <MethodChain><![CDATA[
+  <evaluateRule code="BRCode_OnClick" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode_OnClick" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True">
+        <Condition>True</Condition>
+        <RuleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"BR_VAR_PARENT.msg","type":"1"}}</RuleConfig>
+        <XmlRuleConfig>&lt;dsConfig&gt;&lt;dtMaster&gt;&lt;MsgType&gt;0&lt;/MsgType&gt;&lt;SimpleChinese&gt;BR_VAR_PARENT.#MV(demo_form_1.JGMListView1_OnClick.msg)#&lt;/SimpleChinese&gt;&lt;SimpleChinesetype&gt;1&lt;/SimpleChinesetype&gt;&lt;/dtMaster&gt;&lt;/dsConfig&gt;</XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+    <Variables>
+      <Variable code="msg" name="msg" fieldType="char" initValue="点击事件" desc="" />
+    </Variables>
+  </Method>
+  <Method Code="JGMListView1_OnValueLoaded" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <MethodChain><![CDATA[
+  <evaluateRule code="BRCode1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True">
+        <Condition></Condition>
+        <RuleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"BR_VAR_PARENT.msg","type":"1"}}</RuleConfig>
+        <XmlRuleConfig>&lt;dsConfig&gt;&lt;dtMaster&gt;&lt;MsgType&gt;0&lt;/MsgType&gt;&lt;SimpleChinese&gt;BR_VAR_PARENT.#MV(demo_form_1.JGMListView1_OnValueLoaded.msg)#&lt;/SimpleChinese&gt;&lt;SimpleChinesetype&gt;1&lt;/SimpleChinesetype&gt;&lt;/dtMaster&gt;&lt;/dsConfig&gt;</XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+    <Variables>
+      <Variable code="msg" name="msg" fieldType="char" initValue="数据加载事件" desc="" />
+    </Variables>
+  </Method>
+  <Method Code="JGMListView1_OnDataChanged" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <MethodChain><![CDATA[
+  <evaluateRule code="BRCode1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True">
+        <Condition></Condition>
+        <RuleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"BR_VAR_PARENT.msg","type":"1"}}</RuleConfig>
+        <XmlRuleConfig>&lt;dsConfig&gt;&lt;dtMaster&gt;&lt;MsgType&gt;0&lt;/MsgType&gt;&lt;SimpleChinese&gt;BR_VAR_PARENT.#MV(demo_form_1.JGMListView1_OnDataChanged.msg)#&lt;/SimpleChinese&gt;&lt;SimpleChinesetype&gt;1&lt;/SimpleChinesetype&gt;&lt;/dtMaster&gt;&lt;/dsConfig&gt;</XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+    <Variables>
+      <Variable code="msg" name="msg" fieldType="char" initValue="记录切换事件" desc="" />
+    </Variables>
+  </Method>
+</Methods>
