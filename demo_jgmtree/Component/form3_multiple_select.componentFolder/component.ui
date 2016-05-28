@@ -1,0 +1,22 @@
+﻿<form type="1003" mobiletype="Phone" code="form3_multiple_select" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[337]]></property>
+    <property name="Height"><![CDATA[600]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[#E(autotest_gz39_tree_a)#]]></property>
+    <property name="FormLoadAction"><![CDATA[form1_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[255, 255, 255]]></property>
+    <property name="Name"><![CDATA[form3_multiple_select]]></property>
+    <property name="CustomGridValue"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGMTreeView Code="JGMTreeView1" CollapseIcon="iconfont icon-right" DisplayMode="multi" ExpandIcon="iconfont icon-unfold" Height="600" InnerCodeColumn="#EF(autotest_gz39_tree_a.zs)#" OrderNoColumn="#EF(autotest_gz39_tree_a.xh)#" PercentHeight="100%" PercentWidth="100%" PIDColumn="#EF(autotest_gz39_tree_a.parentId)#" SelectedNodeBackColor="255, 255, 255" TabIndex="0" TableName="#E(autotest_gz39_tree_a)#" Width="337">
+      <treenode_default_template BackColor="192, 255, 255" Code="treenode_default_template2" NodeTemplateType="ChildNode" PercentHeight="16%" PercentWidth="100%" TableName="#E(autotest_gz39_tree_a)#" TitleColumnName="#EF(autotest_gz39_tree_a.nodeName)#" TitleIconColumnName="#EF(autotest_gz39_tree_a.img)#" Top="96" Width="337" />
+      <treenode_default_template BackColor="192, 255, 192" Code="treenode_default_template1" OnAddonDomainClick="#M(form3_multiple_select.treenode_default_template1_OnAddonDomainClick)#" PercentHeight="16%" PercentWidth="100%" TableName="#E(autotest_gz39_tree_a)#" TitleColumnName="#EF(autotest_gz39_tree_a.nodeName)#" TitleIconColumnName="#EF(autotest_gz39_tree_a.img)#" TreeNodeHTMLTemplate="{&quot;HTMLTemplate&quot;:&quot;附加区域文本&lt;%=xh%&gt;&quot;,&quot;PlaceHolder&quot;:&quot;&lt;%=key%&gt;&quot;,&quot;fieldMapping&quot;:[{&quot;code&quot;:&quot;xh&quot;,&quot;fieldValue&quot;:&quot;cj&quot;,&quot;DefaultValue&quot;:&quot;&quot;}],&quot;IsCanEdit&quot;:true}" Width="337" />
+    </JGMTreeView>
+  </controls>
+  <outputs />
+  <inputs />
+</form>

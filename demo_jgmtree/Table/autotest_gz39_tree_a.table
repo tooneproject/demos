@@ -1,0 +1,170 @@
+﻿<Table id="Table45875383" code="autotest_gz39_tree_a" name="autotest_gz39_tree_a">
+  <Remark><![CDATA[]]></Remark>
+  <Creator><![CDATA[]]></Creator>
+  <CreationTime><![CDATA[2016-04-30 17:47:22]]></CreationTime>
+  <Modifier><![CDATA[seamankwok]]></Modifier>
+  <ModificationTime><![CDATA[2016-05-08 15:53:36]]></ModificationTime>
+  <Columns>
+    <Column id="Column_id" code="id" name="" domain="" dataType="char" length="64" precision="" isPrimaryKey="true" isMandratory="true">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="parentId" code="parentId" name="parentId" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="cj" code="cj" name="cj" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="xh" code="xh" name="xh" domain="" dataType="integer" length="50" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="isleaf" code="IsLeaf" name="IsLeaf" domain="" dataType="boolean" length="" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="nodeName" code="nodeName" name="nodeName" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="xs" code="xs" name="xs" domain="" dataType="number" length="50" precision="4" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="zs" code="zs" name="zs" domain="" dataType="integer" length="50" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="Column_1" code="img" name="img" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+  </Columns>
+  <Indexes />
+  <TreeTableStruct treeType="0" parentColumn="parentId" innerCodeColumn="cj" orderNoColumn="xh" leafColumn="IsLeaf" />
+  <Data isInitialData="true" isReplaceDataById="true">
+    <RowData>
+      <ColumnData code="id"><![CDATA[1]]></ColumnData>
+      <ColumnData code="parentId"><![CDATA[]]></ColumnData>
+      <ColumnData code="cj"><![CDATA[00001]]></ColumnData>
+      <ColumnData code="xh"><![CDATA[1]]></ColumnData>
+      <ColumnData code="IsLeaf"><![CDATA[False]]></ColumnData>
+      <ColumnData code="nodeName"><![CDATA[我的好友]]></ColumnData>
+      <ColumnData code="xs"><![CDATA[12]]></ColumnData>
+      <ColumnData code="zs"><![CDATA[13]]></ColumnData>
+      <ColumnData code="img"><![CDATA[itop/common/images/start_icon_active.png]]></ColumnData>
+    </RowData>
+    <RowData>
+      <ColumnData code="id"><![CDATA[2]]></ColumnData>
+      <ColumnData code="parentId"><![CDATA[1]]></ColumnData>
+      <ColumnData code="cj"><![CDATA[0000100001]]></ColumnData>
+      <ColumnData code="xh"><![CDATA[2]]></ColumnData>
+      <ColumnData code="IsLeaf"><![CDATA[False]]></ColumnData>
+      <ColumnData code="nodeName"><![CDATA[中土大陆]]></ColumnData>
+      <ColumnData code="xs"><![CDATA[14]]></ColumnData>
+      <ColumnData code="zs"><![CDATA[15]]></ColumnData>
+      <ColumnData code="img"><![CDATA[itop/common/images/start_icon_active.png]]></ColumnData>
+    </RowData>
+    <RowData>
+      <ColumnData code="id"><![CDATA[3]]></ColumnData>
+      <ColumnData code="parentId"><![CDATA[1]]></ColumnData>
+      <ColumnData code="cj"><![CDATA[0000100002]]></ColumnData>
+      <ColumnData code="xh"><![CDATA[3]]></ColumnData>
+      <ColumnData code="IsLeaf"><![CDATA[False]]></ColumnData>
+      <ColumnData code="nodeName"><![CDATA[维斯特洛大陆]]></ColumnData>
+      <ColumnData code="xs"><![CDATA[13]]></ColumnData>
+      <ColumnData code="zs"><![CDATA[56]]></ColumnData>
+      <ColumnData code="img"><![CDATA[itop/common/images/start_icon_active.png]]></ColumnData>
+    </RowData>
+    <RowData>
+      <ColumnData code="id"><![CDATA[4]]></ColumnData>
+      <ColumnData code="parentId"><![CDATA[2]]></ColumnData>
+      <ColumnData code="cj"><![CDATA[000010000100001]]></ColumnData>
+      <ColumnData code="xh"><![CDATA[4]]></ColumnData>
+      <ColumnData code="IsLeaf"><![CDATA[True]]></ColumnData>
+      <ColumnData code="nodeName"><![CDATA[爱隆王]]></ColumnData>
+      <ColumnData code="xs"><![CDATA[55]]></ColumnData>
+      <ColumnData code="zs"><![CDATA[67]]></ColumnData>
+      <ColumnData code="img"><![CDATA[itop/common/images/003.png]]></ColumnData>
+    </RowData>
+    <RowData>
+      <ColumnData code="id"><![CDATA[5]]></ColumnData>
+      <ColumnData code="parentId"><![CDATA[]]></ColumnData>
+      <ColumnData code="cj"><![CDATA[00002]]></ColumnData>
+      <ColumnData code="xh"><![CDATA[5]]></ColumnData>
+      <ColumnData code="IsLeaf"><![CDATA[False]]></ColumnData>
+      <ColumnData code="nodeName"><![CDATA[陌生人]]></ColumnData>
+      <ColumnData code="xs"><![CDATA[55]]></ColumnData>
+      <ColumnData code="zs"><![CDATA[66]]></ColumnData>
+      <ColumnData code="img"><![CDATA[itop/common/images/start_icon_active.png]]></ColumnData>
+    </RowData>
+    <RowData>
+      <ColumnData code="id"><![CDATA[6]]></ColumnData>
+      <ColumnData code="parentId"><![CDATA[2]]></ColumnData>
+      <ColumnData code="cj"><![CDATA[000010000100002]]></ColumnData>
+      <ColumnData code="xh"><![CDATA[6]]></ColumnData>
+      <ColumnData code="IsLeaf"><![CDATA[True]]></ColumnData>
+      <ColumnData code="nodeName"><![CDATA[甘道夫]]></ColumnData>
+      <ColumnData code="xs"><![CDATA[56]]></ColumnData>
+      <ColumnData code="zs"><![CDATA[66]]></ColumnData>
+      <ColumnData code="img"><![CDATA[itop/common/images/Under_construction2.jpg]]></ColumnData>
+    </RowData>
+    <RowData>
+      <ColumnData code="id"><![CDATA[7]]></ColumnData>
+      <ColumnData code="parentId"><![CDATA[2]]></ColumnData>
+      <ColumnData code="cj"><![CDATA[000010000100003]]></ColumnData>
+      <ColumnData code="xh"><![CDATA[7]]></ColumnData>
+      <ColumnData code="IsLeaf"><![CDATA[True]]></ColumnData>
+      <ColumnData code="nodeName"><![CDATA[魔寇斯]]></ColumnData>
+      <ColumnData code="xs"><![CDATA[55]]></ColumnData>
+      <ColumnData code="zs"><![CDATA[66]]></ColumnData>
+      <ColumnData code="img"><![CDATA[]]></ColumnData>
+    </RowData>
+    <RowData>
+      <ColumnData code="id"><![CDATA[8]]></ColumnData>
+      <ColumnData code="parentId"><![CDATA[2]]></ColumnData>
+      <ColumnData code="cj"><![CDATA[000010000100004]]></ColumnData>
+      <ColumnData code="xh"><![CDATA[8]]></ColumnData>
+      <ColumnData code="IsLeaf"><![CDATA[True]]></ColumnData>
+      <ColumnData code="nodeName"><![CDATA[咕噜]]></ColumnData>
+      <ColumnData code="xs"><![CDATA[55]]></ColumnData>
+      <ColumnData code="zs"><![CDATA[55]]></ColumnData>
+      <ColumnData code="img"><![CDATA[itop/common/images/Under_construction2.jpg]]></ColumnData>
+    </RowData>
+    <RowData>
+      <ColumnData code="id"><![CDATA[9]]></ColumnData>
+      <ColumnData code="parentId"><![CDATA[3]]></ColumnData>
+      <ColumnData code="cj"><![CDATA[000010000200001]]></ColumnData>
+      <ColumnData code="xh"><![CDATA[9]]></ColumnData>
+      <ColumnData code="IsLeaf"><![CDATA[False]]></ColumnData>
+      <ColumnData code="nodeName"><![CDATA[史塔克]]></ColumnData>
+      <ColumnData code="xs"><![CDATA[33]]></ColumnData>
+      <ColumnData code="zs"><![CDATA[33]]></ColumnData>
+      <ColumnData code="img"><![CDATA[http://h.hiphotos.baidu.com/baike/c0%3Dbaike220%2C5%2C5%2C220%2C73/sign=bd291f77e2fe9925df01610255c135ba/94cad1c8a786c917f83e558bcb3d70cf3bc75746.jpg]]></ColumnData>
+    </RowData>
+    <RowData>
+      <ColumnData code="id"><![CDATA[10]]></ColumnData>
+      <ColumnData code="parentId"><![CDATA[9]]></ColumnData>
+      <ColumnData code="cj"><![CDATA[00001000020000100001]]></ColumnData>
+      <ColumnData code="xh"><![CDATA[10]]></ColumnData>
+      <ColumnData code="IsLeaf"><![CDATA[True]]></ColumnData>
+      <ColumnData code="nodeName"><![CDATA[艾莉亚·史塔克]]></ColumnData>
+      <ColumnData code="xs"><![CDATA[33]]></ColumnData>
+      <ColumnData code="zs"><![CDATA[22]]></ColumnData>
+      <ColumnData code="img"><![CDATA[http://getimg.jrj.com.cn/images/2014/07/newsyouth/one_20140726131956930.jpg]]></ColumnData>
+    </RowData>
+    <RowData>
+      <ColumnData code="id"><![CDATA[11]]></ColumnData>
+      <ColumnData code="parentId"><![CDATA[9]]></ColumnData>
+      <ColumnData code="cj"><![CDATA[00001000020000100002]]></ColumnData>
+      <ColumnData code="xh"><![CDATA[11]]></ColumnData>
+      <ColumnData code="IsLeaf"><![CDATA[True]]></ColumnData>
+      <ColumnData code="nodeName"><![CDATA[布兰·史塔克]]></ColumnData>
+      <ColumnData code="xs"><![CDATA[44]]></ColumnData>
+      <ColumnData code="zs"><![CDATA[44]]></ColumnData>
+      <ColumnData code="img"><![CDATA[http://h.hiphotos.baidu.com/baike/w%3D268/sign=70d63f277f310a55c424d9f28f474387/1e30e924b899a901cbe8fee21b950a7b0308f501.jpg]]></ColumnData>
+    </RowData>
+  </Data>
+</Table>

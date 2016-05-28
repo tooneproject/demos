@@ -1,0 +1,22 @@
+﻿<form type="1003" mobiletype="Phone" code="form4_blank_template" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[337]]></property>
+    <property name="Height"><![CDATA[600]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[#E(autotest_gz39_tree_a)#]]></property>
+    <property name="FormLoadAction"><![CDATA[form1_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[255, 255, 255]]></property>
+    <property name="Name"><![CDATA[form4_blank_template]]></property>
+    <property name="CustomGridValue"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGMTreeView CascadeCheck="True" Code="JGMTreeView1" CollapseIcon="iconfont icon-add" DisplayMode="multi" ExpandIcon="iconfont icon-move" Height="600" InnerCodeColumn="#EF(autotest_gz39_tree_a.zs)#" OrderNoColumn="#EF(autotest_gz39_tree_a.xh)#" PercentHeight="100%" PercentWidth="100%" PIDColumn="#EF(autotest_gz39_tree_a.parentId)#" SelectedNodeBackColor="255, 192, 255" TabIndex="0" TableName="#E(autotest_gz39_tree_a)#" Width="337">
+      <treenode_blank_template BackColor="192, 255, 255" Code="treenode_blank_template2" NodeTemplateType="ChildNode" TableName="#E(autotest_gz39_tree_a)#" Top="96" TreeNodeHTMLTemplate="{&quot;HTMLTemplate&quot;:&quot;&lt;%=title%&gt;&quot;,&quot;PlaceHolder&quot;:&quot;&lt;%=key%&gt;&quot;,&quot;fieldMapping&quot;:[{&quot;code&quot;:&quot;title&quot;,&quot;fieldValue&quot;:&quot;nodeName&quot;,&quot;DefaultValue&quot;:&quot;&quot;}],&quot;IsCanEdit&quot;:true}" Width="337" />
+      <treenode_blank_template BackColor="192, 255, 192" Code="treenode_blank_template1" TableName="#E(autotest_gz39_tree_a)#" TreeNodeHTMLTemplate="{&quot;HTMLTemplate&quot;:&quot;&lt;%=title%&gt;&quot;,&quot;PlaceHolder&quot;:&quot;&lt;%=key%&gt;&quot;,&quot;fieldMapping&quot;:[{&quot;code&quot;:&quot;title&quot;,&quot;fieldValue&quot;:&quot;nodeName&quot;,&quot;DefaultValue&quot;:&quot;&quot;}],&quot;IsCanEdit&quot;:true}" Width="337" />
+    </JGMTreeView>
+  </controls>
+  <outputs />
+  <inputs />
+</form>

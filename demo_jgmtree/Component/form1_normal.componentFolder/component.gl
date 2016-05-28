@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Created: 2016-04-26 21:14:31-->
+<Methods>
+  <Method Remark="" Name="JGMTreeView1_值加载事件" FileName="JGMTreeView1_OnValueLoaded.method" Code="JGMTreeView1_OnValueLoaded" MethodDir="ControlMethod" />
+  <Method Remark="" Name="JGMTreeView1_单击事件" FileName="JGMTreeView1_OnClick.method" Code="JGMTreeView1_OnClick" MethodDir="ControlMethod" />
+  <Method Remark="" Name="JGMTreeView1_双击事件" FileName="JGMTreeView1_OnDoubleClick.method" Code="JGMTreeView1_OnDoubleClick" MethodDir="ControlMethod" />
+  <Method Remark="" Name="JGMTreeView1_节点折叠事件" FileName="JGMTreeView1_NodeCollapseEvent.method" Code="JGMTreeView1_NodeCollapseEvent" MethodDir="ControlMethod" />
+  <Method Remark="" Name="JGMTreeView1_节点展开事件" FileName="JGMTreeView1_NodeExpandEvent.method" Code="JGMTreeView1_NodeExpandEvent" MethodDir="ControlMethod" />
+  <Method Remark="" Name="JGMTreeView1_记录选择变更" FileName="JGMTreeView1_OnSelectionChanged.method" Code="JGMTreeView1_OnSelectionChanged" MethodDir="ControlMethod" />
+  <Method Remark="" Name="form1_窗体加载事件" FileName="form1_FormLoadAction.method" Code="form1_FormLoadAction" MethodDir="WindowMethod" />
+  <Method Remark="" Name="treenode_default_template1_点击附加域点击事件" FileName="treenode_default_template1_OnAddonDomainClick.method" Code="treenode_default_template1_OnAddonDomainClick" MethodDir="ControlMethod" />
+</Methods>

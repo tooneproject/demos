@@ -1,0 +1,1885 @@
+<Deploy>
+  <LastDeployTime>2016-05-25 19:05:09</LastDeployTime>
+  <LastDeployData><![CDATA[<?xml version="1.0"?>
+<component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" code="test_demo_tree" name="test_demo_tree" desc="">
+  <windows>
+    <window type="2" code="form1_normal" name="form1_normal" desc="">
+      <propertys>
+        <property name="Width" code="Width">337</property>
+        <property name="Height" code="Height">600</property>
+        <property name="HeightSet" code="HeightSet">StaticHeight</property>
+        <property name="LayoutType" code="LayoutType">None</property>
+        <property name="BackColor" code="BackColor">255, 255, 255</property>
+        <property name="Name" code="Name">form1_normal</property>
+        <property name="CustomGridValue" code="CustomGridValue" />
+        <property name="Code" code="Code">form1_normal</property>
+      </propertys>
+      <controls>
+        <control code="JGMTreeView1" name="树" type="JGMTreeView" desc="Toone-1460462203000">
+          <propertys>
+            <property name="级联" code="CascadeCheck">True</property>
+            <property name="控件编码" code="Code">JGMTreeView1</property>
+            <property name="父节点折叠图标" code="CollapseIcon">iconfont icon-sanjiao3</property>
+            <property name="显示模式" code="DisplayMode">normal</property>
+            <property name="泊靠" code="Dock">Fill</property>
+            <property name="父节点展开图标" code="ExpandIcon">iconfont icon-sanjiao1</property>
+            <property name="高度" code="Height">600</property>
+            <property name="左边距" code="Left">0</property>
+            <property name="百分比高度" code="PercentHeight">100%</property>
+            <property name="百分比宽度" code="PercentWidth">100%</property>
+            <property name="节点选中背景色" code="SelectedNodeBackColor">255, 255, 255</property>
+            <property name="界面顺序号" code="TabIndex">0</property>
+            <property name="上边距" code="Top">0</property>
+            <property name="显示" code="Visible">True</property>
+            <property name="宽度" code="Width">337</property>
+          </propertys>
+          <controls>
+            <control code="treenode_default_template2" name="树节点默认模板" type="treenode_default_template" desc="Toone-1463839315000">
+              <propertys>
+                <property name="背景色" code="BackColor">192, 192, 255</property>
+                <property name="控件编码" code="Code">treenode_default_template2</property>
+                <property name="泊靠" code="Dock">Top</property>
+                <property name="扩展点类型" code="ExtPoint">TreeNodeExtPoint</property>
+                <property name="高度" code="Height">96</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="模板应用样式" code="NodeTemplateType">ChildNode</property>
+                <property name="实体名" code="TableName">autotest_gz39_tree_a</property>
+                <property name="标题名称字段" code="TitleColumnName">nodeName</property>
+                <property name="标题图片字段" code="TitleIconColumnName">img</property>
+                <property name="上边距" code="Top">96</property>
+                <property name="节点附加域模板" code="TreeNodeHTMLTemplate">{"HTMLTemplate":"","PlaceHolder":"&lt;%=key%&gt;","fieldMapping":[],"IsCanEdit":true}</property>
+                <property name="宽度" code="Width">337</property>
+              </propertys>
+              <controls />
+              <events>
+                <event code="OnAddonDomainClick" name="点击附加域点击事件">
+                  <evaluateRule />
+                </event>
+              </events>
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>autotest_gz39_tree_a</dataSource>
+                  <dataMembers>
+                    <dataMember name="标题名称字段" code="TitleColumnName">nodeName</dataMember>
+                    <dataMember name="标题图片字段" code="TitleIconColumnName">img</dataMember>
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+            <control code="treenode_default_template1" name="树节点默认模板" type="treenode_default_template" desc="Toone-1463839315000">
+              <propertys>
+                <property name="背景色" code="BackColor">192, 255, 192</property>
+                <property name="控件编码" code="Code">treenode_default_template1</property>
+                <property name="泊靠" code="Dock">Top</property>
+                <property name="扩展点类型" code="ExtPoint">TreeNodeExtPoint</property>
+                <property name="高度" code="Height">96</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="模板应用样式" code="NodeTemplateType">ParentNode</property>
+                <property name="实体名" code="TableName">autotest_gz39_tree_a</property>
+                <property name="标题名称字段" code="TitleColumnName">nodeName</property>
+                <property name="标题图片字段" code="TitleIconColumnName">img</property>
+                <property name="上边距" code="Top">0</property>
+                <property name="节点附加域模板" code="TreeNodeHTMLTemplate">{"HTMLTemplate":"","PlaceHolder":"&lt;%=key%&gt;","fieldMapping":[],"IsCanEdit":true}</property>
+                <property name="宽度" code="Width">337</property>
+              </propertys>
+              <controls />
+              <events>
+                <event code="OnAddonDomainClick" name="点击附加域点击事件">
+                  <evaluateRule />
+                </event>
+              </events>
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>autotest_gz39_tree_a</dataSource>
+                  <dataMembers>
+                    <dataMember name="标题名称字段" code="TitleColumnName">nodeName</dataMember>
+                    <dataMember name="标题图片字段" code="TitleIconColumnName">img</dataMember>
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+          </controls>
+          <events>
+            <event code="OnValueLoaded" name="值加载事件">
+              <evaluateRule />
+            </event>
+            <event code="OnClick" name="单击事件">
+              <evaluateRule />
+            </event>
+            <event code="OnDoubleClick" name="双击事件">
+              <evaluateRule />
+            </event>
+            <event code="NodeCollapseEvent" name="节点折叠事件">
+              <evaluateRule />
+            </event>
+            <event code="NodeExpandEvent" name="节点展开事件">
+              <evaluateRule />
+            </event>
+            <event code="OnSelectionChanged" name="记录选择变更">
+              <evaluateRule />
+            </event>
+          </events>
+          <dataBindings>
+            <dataBinding>
+              <dataSource>autotest_gz39_tree_a</dataSource>
+              <dataMembers>
+                <dataMember name="父标识字段" code="PIDColumn">parentId</dataMember>
+                <dataMember name="排序字段" code="OrderNoColumn">xh</dataMember>
+                <dataMember name="层级码字段" code="InnerCodeColumn">zs</dataMember>
+                <dataMember name="叶子节点字段" code="LeafNode">IsLeaf</dataMember>
+              </dataMembers>
+            </dataBinding>
+          </dataBindings>
+        </control>
+      </controls>
+      <events>
+        <event code="FormLoadAction" name="窗体加载事件">
+          <evaluateRule code="test_demo_tree.form1_normal.form1_FormLoadAction" />
+        </event>
+        <event code="FormCloseAction" name="窗体关闭事件">
+          <evaluateRule />
+        </event>
+      </events>
+      <logics>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnValueLoaded" name="JGMTreeView1_值加载事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnValueLoaded\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnClick" name="JGMTreeView1_单击事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnClick\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnDoubleClick" name="JGMTreeView1_双击事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnDoubleClick\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_NodeCollapseEvent" name="JGMTreeView1_节点折叠事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;Root /&gt;</ruleRoute>
+              <ruleInstances />
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_NodeExpandEvent" name="JGMTreeView1_节点展开事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode3" /&gt;&lt;evaluateRule code="BRCode4" /&gt;&lt;evaluateRule code="BRCode2" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ClearInterfaceEntityData" ruleName="清除界面实体中的数据" instanceCode="BRCode3" instanceName="清除界面实体中的数据" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition>True</condition>
+                  <ruleConfig>{"dataSourceNames":[{"name":"autotest_gz39_tree_a"}]}</ruleConfig>
+                </ruleInstance>
+                <ruleInstance ruleCode="DeleteListSelectRow" ruleName="删除界面实体记录" instanceCode="BRCode4" instanceName="删除界面实体记录" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"Condition":"True","deleteType":"1","DisplayColumn":"","ID":"","TableName":"autotest_gz39_tree_a","treeStruct":null}</ruleConfig>
+                </ruleInstance>
+                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode2" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":[{"columnType":"1","field":"autotest_gz39_tree_a.parentId","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"BR_IN_PARENT.id","valueType":"9"}],"entityType":"window","entityName":"autotest_gz39_tree_a","itemqueryparam":null,"items":[{"destName":"autotest_gz39_tree_a.id","sourceName":"autotest_gz39_tree_a.id","type":"entityField"},{"destName":"autotest_gz39_tree_a.parentId","sourceName":"autotest_gz39_tree_a.parentId","type":"entityField"},{"destName":"autotest_gz39_tree_a.cj","sourceName":"autotest_gz39_tree_a.cj","type":"entityField"},{"destName":"autotest_gz39_tree_a.xh","sourceName":"autotest_gz39_tree_a.xh","type":"entityField"},{"destName":"autotest_gz39_tree_a.IsLeaf","sourceName":"autotest_gz39_tree_a.IsLeaf","type":"entityField"},{"destName":"autotest_gz39_tree_a.nodeName","sourceName":"autotest_gz39_tree_a.nodeName","type":"entityField"},{"destName":"autotest_gz39_tree_a.xs","sourceName":"autotest_gz39_tree_a.xs","type":"entityField"},{"destName":"autotest_gz39_tree_a.zs","sourceName":"autotest_gz39_tree_a.zs","type":"entityField"},{"destName":"autotest_gz39_tree_a.img","sourceName":"autotest_gz39_tree_a.img","type":"entityField"}],"orderBy":null,"sourceName":"autotest_gz39_tree_a","dataLoad":"","pager":null}],"treeStruct":null}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs>
+                <variables>
+                  <variable code="id" name="id" type="char" desc="" initValue="" />
+                </variables>
+                <dataTypes />
+              </inputs>
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnSelectionChanged" name="JGMTreeView1_记录选择变更" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnSelectionChanged\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="form1_FormLoadAction" name="form1_窗体加载事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode1" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"autotest_gz39_tree_a","itemqueryparam":null,"items":[{"destName":"autotest_gz39_tree_a.id","sourceName":"autotest_gz39_tree_a.id","type":"entityField"},{"destName":"autotest_gz39_tree_a.parentId","sourceName":"autotest_gz39_tree_a.parentId","type":"entityField"},{"destName":"autotest_gz39_tree_a.cj","sourceName":"autotest_gz39_tree_a.cj","type":"entityField"},{"destName":"autotest_gz39_tree_a.xh","sourceName":"autotest_gz39_tree_a.xh","type":"entityField"},{"destName":"autotest_gz39_tree_a.IsLeaf","sourceName":"autotest_gz39_tree_a.IsLeaf","type":"entityField"},{"destName":"autotest_gz39_tree_a.nodeName","sourceName":"autotest_gz39_tree_a.nodeName","type":"entityField"},{"destName":"autotest_gz39_tree_a.xs","sourceName":"autotest_gz39_tree_a.xs","type":"entityField"},{"destName":"autotest_gz39_tree_a.zs","sourceName":"autotest_gz39_tree_a.zs","type":"entityField"},{"destName":"autotest_gz39_tree_a.img","sourceName":"autotest_gz39_tree_a.img","type":"entityField"}],"orderBy":null,"sourceName":"autotest_gz39_tree_a","dataLoad":"0","pager":null}],"treeStruct":[{"tableName":"autotest_gz39_tree_a","type":"1","pidField":"parentId","treeCodeField":"cj","orderField":"xh","isLeafField":"IsLeaf","leftField":"","rightField":"","bizCodeField":"","bizCodeFormat":"","busiFilterField":""}]}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="test_demo_tree.form1_normal.form1_FormLoadAction" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "test_demo_tree","windowCode": "form1_normal","ruleSetCode": "form1_FormLoadAction"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="treenode_default_template1_OnAddonDomainClick" name="treenode_default_template1_点击附加域点击事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"附加区域\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+      </logics>
+      <entitys>
+        <entity code="autotest_gz39_tree_a" name="autotest_gz39_tree_a" chineseName="autotest_gz39_tree_a">
+          <entityFields>
+            <entityField code="id" name="id" chineseName="" type="char" length="64" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="parentId" name="parentId" chineseName="parentId" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="cj" name="cj" chineseName="cj" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="xh" name="xh" chineseName="xh" type="integer" length="50" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="IsLeaf" name="IsLeaf" chineseName="IsLeaf" type="boolean" length="" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="nodeName" name="nodeName" chineseName="nodeName" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="xs" name="xs" chineseName="xs" type="number" length="50" precision="4" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="zs" name="zs" chineseName="zs" type="integer" length="50" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="img" name="img" chineseName="img" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+          </entityFields>
+          <events>
+            <event code="OnLoaded" name="实体加载事件" />
+          </events>
+        </entity>
+      </entitys>
+      <dataBindings>
+        <dataBinding>
+          <dataSource>#E(autotest_gz39_tree_a)#</dataSource>
+        </dataBinding>
+      </dataBindings>
+      <windowVariants>
+        <variables />
+        <dataTypes />
+      </windowVariants>
+      <windowOutputs>
+        <variables />
+        <dataTypes />
+      </windowOutputs>
+      <expressions>
+        <expression content="&quot;OnValueLoaded&quot;" type="client" />
+        <expression content="&quot;OnClick&quot;" type="client" />
+        <expression content="&quot;OnDoubleClick&quot;" type="client" />
+        <expression content="True" type="client" />
+        <expression content="True" type="client" />
+        <expression content="BR_IN_PARENT.id" type="client" />
+        <expression content="&quot;OnSelectionChanged&quot;" type="client" />
+        <expression content="&quot;附加区域&quot;" type="client" />
+      </expressions>
+    </window>
+    <window type="2" code="form2_single_select" name="form2_single_select" desc="">
+      <propertys>
+        <property name="Width" code="Width">337</property>
+        <property name="Height" code="Height">600</property>
+        <property name="HeightSet" code="HeightSet">StaticHeight</property>
+        <property name="LayoutType" code="LayoutType">None</property>
+        <property name="BackColor" code="BackColor">255, 255, 255</property>
+        <property name="Name" code="Name">form2_single_select</property>
+        <property name="CustomGridValue" code="CustomGridValue" />
+        <property name="Code" code="Code">form2_single_select</property>
+      </propertys>
+      <controls>
+        <control code="JGMTreeView1" name="树" type="JGMTreeView" desc="Toone-1460462203000">
+          <propertys>
+            <property name="级联" code="CascadeCheck">True</property>
+            <property name="控件编码" code="Code">JGMTreeView1</property>
+            <property name="父节点折叠图标" code="CollapseIcon">iconfont icon-right</property>
+            <property name="显示模式" code="DisplayMode">single</property>
+            <property name="泊靠" code="Dock">Fill</property>
+            <property name="父节点展开图标" code="ExpandIcon">iconfont icon-unfold</property>
+            <property name="高度" code="Height">600</property>
+            <property name="左边距" code="Left">0</property>
+            <property name="百分比高度" code="PercentHeight">100%</property>
+            <property name="百分比宽度" code="PercentWidth">100%</property>
+            <property name="节点选中背景色" code="SelectedNodeBackColor">192, 255, 192</property>
+            <property name="界面顺序号" code="TabIndex">0</property>
+            <property name="上边距" code="Top">0</property>
+            <property name="显示" code="Visible">True</property>
+            <property name="宽度" code="Width">337</property>
+          </propertys>
+          <controls>
+            <control code="treenode_default_template2" name="树节点默认模板" type="treenode_default_template" desc="Toone-1463839315000">
+              <propertys>
+                <property name="背景色" code="BackColor">192, 255, 255</property>
+                <property name="控件编码" code="Code">treenode_default_template2</property>
+                <property name="泊靠" code="Dock">Top</property>
+                <property name="扩展点类型" code="ExtPoint">TreeNodeExtPoint</property>
+                <property name="高度" code="Height">96</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="模板应用样式" code="NodeTemplateType">ChildNode</property>
+                <property name="实体名" code="TableName">autotest_gz39_tree_a</property>
+                <property name="标题名称字段" code="TitleColumnName">nodeName</property>
+                <property name="标题图片字段" code="TitleIconColumnName">img</property>
+                <property name="上边距" code="Top">96</property>
+                <property name="节点附加域模板" code="TreeNodeHTMLTemplate">{"HTMLTemplate":"","PlaceHolder":"&lt;%=key%&gt;","fieldMapping":[],"IsCanEdit":true}</property>
+                <property name="宽度" code="Width">337</property>
+              </propertys>
+              <controls />
+              <events>
+                <event code="OnAddonDomainClick" name="点击附加域点击事件">
+                  <evaluateRule />
+                </event>
+              </events>
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>autotest_gz39_tree_a</dataSource>
+                  <dataMembers>
+                    <dataMember name="标题名称字段" code="TitleColumnName">nodeName</dataMember>
+                    <dataMember name="标题图片字段" code="TitleIconColumnName">img</dataMember>
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+            <control code="treenode_default_template1" name="树节点默认模板" type="treenode_default_template" desc="Toone-1463839315000">
+              <propertys>
+                <property name="背景色" code="BackColor">255, 255, 192</property>
+                <property name="控件编码" code="Code">treenode_default_template1</property>
+                <property name="泊靠" code="Dock">Top</property>
+                <property name="扩展点类型" code="ExtPoint">TreeNodeExtPoint</property>
+                <property name="高度" code="Height">96</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="模板应用样式" code="NodeTemplateType">ParentNode</property>
+                <property name="实体名" code="TableName">autotest_gz39_tree_a</property>
+                <property name="标题名称字段" code="TitleColumnName">nodeName</property>
+                <property name="标题图片字段" code="TitleIconColumnName">img</property>
+                <property name="上边距" code="Top">0</property>
+                <property name="节点附加域模板" code="TreeNodeHTMLTemplate">{"HTMLTemplate":"附加区域文本&lt;%=xh%&gt;","PlaceHolder":"&lt;%=key%&gt;","fieldMapping":[{"code":"xh","fieldValue":"cj","DefaultValue":""}],"IsCanEdit":true}</property>
+                <property name="宽度" code="Width">337</property>
+              </propertys>
+              <controls />
+              <events>
+                <event code="OnAddonDomainClick" name="点击附加域点击事件">
+                  <evaluateRule code="test_demo_tree.form2_single_select.treenode_default_template1_OnAddonDomainClick" />
+                </event>
+              </events>
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>autotest_gz39_tree_a</dataSource>
+                  <dataMembers>
+                    <dataMember name="标题名称字段" code="TitleColumnName">nodeName</dataMember>
+                    <dataMember name="标题图片字段" code="TitleIconColumnName">img</dataMember>
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+          </controls>
+          <events>
+            <event code="OnValueLoaded" name="值加载事件">
+              <evaluateRule />
+            </event>
+            <event code="OnClick" name="单击事件">
+              <evaluateRule />
+            </event>
+            <event code="OnDoubleClick" name="双击事件">
+              <evaluateRule />
+            </event>
+            <event code="NodeCollapseEvent" name="节点折叠事件">
+              <evaluateRule />
+            </event>
+            <event code="NodeExpandEvent" name="节点展开事件">
+              <evaluateRule />
+            </event>
+            <event code="OnSelectionChanged" name="记录选择变更">
+              <evaluateRule />
+            </event>
+          </events>
+          <dataBindings>
+            <dataBinding>
+              <dataSource>autotest_gz39_tree_a</dataSource>
+              <dataMembers>
+                <dataMember name="父标识字段" code="PIDColumn">parentId</dataMember>
+                <dataMember name="排序字段" code="OrderNoColumn">xh</dataMember>
+                <dataMember name="层级码字段" code="InnerCodeColumn">zs</dataMember>
+                <dataMember name="叶子节点字段" code="LeafNode">IsLeaf</dataMember>
+              </dataMembers>
+            </dataBinding>
+          </dataBindings>
+        </control>
+      </controls>
+      <events>
+        <event code="FormLoadAction" name="窗体加载事件">
+          <evaluateRule code="test_demo_tree.form2_single_select.form1_FormLoadAction" />
+        </event>
+        <event code="FormCloseAction" name="窗体关闭事件">
+          <evaluateRule />
+        </event>
+      </events>
+      <logics>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnValueLoaded" name="JGMTreeView1_值加载事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnValueLoaded\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnClick" name="JGMTreeView1_单击事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnClick\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnDoubleClick" name="JGMTreeView1_双击事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnDoubleClick\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_NodeCollapseEvent" name="JGMTreeView1_节点折叠事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;Root /&gt;</ruleRoute>
+              <ruleInstances />
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_NodeExpandEvent" name="JGMTreeView1_节点展开事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode3" /&gt;&lt;evaluateRule code="BRCode4" /&gt;&lt;evaluateRule code="BRCode2" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ClearInterfaceEntityData" ruleName="清除界面实体中的数据" instanceCode="BRCode3" instanceName="清除界面实体中的数据" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition>True</condition>
+                  <ruleConfig>{"dataSourceNames":[{"name":"autotest_gz39_tree_a"}]}</ruleConfig>
+                </ruleInstance>
+                <ruleInstance ruleCode="DeleteListSelectRow" ruleName="删除界面实体记录" instanceCode="BRCode4" instanceName="删除界面实体记录" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"Condition":"True","deleteType":"1","DisplayColumn":"","ID":"","TableName":"autotest_gz39_tree_a","treeStruct":null}</ruleConfig>
+                </ruleInstance>
+                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode2" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":[{"columnType":"1","field":"autotest_gz39_tree_a.parentId","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"BR_IN_PARENT.id","valueType":"9"}],"entityType":"window","entityName":"autotest_gz39_tree_a","itemqueryparam":null,"items":[{"destName":"autotest_gz39_tree_a.id","sourceName":"autotest_gz39_tree_a.id","type":"entityField"},{"destName":"autotest_gz39_tree_a.parentId","sourceName":"autotest_gz39_tree_a.parentId","type":"entityField"},{"destName":"autotest_gz39_tree_a.cj","sourceName":"autotest_gz39_tree_a.cj","type":"entityField"},{"destName":"autotest_gz39_tree_a.xh","sourceName":"autotest_gz39_tree_a.xh","type":"entityField"},{"destName":"autotest_gz39_tree_a.IsLeaf","sourceName":"autotest_gz39_tree_a.IsLeaf","type":"entityField"},{"destName":"autotest_gz39_tree_a.nodeName","sourceName":"autotest_gz39_tree_a.nodeName","type":"entityField"},{"destName":"autotest_gz39_tree_a.xs","sourceName":"autotest_gz39_tree_a.xs","type":"entityField"},{"destName":"autotest_gz39_tree_a.zs","sourceName":"autotest_gz39_tree_a.zs","type":"entityField"},{"destName":"autotest_gz39_tree_a.img","sourceName":"autotest_gz39_tree_a.img","type":"entityField"}],"orderBy":null,"sourceName":"autotest_gz39_tree_a","dataLoad":"","pager":null}],"treeStruct":null}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs>
+                <variables>
+                  <variable code="id" name="id" type="char" desc="" initValue="" />
+                </variables>
+                <dataTypes />
+              </inputs>
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnSelectionChanged" name="JGMTreeView1_记录选择变更" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnSelectionChanged\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="form1_FormLoadAction" name="form1_窗体加载事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode1" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"autotest_gz39_tree_a","itemqueryparam":null,"items":[{"destName":"autotest_gz39_tree_a.id","sourceName":"autotest_gz39_tree_a.id","type":"entityField"},{"destName":"autotest_gz39_tree_a.parentId","sourceName":"autotest_gz39_tree_a.parentId","type":"entityField"},{"destName":"autotest_gz39_tree_a.cj","sourceName":"autotest_gz39_tree_a.cj","type":"entityField"},{"destName":"autotest_gz39_tree_a.xh","sourceName":"autotest_gz39_tree_a.xh","type":"entityField"},{"destName":"autotest_gz39_tree_a.IsLeaf","sourceName":"autotest_gz39_tree_a.IsLeaf","type":"entityField"},{"destName":"autotest_gz39_tree_a.nodeName","sourceName":"autotest_gz39_tree_a.nodeName","type":"entityField"},{"destName":"autotest_gz39_tree_a.xs","sourceName":"autotest_gz39_tree_a.xs","type":"entityField"},{"destName":"autotest_gz39_tree_a.zs","sourceName":"autotest_gz39_tree_a.zs","type":"entityField"},{"destName":"autotest_gz39_tree_a.img","sourceName":"autotest_gz39_tree_a.img","type":"entityField"}],"orderBy":null,"sourceName":"autotest_gz39_tree_a","dataLoad":"0","pager":null}],"treeStruct":[{"tableName":"autotest_gz39_tree_a","type":"1","pidField":"parentId","treeCodeField":"cj","orderField":"xh","isLeafField":"IsLeaf","leftField":"","rightField":"","bizCodeField":"","bizCodeFormat":"","busiFilterField":""}]}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="test_demo_tree.form2_single_select.form1_FormLoadAction" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "test_demo_tree","windowCode": "form2_single_select","ruleSetCode": "form1_FormLoadAction"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="treenode_default_template1_OnAddonDomainClick" name="treenode_default_template1_点击附加域点击事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"附加区域\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="test_demo_tree.form2_single_select.treenode_default_template1_OnAddonDomainClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "test_demo_tree","windowCode": "form2_single_select","ruleSetCode": "treenode_default_template1_OnAddonDomainClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+      </logics>
+      <entitys>
+        <entity code="autotest_gz39_tree_a" name="autotest_gz39_tree_a" chineseName="autotest_gz39_tree_a">
+          <entityFields>
+            <entityField code="id" name="id" chineseName="" type="char" length="64" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="parentId" name="parentId" chineseName="parentId" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="cj" name="cj" chineseName="cj" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="xh" name="xh" chineseName="xh" type="integer" length="50" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="IsLeaf" name="IsLeaf" chineseName="IsLeaf" type="boolean" length="" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="nodeName" name="nodeName" chineseName="nodeName" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="xs" name="xs" chineseName="xs" type="number" length="50" precision="4" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="zs" name="zs" chineseName="zs" type="integer" length="50" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="img" name="img" chineseName="img" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+          </entityFields>
+          <events>
+            <event code="OnLoaded" name="实体加载事件" />
+          </events>
+        </entity>
+      </entitys>
+      <dataBindings>
+        <dataBinding>
+          <dataSource>#E(autotest_gz39_tree_a)#</dataSource>
+        </dataBinding>
+      </dataBindings>
+      <windowVariants>
+        <variables />
+        <dataTypes />
+      </windowVariants>
+      <windowOutputs>
+        <variables />
+        <dataTypes />
+      </windowOutputs>
+      <expressions>
+        <expression content="&quot;OnValueLoaded&quot;" type="client" />
+        <expression content="&quot;OnClick&quot;" type="client" />
+        <expression content="&quot;OnDoubleClick&quot;" type="client" />
+        <expression content="True" type="client" />
+        <expression content="True" type="client" />
+        <expression content="BR_IN_PARENT.id" type="client" />
+        <expression content="&quot;OnSelectionChanged&quot;" type="client" />
+        <expression content="&quot;附加区域&quot;" type="client" />
+      </expressions>
+    </window>
+    <window type="2" code="form3_multiple_select" name="form3_multiple_select" desc="">
+      <propertys>
+        <property name="Width" code="Width">337</property>
+        <property name="Height" code="Height">600</property>
+        <property name="HeightSet" code="HeightSet">StaticHeight</property>
+        <property name="LayoutType" code="LayoutType">None</property>
+        <property name="BackColor" code="BackColor">255, 255, 255</property>
+        <property name="Name" code="Name">form3_multiple_select</property>
+        <property name="CustomGridValue" code="CustomGridValue" />
+        <property name="Code" code="Code">form3_multiple_select</property>
+      </propertys>
+      <controls>
+        <control code="JGMTreeView1" name="树" type="JGMTreeView" desc="Toone-1460462203000">
+          <propertys>
+            <property name="级联" code="CascadeCheck">False</property>
+            <property name="控件编码" code="Code">JGMTreeView1</property>
+            <property name="父节点折叠图标" code="CollapseIcon">iconfont icon-right</property>
+            <property name="显示模式" code="DisplayMode">multi</property>
+            <property name="泊靠" code="Dock">Fill</property>
+            <property name="父节点展开图标" code="ExpandIcon">iconfont icon-unfold</property>
+            <property name="高度" code="Height">600</property>
+            <property name="左边距" code="Left">0</property>
+            <property name="百分比高度" code="PercentHeight">100%</property>
+            <property name="百分比宽度" code="PercentWidth">100%</property>
+            <property name="节点选中背景色" code="SelectedNodeBackColor">255, 255, 255</property>
+            <property name="界面顺序号" code="TabIndex">0</property>
+            <property name="上边距" code="Top">0</property>
+            <property name="显示" code="Visible">True</property>
+            <property name="宽度" code="Width">337</property>
+          </propertys>
+          <controls>
+            <control code="treenode_default_template2" name="树节点默认模板" type="treenode_default_template" desc="Toone-1463839315000">
+              <propertys>
+                <property name="背景色" code="BackColor">192, 255, 255</property>
+                <property name="控件编码" code="Code">treenode_default_template2</property>
+                <property name="泊靠" code="Dock">Top</property>
+                <property name="扩展点类型" code="ExtPoint">TreeNodeExtPoint</property>
+                <property name="高度" code="Height">96</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="模板应用样式" code="NodeTemplateType">ChildNode</property>
+                <property name="实体名" code="TableName">autotest_gz39_tree_a</property>
+                <property name="标题名称字段" code="TitleColumnName">nodeName</property>
+                <property name="标题图片字段" code="TitleIconColumnName">img</property>
+                <property name="上边距" code="Top">96</property>
+                <property name="节点附加域模板" code="TreeNodeHTMLTemplate">{"HTMLTemplate":"","PlaceHolder":"&lt;%=key%&gt;","fieldMapping":[],"IsCanEdit":true}</property>
+                <property name="宽度" code="Width">337</property>
+              </propertys>
+              <controls />
+              <events>
+                <event code="OnAddonDomainClick" name="点击附加域点击事件">
+                  <evaluateRule />
+                </event>
+              </events>
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>autotest_gz39_tree_a</dataSource>
+                  <dataMembers>
+                    <dataMember name="标题名称字段" code="TitleColumnName">nodeName</dataMember>
+                    <dataMember name="标题图片字段" code="TitleIconColumnName">img</dataMember>
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+            <control code="treenode_default_template1" name="树节点默认模板" type="treenode_default_template" desc="Toone-1463839315000">
+              <propertys>
+                <property name="背景色" code="BackColor">192, 255, 192</property>
+                <property name="控件编码" code="Code">treenode_default_template1</property>
+                <property name="泊靠" code="Dock">Top</property>
+                <property name="扩展点类型" code="ExtPoint">TreeNodeExtPoint</property>
+                <property name="高度" code="Height">96</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="模板应用样式" code="NodeTemplateType">ParentNode</property>
+                <property name="实体名" code="TableName">autotest_gz39_tree_a</property>
+                <property name="标题名称字段" code="TitleColumnName">nodeName</property>
+                <property name="标题图片字段" code="TitleIconColumnName">img</property>
+                <property name="上边距" code="Top">0</property>
+                <property name="节点附加域模板" code="TreeNodeHTMLTemplate">{"HTMLTemplate":"附加区域文本&lt;%=xh%&gt;","PlaceHolder":"&lt;%=key%&gt;","fieldMapping":[{"code":"xh","fieldValue":"cj","DefaultValue":""}],"IsCanEdit":true}</property>
+                <property name="宽度" code="Width">337</property>
+              </propertys>
+              <controls />
+              <events>
+                <event code="OnAddonDomainClick" name="点击附加域点击事件">
+                  <evaluateRule code="test_demo_tree.form3_multiple_select.treenode_default_template1_OnAddonDomainClick" />
+                </event>
+              </events>
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>autotest_gz39_tree_a</dataSource>
+                  <dataMembers>
+                    <dataMember name="标题名称字段" code="TitleColumnName">nodeName</dataMember>
+                    <dataMember name="标题图片字段" code="TitleIconColumnName">img</dataMember>
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+          </controls>
+          <events>
+            <event code="OnValueLoaded" name="值加载事件">
+              <evaluateRule />
+            </event>
+            <event code="OnClick" name="单击事件">
+              <evaluateRule />
+            </event>
+            <event code="OnDoubleClick" name="双击事件">
+              <evaluateRule />
+            </event>
+            <event code="NodeCollapseEvent" name="节点折叠事件">
+              <evaluateRule />
+            </event>
+            <event code="NodeExpandEvent" name="节点展开事件">
+              <evaluateRule />
+            </event>
+            <event code="OnSelectionChanged" name="记录选择变更">
+              <evaluateRule />
+            </event>
+          </events>
+          <dataBindings>
+            <dataBinding>
+              <dataSource>autotest_gz39_tree_a</dataSource>
+              <dataMembers>
+                <dataMember name="父标识字段" code="PIDColumn">parentId</dataMember>
+                <dataMember name="排序字段" code="OrderNoColumn">xh</dataMember>
+                <dataMember name="层级码字段" code="InnerCodeColumn">zs</dataMember>
+                <dataMember name="叶子节点字段" code="LeafNode">IsLeaf</dataMember>
+              </dataMembers>
+            </dataBinding>
+          </dataBindings>
+        </control>
+      </controls>
+      <events>
+        <event code="FormLoadAction" name="窗体加载事件">
+          <evaluateRule code="test_demo_tree.form3_multiple_select.form1_FormLoadAction" />
+        </event>
+        <event code="FormCloseAction" name="窗体关闭事件">
+          <evaluateRule />
+        </event>
+      </events>
+      <logics>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnValueLoaded" name="JGMTreeView1_值加载事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnValueLoaded\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnClick" name="JGMTreeView1_单击事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnClick\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnDoubleClick" name="JGMTreeView1_双击事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnDoubleClick\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_NodeCollapseEvent" name="JGMTreeView1_节点折叠事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;Root /&gt;</ruleRoute>
+              <ruleInstances />
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_NodeExpandEvent" name="JGMTreeView1_节点展开事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode3" /&gt;&lt;evaluateRule code="BRCode4" /&gt;&lt;evaluateRule code="BRCode2" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ClearInterfaceEntityData" ruleName="清除界面实体中的数据" instanceCode="BRCode3" instanceName="清除界面实体中的数据" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition>True</condition>
+                  <ruleConfig>{"dataSourceNames":[{"name":"autotest_gz39_tree_a"}]}</ruleConfig>
+                </ruleInstance>
+                <ruleInstance ruleCode="DeleteListSelectRow" ruleName="删除界面实体记录" instanceCode="BRCode4" instanceName="删除界面实体记录" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"Condition":"True","deleteType":"1","DisplayColumn":"","ID":"","TableName":"autotest_gz39_tree_a","treeStruct":null}</ruleConfig>
+                </ruleInstance>
+                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode2" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":[{"columnType":"1","field":"autotest_gz39_tree_a.parentId","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"BR_IN_PARENT.id","valueType":"9"}],"entityType":"window","entityName":"autotest_gz39_tree_a","itemqueryparam":null,"items":[{"destName":"autotest_gz39_tree_a.id","sourceName":"autotest_gz39_tree_a.id","type":"entityField"},{"destName":"autotest_gz39_tree_a.parentId","sourceName":"autotest_gz39_tree_a.parentId","type":"entityField"},{"destName":"autotest_gz39_tree_a.cj","sourceName":"autotest_gz39_tree_a.cj","type":"entityField"},{"destName":"autotest_gz39_tree_a.xh","sourceName":"autotest_gz39_tree_a.xh","type":"entityField"},{"destName":"autotest_gz39_tree_a.IsLeaf","sourceName":"autotest_gz39_tree_a.IsLeaf","type":"entityField"},{"destName":"autotest_gz39_tree_a.nodeName","sourceName":"autotest_gz39_tree_a.nodeName","type":"entityField"},{"destName":"autotest_gz39_tree_a.xs","sourceName":"autotest_gz39_tree_a.xs","type":"entityField"},{"destName":"autotest_gz39_tree_a.zs","sourceName":"autotest_gz39_tree_a.zs","type":"entityField"},{"destName":"autotest_gz39_tree_a.img","sourceName":"autotest_gz39_tree_a.img","type":"entityField"}],"orderBy":null,"sourceName":"autotest_gz39_tree_a","dataLoad":"","pager":null}],"treeStruct":null}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs>
+                <variables>
+                  <variable code="id" name="id" type="char" desc="" initValue="" />
+                </variables>
+                <dataTypes />
+              </inputs>
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnSelectionChanged" name="JGMTreeView1_记录选择变更" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnSelectionChanged\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="form1_FormLoadAction" name="form1_窗体加载事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode1" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"autotest_gz39_tree_a","itemqueryparam":null,"items":[{"destName":"autotest_gz39_tree_a.id","sourceName":"autotest_gz39_tree_a.id","type":"entityField"},{"destName":"autotest_gz39_tree_a.parentId","sourceName":"autotest_gz39_tree_a.parentId","type":"entityField"},{"destName":"autotest_gz39_tree_a.cj","sourceName":"autotest_gz39_tree_a.cj","type":"entityField"},{"destName":"autotest_gz39_tree_a.xh","sourceName":"autotest_gz39_tree_a.xh","type":"entityField"},{"destName":"autotest_gz39_tree_a.IsLeaf","sourceName":"autotest_gz39_tree_a.IsLeaf","type":"entityField"},{"destName":"autotest_gz39_tree_a.nodeName","sourceName":"autotest_gz39_tree_a.nodeName","type":"entityField"},{"destName":"autotest_gz39_tree_a.xs","sourceName":"autotest_gz39_tree_a.xs","type":"entityField"},{"destName":"autotest_gz39_tree_a.zs","sourceName":"autotest_gz39_tree_a.zs","type":"entityField"},{"destName":"autotest_gz39_tree_a.img","sourceName":"autotest_gz39_tree_a.img","type":"entityField"}],"orderBy":null,"sourceName":"autotest_gz39_tree_a","dataLoad":"0","pager":null}],"treeStruct":[{"tableName":"autotest_gz39_tree_a","type":"1","pidField":"parentId","treeCodeField":"cj","orderField":"xh","isLeafField":"IsLeaf","leftField":"","rightField":"","bizCodeField":"","bizCodeFormat":"","busiFilterField":""}]}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="test_demo_tree.form3_multiple_select.form1_FormLoadAction" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "test_demo_tree","windowCode": "form3_multiple_select","ruleSetCode": "form1_FormLoadAction"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="treenode_default_template1_OnAddonDomainClick" name="treenode_default_template1_点击附加域点击事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"附加区域\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="test_demo_tree.form3_multiple_select.treenode_default_template1_OnAddonDomainClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "test_demo_tree","windowCode": "form3_multiple_select","ruleSetCode": "treenode_default_template1_OnAddonDomainClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+      </logics>
+      <entitys>
+        <entity code="autotest_gz39_tree_a" name="autotest_gz39_tree_a" chineseName="autotest_gz39_tree_a">
+          <entityFields>
+            <entityField code="id" name="id" chineseName="" type="char" length="64" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="parentId" name="parentId" chineseName="parentId" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="cj" name="cj" chineseName="cj" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="xh" name="xh" chineseName="xh" type="integer" length="50" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="IsLeaf" name="IsLeaf" chineseName="IsLeaf" type="boolean" length="" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="nodeName" name="nodeName" chineseName="nodeName" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="xs" name="xs" chineseName="xs" type="number" length="50" precision="4" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="zs" name="zs" chineseName="zs" type="integer" length="50" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="img" name="img" chineseName="img" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+          </entityFields>
+          <events>
+            <event code="OnLoaded" name="实体加载事件" />
+          </events>
+        </entity>
+      </entitys>
+      <dataBindings>
+        <dataBinding>
+          <dataSource>#E(autotest_gz39_tree_a)#</dataSource>
+        </dataBinding>
+      </dataBindings>
+      <windowVariants>
+        <variables />
+        <dataTypes />
+      </windowVariants>
+      <windowOutputs>
+        <variables />
+        <dataTypes />
+      </windowOutputs>
+      <expressions>
+        <expression content="&quot;OnValueLoaded&quot;" type="client" />
+        <expression content="&quot;OnClick&quot;" type="client" />
+        <expression content="&quot;OnDoubleClick&quot;" type="client" />
+        <expression content="True" type="client" />
+        <expression content="True" type="client" />
+        <expression content="BR_IN_PARENT.id" type="client" />
+        <expression content="&quot;OnSelectionChanged&quot;" type="client" />
+        <expression content="&quot;附加区域&quot;" type="client" />
+      </expressions>
+    </window>
+    <window type="2" code="form4_blank_template" name="form4_blank_template" desc="">
+      <propertys>
+        <property name="Width" code="Width">337</property>
+        <property name="Height" code="Height">600</property>
+        <property name="HeightSet" code="HeightSet">StaticHeight</property>
+        <property name="LayoutType" code="LayoutType">None</property>
+        <property name="BackColor" code="BackColor">255, 255, 255</property>
+        <property name="Name" code="Name">form4_blank_template</property>
+        <property name="CustomGridValue" code="CustomGridValue" />
+        <property name="Code" code="Code">form4_blank_template</property>
+      </propertys>
+      <controls>
+        <control code="JGMTreeView1" name="树" type="JGMTreeView" desc="Toone-1460462203000">
+          <propertys>
+            <property name="级联" code="CascadeCheck">True</property>
+            <property name="控件编码" code="Code">JGMTreeView1</property>
+            <property name="父节点折叠图标" code="CollapseIcon">iconfont icon-add</property>
+            <property name="显示模式" code="DisplayMode">multi</property>
+            <property name="泊靠" code="Dock">Fill</property>
+            <property name="父节点展开图标" code="ExpandIcon">iconfont icon-move</property>
+            <property name="高度" code="Height">600</property>
+            <property name="左边距" code="Left">0</property>
+            <property name="百分比高度" code="PercentHeight">100%</property>
+            <property name="百分比宽度" code="PercentWidth">100%</property>
+            <property name="节点选中背景色" code="SelectedNodeBackColor">255, 192, 255</property>
+            <property name="界面顺序号" code="TabIndex">0</property>
+            <property name="上边距" code="Top">0</property>
+            <property name="显示" code="Visible">True</property>
+            <property name="宽度" code="Width">337</property>
+          </propertys>
+          <controls>
+            <control code="treenode_blank_template2" name="树节点空白模板" type="treenode_blank_template" desc="Toone-1463839305000">
+              <propertys>
+                <property name="背景色" code="BackColor">192, 255, 255</property>
+                <property name="控件编码" code="Code">treenode_blank_template2</property>
+                <property name="泊靠" code="Dock">Top</property>
+                <property name="扩展点类型" code="ExtPoint">TreeNodeExtPoint</property>
+                <property name="高度" code="Height">96</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="模板应用样式" code="NodeTemplateType">ChildNode</property>
+                <property name="实体名" code="TableName">autotest_gz39_tree_a</property>
+                <property name="上边距" code="Top">96</property>
+                <property name="自定义模板" code="TreeNodeHTMLTemplate">{"HTMLTemplate":"&lt;%=title%&gt;","PlaceHolder":"&lt;%=key%&gt;","fieldMapping":[{"code":"title","fieldValue":"nodeName","DefaultValue":""}],"IsCanEdit":true}</property>
+                <property name="宽度" code="Width">337</property>
+              </propertys>
+              <controls />
+              <events />
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>autotest_gz39_tree_a</dataSource>
+                  <dataMembers />
+                </dataBinding>
+              </dataBindings>
+            </control>
+            <control code="treenode_blank_template1" name="树节点空白模板" type="treenode_blank_template" desc="Toone-1463839305000">
+              <propertys>
+                <property name="背景色" code="BackColor">192, 255, 192</property>
+                <property name="控件编码" code="Code">treenode_blank_template1</property>
+                <property name="泊靠" code="Dock">Top</property>
+                <property name="扩展点类型" code="ExtPoint">TreeNodeExtPoint</property>
+                <property name="高度" code="Height">96</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="模板应用样式" code="NodeTemplateType">ParentNode</property>
+                <property name="实体名" code="TableName">autotest_gz39_tree_a</property>
+                <property name="上边距" code="Top">0</property>
+                <property name="自定义模板" code="TreeNodeHTMLTemplate">{"HTMLTemplate":"&lt;%=title%&gt;","PlaceHolder":"&lt;%=key%&gt;","fieldMapping":[{"code":"title","fieldValue":"nodeName","DefaultValue":""}],"IsCanEdit":true}</property>
+                <property name="宽度" code="Width">337</property>
+              </propertys>
+              <controls />
+              <events />
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>autotest_gz39_tree_a</dataSource>
+                  <dataMembers />
+                </dataBinding>
+              </dataBindings>
+            </control>
+          </controls>
+          <events>
+            <event code="OnValueLoaded" name="值加载事件">
+              <evaluateRule />
+            </event>
+            <event code="OnClick" name="单击事件">
+              <evaluateRule />
+            </event>
+            <event code="OnDoubleClick" name="双击事件">
+              <evaluateRule />
+            </event>
+            <event code="NodeCollapseEvent" name="节点折叠事件">
+              <evaluateRule />
+            </event>
+            <event code="NodeExpandEvent" name="节点展开事件">
+              <evaluateRule />
+            </event>
+            <event code="OnSelectionChanged" name="记录选择变更">
+              <evaluateRule />
+            </event>
+          </events>
+          <dataBindings>
+            <dataBinding>
+              <dataSource>autotest_gz39_tree_a</dataSource>
+              <dataMembers>
+                <dataMember name="父标识字段" code="PIDColumn">parentId</dataMember>
+                <dataMember name="排序字段" code="OrderNoColumn">xh</dataMember>
+                <dataMember name="层级码字段" code="InnerCodeColumn">zs</dataMember>
+                <dataMember name="叶子节点字段" code="LeafNode">IsLeaf</dataMember>
+              </dataMembers>
+            </dataBinding>
+          </dataBindings>
+        </control>
+      </controls>
+      <events>
+        <event code="FormLoadAction" name="窗体加载事件">
+          <evaluateRule code="test_demo_tree.form4_blank_template.form1_FormLoadAction" />
+        </event>
+        <event code="FormCloseAction" name="窗体关闭事件">
+          <evaluateRule />
+        </event>
+      </events>
+      <logics>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnValueLoaded" name="JGMTreeView1_值加载事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnValueLoaded\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnClick" name="JGMTreeView1_单击事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnClick\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnDoubleClick" name="JGMTreeView1_双击事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnDoubleClick\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_NodeCollapseEvent" name="JGMTreeView1_节点折叠事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;Root /&gt;</ruleRoute>
+              <ruleInstances />
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_NodeExpandEvent" name="JGMTreeView1_节点展开事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode3" /&gt;&lt;evaluateRule code="BRCode4" /&gt;&lt;evaluateRule code="BRCode2" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ClearInterfaceEntityData" ruleName="清除界面实体中的数据" instanceCode="BRCode3" instanceName="清除界面实体中的数据" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition>True</condition>
+                  <ruleConfig>{"dataSourceNames":[{"name":"autotest_gz39_tree_a"}]}</ruleConfig>
+                </ruleInstance>
+                <ruleInstance ruleCode="DeleteListSelectRow" ruleName="删除界面实体记录" instanceCode="BRCode4" instanceName="删除界面实体记录" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"Condition":"True","deleteType":"1","DisplayColumn":"","ID":"","TableName":"autotest_gz39_tree_a","treeStruct":null}</ruleConfig>
+                </ruleInstance>
+                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode2" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":[{"columnType":"1","field":"autotest_gz39_tree_a.parentId","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"BR_IN_PARENT.id","valueType":"9"}],"entityType":"window","entityName":"autotest_gz39_tree_a","itemqueryparam":null,"items":[{"destName":"autotest_gz39_tree_a.id","sourceName":"autotest_gz39_tree_a.id","type":"entityField"},{"destName":"autotest_gz39_tree_a.parentId","sourceName":"autotest_gz39_tree_a.parentId","type":"entityField"},{"destName":"autotest_gz39_tree_a.cj","sourceName":"autotest_gz39_tree_a.cj","type":"entityField"},{"destName":"autotest_gz39_tree_a.xh","sourceName":"autotest_gz39_tree_a.xh","type":"entityField"},{"destName":"autotest_gz39_tree_a.IsLeaf","sourceName":"autotest_gz39_tree_a.IsLeaf","type":"entityField"},{"destName":"autotest_gz39_tree_a.nodeName","sourceName":"autotest_gz39_tree_a.nodeName","type":"entityField"},{"destName":"autotest_gz39_tree_a.xs","sourceName":"autotest_gz39_tree_a.xs","type":"entityField"},{"destName":"autotest_gz39_tree_a.zs","sourceName":"autotest_gz39_tree_a.zs","type":"entityField"},{"destName":"autotest_gz39_tree_a.img","sourceName":"autotest_gz39_tree_a.img","type":"entityField"}],"orderBy":null,"sourceName":"autotest_gz39_tree_a","dataLoad":"","pager":null}],"treeStruct":null}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs>
+                <variables>
+                  <variable code="id" name="id" type="char" desc="" initValue="" />
+                </variables>
+                <dataTypes />
+              </inputs>
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnSelectionChanged" name="JGMTreeView1_记录选择变更" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnSelectionChanged\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="form1_FormLoadAction" name="form1_窗体加载事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode1" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"autotest_gz39_tree_a","itemqueryparam":null,"items":[{"destName":"autotest_gz39_tree_a.id","sourceName":"autotest_gz39_tree_a.id","type":"entityField"},{"destName":"autotest_gz39_tree_a.parentId","sourceName":"autotest_gz39_tree_a.parentId","type":"entityField"},{"destName":"autotest_gz39_tree_a.cj","sourceName":"autotest_gz39_tree_a.cj","type":"entityField"},{"destName":"autotest_gz39_tree_a.xh","sourceName":"autotest_gz39_tree_a.xh","type":"entityField"},{"destName":"autotest_gz39_tree_a.IsLeaf","sourceName":"autotest_gz39_tree_a.IsLeaf","type":"entityField"},{"destName":"autotest_gz39_tree_a.nodeName","sourceName":"autotest_gz39_tree_a.nodeName","type":"entityField"},{"destName":"autotest_gz39_tree_a.xs","sourceName":"autotest_gz39_tree_a.xs","type":"entityField"},{"destName":"autotest_gz39_tree_a.zs","sourceName":"autotest_gz39_tree_a.zs","type":"entityField"},{"destName":"autotest_gz39_tree_a.img","sourceName":"autotest_gz39_tree_a.img","type":"entityField"}],"orderBy":null,"sourceName":"autotest_gz39_tree_a","dataLoad":"0","pager":null}],"treeStruct":[{"tableName":"autotest_gz39_tree_a","type":"1","pidField":"parentId","treeCodeField":"cj","orderField":"xh","isLeafField":"IsLeaf","leftField":"","rightField":"","bizCodeField":"","bizCodeFormat":"","busiFilterField":""}]}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="test_demo_tree.form4_blank_template.form1_FormLoadAction" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "test_demo_tree","windowCode": "form4_blank_template","ruleSetCode": "form1_FormLoadAction"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="treenode_default_template1_OnAddonDomainClick" name="treenode_default_template1_点击附加域点击事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"附加区域\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+      </logics>
+      <entitys>
+        <entity code="autotest_gz39_tree_a" name="autotest_gz39_tree_a" chineseName="autotest_gz39_tree_a">
+          <entityFields>
+            <entityField code="id" name="id" chineseName="" type="char" length="64" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="parentId" name="parentId" chineseName="parentId" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="cj" name="cj" chineseName="cj" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="xh" name="xh" chineseName="xh" type="integer" length="50" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="IsLeaf" name="IsLeaf" chineseName="IsLeaf" type="boolean" length="" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="nodeName" name="nodeName" chineseName="nodeName" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="xs" name="xs" chineseName="xs" type="number" length="50" precision="4" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="zs" name="zs" chineseName="zs" type="integer" length="50" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="img" name="img" chineseName="img" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+          </entityFields>
+          <events>
+            <event code="OnLoaded" name="实体加载事件" />
+          </events>
+        </entity>
+      </entitys>
+      <dataBindings>
+        <dataBinding>
+          <dataSource>#E(autotest_gz39_tree_a)#</dataSource>
+        </dataBinding>
+      </dataBindings>
+      <windowVariants>
+        <variables />
+        <dataTypes />
+      </windowVariants>
+      <windowOutputs>
+        <variables />
+        <dataTypes />
+      </windowOutputs>
+      <expressions>
+        <expression content="&quot;OnValueLoaded&quot;" type="client" />
+        <expression content="&quot;OnClick&quot;" type="client" />
+        <expression content="&quot;OnDoubleClick&quot;" type="client" />
+        <expression content="True" type="client" />
+        <expression content="True" type="client" />
+        <expression content="BR_IN_PARENT.id" type="client" />
+        <expression content="&quot;OnSelectionChanged&quot;" type="client" />
+        <expression content="&quot;附加区域&quot;" type="client" />
+      </expressions>
+    </window>
+    <window type="2" code="form4_multiple_select_cascade" name="form4_multiple_select_cascade" desc="">
+      <propertys>
+        <property name="Width" code="Width">337</property>
+        <property name="Height" code="Height">600</property>
+        <property name="HeightSet" code="HeightSet">StaticHeight</property>
+        <property name="LayoutType" code="LayoutType">None</property>
+        <property name="BackColor" code="BackColor">255, 255, 255</property>
+        <property name="Name" code="Name">form4_multiple_select_cascade</property>
+        <property name="CustomGridValue" code="CustomGridValue" />
+        <property name="Code" code="Code">form4_multiple_select_cascade</property>
+      </propertys>
+      <controls>
+        <control code="JGMTreeView1" name="树" type="JGMTreeView" desc="Toone-1460462203000">
+          <propertys>
+            <property name="级联" code="CascadeCheck">True</property>
+            <property name="控件编码" code="Code">JGMTreeView1</property>
+            <property name="父节点折叠图标" code="CollapseIcon">iconfont icon-right</property>
+            <property name="显示模式" code="DisplayMode">multi</property>
+            <property name="泊靠" code="Dock">Fill</property>
+            <property name="父节点展开图标" code="ExpandIcon">iconfont icon-unfold</property>
+            <property name="高度" code="Height">600</property>
+            <property name="左边距" code="Left">0</property>
+            <property name="百分比高度" code="PercentHeight">100%</property>
+            <property name="百分比宽度" code="PercentWidth">100%</property>
+            <property name="节点选中背景色" code="SelectedNodeBackColor">255, 255, 255</property>
+            <property name="界面顺序号" code="TabIndex">0</property>
+            <property name="上边距" code="Top">0</property>
+            <property name="显示" code="Visible">True</property>
+            <property name="宽度" code="Width">337</property>
+          </propertys>
+          <controls>
+            <control code="treenode_default_template2" name="树节点默认模板" type="treenode_default_template" desc="Toone-1463839315000">
+              <propertys>
+                <property name="背景色" code="BackColor">192, 255, 255</property>
+                <property name="控件编码" code="Code">treenode_default_template2</property>
+                <property name="泊靠" code="Dock">Top</property>
+                <property name="扩展点类型" code="ExtPoint">TreeNodeExtPoint</property>
+                <property name="高度" code="Height">96</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="模板应用样式" code="NodeTemplateType">ChildNode</property>
+                <property name="实体名" code="TableName">autotest_gz39_tree_a</property>
+                <property name="标题名称字段" code="TitleColumnName">nodeName</property>
+                <property name="标题图片字段" code="TitleIconColumnName">img</property>
+                <property name="上边距" code="Top">96</property>
+                <property name="节点附加域模板" code="TreeNodeHTMLTemplate">{"HTMLTemplate":"","PlaceHolder":"&lt;%=key%&gt;","fieldMapping":[],"IsCanEdit":true}</property>
+                <property name="宽度" code="Width">337</property>
+              </propertys>
+              <controls />
+              <events>
+                <event code="OnAddonDomainClick" name="点击附加域点击事件">
+                  <evaluateRule />
+                </event>
+              </events>
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>autotest_gz39_tree_a</dataSource>
+                  <dataMembers>
+                    <dataMember name="标题名称字段" code="TitleColumnName">nodeName</dataMember>
+                    <dataMember name="标题图片字段" code="TitleIconColumnName">img</dataMember>
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+            <control code="treenode_default_template1" name="树节点默认模板" type="treenode_default_template" desc="Toone-1463839315000">
+              <propertys>
+                <property name="背景色" code="BackColor">192, 255, 192</property>
+                <property name="控件编码" code="Code">treenode_default_template1</property>
+                <property name="泊靠" code="Dock">Top</property>
+                <property name="扩展点类型" code="ExtPoint">TreeNodeExtPoint</property>
+                <property name="高度" code="Height">96</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="模板应用样式" code="NodeTemplateType">ParentNode</property>
+                <property name="实体名" code="TableName">autotest_gz39_tree_a</property>
+                <property name="标题名称字段" code="TitleColumnName">nodeName</property>
+                <property name="标题图片字段" code="TitleIconColumnName">img</property>
+                <property name="上边距" code="Top">0</property>
+                <property name="节点附加域模板" code="TreeNodeHTMLTemplate">{"HTMLTemplate":"附加区域文本&lt;%=xh%&gt;","PlaceHolder":"&lt;%=key%&gt;","fieldMapping":[{"code":"xh","fieldValue":"cj","DefaultValue":""}],"IsCanEdit":true}</property>
+                <property name="宽度" code="Width">337</property>
+              </propertys>
+              <controls />
+              <events>
+                <event code="OnAddonDomainClick" name="点击附加域点击事件">
+                  <evaluateRule code="test_demo_tree.form4_multiple_select_cascade.treenode_default_template1_OnAddonDomainClick" />
+                </event>
+              </events>
+              <dataBindings>
+                <dataBinding>
+                  <dataSource>autotest_gz39_tree_a</dataSource>
+                  <dataMembers>
+                    <dataMember name="标题名称字段" code="TitleColumnName">nodeName</dataMember>
+                    <dataMember name="标题图片字段" code="TitleIconColumnName">img</dataMember>
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+          </controls>
+          <events>
+            <event code="OnValueLoaded" name="值加载事件">
+              <evaluateRule />
+            </event>
+            <event code="OnClick" name="单击事件">
+              <evaluateRule />
+            </event>
+            <event code="OnDoubleClick" name="双击事件">
+              <evaluateRule />
+            </event>
+            <event code="NodeCollapseEvent" name="节点折叠事件">
+              <evaluateRule />
+            </event>
+            <event code="NodeExpandEvent" name="节点展开事件">
+              <evaluateRule />
+            </event>
+            <event code="OnSelectionChanged" name="记录选择变更">
+              <evaluateRule />
+            </event>
+          </events>
+          <dataBindings>
+            <dataBinding>
+              <dataSource>autotest_gz39_tree_a</dataSource>
+              <dataMembers>
+                <dataMember name="父标识字段" code="PIDColumn">parentId</dataMember>
+                <dataMember name="排序字段" code="OrderNoColumn">xh</dataMember>
+                <dataMember name="层级码字段" code="InnerCodeColumn">zs</dataMember>
+                <dataMember name="叶子节点字段" code="LeafNode">IsLeaf</dataMember>
+              </dataMembers>
+            </dataBinding>
+          </dataBindings>
+        </control>
+      </controls>
+      <events>
+        <event code="FormLoadAction" name="窗体加载事件">
+          <evaluateRule code="test_demo_tree.form4_multiple_select_cascade.form1_FormLoadAction" />
+        </event>
+        <event code="FormCloseAction" name="窗体关闭事件">
+          <evaluateRule />
+        </event>
+      </events>
+      <logics>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnValueLoaded" name="JGMTreeView1_值加载事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnValueLoaded\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnClick" name="JGMTreeView1_单击事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnClick\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnDoubleClick" name="JGMTreeView1_双击事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnDoubleClick\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_NodeCollapseEvent" name="JGMTreeView1_节点折叠事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;Root /&gt;</ruleRoute>
+              <ruleInstances />
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_NodeExpandEvent" name="JGMTreeView1_节点展开事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode3" /&gt;&lt;evaluateRule code="BRCode4" /&gt;&lt;evaluateRule code="BRCode2" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ClearInterfaceEntityData" ruleName="清除界面实体中的数据" instanceCode="BRCode3" instanceName="清除界面实体中的数据" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition>True</condition>
+                  <ruleConfig>{"dataSourceNames":[{"name":"autotest_gz39_tree_a"}]}</ruleConfig>
+                </ruleInstance>
+                <ruleInstance ruleCode="DeleteListSelectRow" ruleName="删除界面实体记录" instanceCode="BRCode4" instanceName="删除界面实体记录" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"Condition":"True","deleteType":"1","DisplayColumn":"","ID":"","TableName":"autotest_gz39_tree_a","treeStruct":null}</ruleConfig>
+                </ruleInstance>
+                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode2" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":[{"columnType":"1","field":"autotest_gz39_tree_a.parentId","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"BR_IN_PARENT.id","valueType":"9"}],"entityType":"window","entityName":"autotest_gz39_tree_a","itemqueryparam":null,"items":[{"destName":"autotest_gz39_tree_a.id","sourceName":"autotest_gz39_tree_a.id","type":"entityField"},{"destName":"autotest_gz39_tree_a.parentId","sourceName":"autotest_gz39_tree_a.parentId","type":"entityField"},{"destName":"autotest_gz39_tree_a.cj","sourceName":"autotest_gz39_tree_a.cj","type":"entityField"},{"destName":"autotest_gz39_tree_a.xh","sourceName":"autotest_gz39_tree_a.xh","type":"entityField"},{"destName":"autotest_gz39_tree_a.IsLeaf","sourceName":"autotest_gz39_tree_a.IsLeaf","type":"entityField"},{"destName":"autotest_gz39_tree_a.nodeName","sourceName":"autotest_gz39_tree_a.nodeName","type":"entityField"},{"destName":"autotest_gz39_tree_a.xs","sourceName":"autotest_gz39_tree_a.xs","type":"entityField"},{"destName":"autotest_gz39_tree_a.zs","sourceName":"autotest_gz39_tree_a.zs","type":"entityField"},{"destName":"autotest_gz39_tree_a.img","sourceName":"autotest_gz39_tree_a.img","type":"entityField"}],"orderBy":null,"sourceName":"autotest_gz39_tree_a","dataLoad":"","pager":null}],"treeStruct":null}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs>
+                <variables>
+                  <variable code="id" name="id" type="char" desc="" initValue="" />
+                </variables>
+                <dataTypes />
+              </inputs>
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMTreeView1_OnSelectionChanged" name="JGMTreeView1_记录选择变更" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnSelectionChanged\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="form1_FormLoadAction" name="form1_窗体加载事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode1" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"autotest_gz39_tree_a","itemqueryparam":null,"items":[{"destName":"autotest_gz39_tree_a.id","sourceName":"autotest_gz39_tree_a.id","type":"entityField"},{"destName":"autotest_gz39_tree_a.parentId","sourceName":"autotest_gz39_tree_a.parentId","type":"entityField"},{"destName":"autotest_gz39_tree_a.cj","sourceName":"autotest_gz39_tree_a.cj","type":"entityField"},{"destName":"autotest_gz39_tree_a.xh","sourceName":"autotest_gz39_tree_a.xh","type":"entityField"},{"destName":"autotest_gz39_tree_a.IsLeaf","sourceName":"autotest_gz39_tree_a.IsLeaf","type":"entityField"},{"destName":"autotest_gz39_tree_a.nodeName","sourceName":"autotest_gz39_tree_a.nodeName","type":"entityField"},{"destName":"autotest_gz39_tree_a.xs","sourceName":"autotest_gz39_tree_a.xs","type":"entityField"},{"destName":"autotest_gz39_tree_a.zs","sourceName":"autotest_gz39_tree_a.zs","type":"entityField"},{"destName":"autotest_gz39_tree_a.img","sourceName":"autotest_gz39_tree_a.img","type":"entityField"}],"orderBy":null,"sourceName":"autotest_gz39_tree_a","dataLoad":"0","pager":null}],"treeStruct":[{"tableName":"autotest_gz39_tree_a","type":"1","pidField":"parentId","treeCodeField":"cj","orderField":"xh","isLeafField":"IsLeaf","leftField":"","rightField":"","bizCodeField":"","bizCodeFormat":"","busiFilterField":""}]}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="test_demo_tree.form4_multiple_select_cascade.form1_FormLoadAction" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "test_demo_tree","windowCode": "form4_multiple_select_cascade","ruleSetCode": "form1_FormLoadAction"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="treenode_default_template1_OnAddonDomainClick" name="treenode_default_template1_点击附加域点击事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"\"附加区域\"","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="test_demo_tree.form4_multiple_select_cascade.treenode_default_template1_OnAddonDomainClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "test_demo_tree","windowCode": "form4_multiple_select_cascade","ruleSetCode": "treenode_default_template1_OnAddonDomainClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+      </logics>
+      <entitys>
+        <entity code="autotest_gz39_tree_a" name="autotest_gz39_tree_a" chineseName="autotest_gz39_tree_a">
+          <entityFields>
+            <entityField code="id" name="id" chineseName="" type="char" length="64" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="parentId" name="parentId" chineseName="parentId" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="cj" name="cj" chineseName="cj" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="xh" name="xh" chineseName="xh" type="integer" length="50" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="IsLeaf" name="IsLeaf" chineseName="IsLeaf" type="boolean" length="" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="nodeName" name="nodeName" chineseName="nodeName" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="xs" name="xs" chineseName="xs" type="number" length="50" precision="4" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="zs" name="zs" chineseName="zs" type="integer" length="50" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="img" name="img" chineseName="img" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+          </entityFields>
+          <events>
+            <event code="OnLoaded" name="实体加载事件" />
+          </events>
+        </entity>
+      </entitys>
+      <dataBindings>
+        <dataBinding>
+          <dataSource>#E(autotest_gz39_tree_a)#</dataSource>
+        </dataBinding>
+      </dataBindings>
+      <windowVariants>
+        <variables />
+        <dataTypes />
+      </windowVariants>
+      <windowOutputs>
+        <variables />
+        <dataTypes />
+      </windowOutputs>
+      <expressions>
+        <expression content="&quot;OnValueLoaded&quot;" type="client" />
+        <expression content="&quot;OnClick&quot;" type="client" />
+        <expression content="&quot;OnDoubleClick&quot;" type="client" />
+        <expression content="True" type="client" />
+        <expression content="True" type="client" />
+        <expression content="BR_IN_PARENT.id" type="client" />
+        <expression content="&quot;OnSelectionChanged&quot;" type="client" />
+        <expression content="&quot;附加区域&quot;" type="client" />
+      </expressions>
+    </window>
+  </windows>
+  <logics />
+  <models>
+    <model name="autotest_gz39_tree_a" isDeleted="false" code="Table45875383" desc="" chineseName="autotest_gz39_tree_a">
+      <fields>
+        <field type="char" precision="0" fieldName="id" length="64" code="Column_id" desc="" defaultvalue="" name="" />
+        <field type="char" precision="0" fieldName="parentId" length="255" code="parentId" desc="" defaultvalue="" name="parentId" />
+        <field type="char" precision="0" fieldName="cj" length="255" code="cj" desc="" defaultvalue="" name="cj" />
+        <field type="integer" precision="0" fieldName="xh" length="50" code="xh" desc="" defaultvalue="" name="xh" />
+        <field type="boolean" precision="0" fieldName="IsLeaf" length="50" code="isleaf" desc="" defaultvalue="" name="IsLeaf" />
+        <field type="char" precision="0" fieldName="nodeName" length="255" code="nodeName" desc="" defaultvalue="" name="nodeName" />
+        <field type="number" precision="4" fieldName="xs" length="50" code="xs" desc="" defaultvalue="" name="xs" />
+        <field type="integer" precision="0" fieldName="zs" length="50" code="zs" desc="" defaultvalue="" name="zs" />
+        <field type="char" precision="0" fieldName="img" length="255" code="Column_1" desc="" defaultvalue="" name="img" />
+      </fields>
+      <indexes>
+        <index name="PK_970804389" isUnique="false" isPrimaryKey="true">
+          <indexFields>
+            <indexField isAsc="true" indexOrder="0" fieldName="id" />
+          </indexFields>
+        </index>
+      </indexes>
+      <records>
+        <record>
+          <fieldDefVal fieldCode="id">1</fieldDefVal>
+          <fieldDefVal fieldCode="parentId" />
+          <fieldDefVal fieldCode="cj">00001</fieldDefVal>
+          <fieldDefVal fieldCode="xh">1</fieldDefVal>
+          <fieldDefVal fieldCode="IsLeaf">False</fieldDefVal>
+          <fieldDefVal fieldCode="nodeName">我的好友</fieldDefVal>
+          <fieldDefVal fieldCode="xs">12</fieldDefVal>
+          <fieldDefVal fieldCode="zs">13</fieldDefVal>
+          <fieldDefVal fieldCode="img">itop/common/images/start_icon_active.png</fieldDefVal>
+        </record>
+        <record>
+          <fieldDefVal fieldCode="id">2</fieldDefVal>
+          <fieldDefVal fieldCode="parentId">1</fieldDefVal>
+          <fieldDefVal fieldCode="cj">0000100001</fieldDefVal>
+          <fieldDefVal fieldCode="xh">2</fieldDefVal>
+          <fieldDefVal fieldCode="IsLeaf">False</fieldDefVal>
+          <fieldDefVal fieldCode="nodeName">中土大陆</fieldDefVal>
+          <fieldDefVal fieldCode="xs">14</fieldDefVal>
+          <fieldDefVal fieldCode="zs">15</fieldDefVal>
+          <fieldDefVal fieldCode="img">itop/common/images/start_icon_active.png</fieldDefVal>
+        </record>
+        <record>
+          <fieldDefVal fieldCode="id">3</fieldDefVal>
+          <fieldDefVal fieldCode="parentId">1</fieldDefVal>
+          <fieldDefVal fieldCode="cj">0000100002</fieldDefVal>
+          <fieldDefVal fieldCode="xh">3</fieldDefVal>
+          <fieldDefVal fieldCode="IsLeaf">False</fieldDefVal>
+          <fieldDefVal fieldCode="nodeName">维斯特洛大陆</fieldDefVal>
+          <fieldDefVal fieldCode="xs">13</fieldDefVal>
+          <fieldDefVal fieldCode="zs">56</fieldDefVal>
+          <fieldDefVal fieldCode="img">itop/common/images/start_icon_active.png</fieldDefVal>
+        </record>
+        <record>
+          <fieldDefVal fieldCode="id">4</fieldDefVal>
+          <fieldDefVal fieldCode="parentId">2</fieldDefVal>
+          <fieldDefVal fieldCode="cj">000010000100001</fieldDefVal>
+          <fieldDefVal fieldCode="xh">4</fieldDefVal>
+          <fieldDefVal fieldCode="IsLeaf">True</fieldDefVal>
+          <fieldDefVal fieldCode="nodeName">爱隆王</fieldDefVal>
+          <fieldDefVal fieldCode="xs">55</fieldDefVal>
+          <fieldDefVal fieldCode="zs">67</fieldDefVal>
+          <fieldDefVal fieldCode="img">itop/common/images/003.png</fieldDefVal>
+        </record>
+        <record>
+          <fieldDefVal fieldCode="id">5</fieldDefVal>
+          <fieldDefVal fieldCode="parentId" />
+          <fieldDefVal fieldCode="cj">00002</fieldDefVal>
+          <fieldDefVal fieldCode="xh">5</fieldDefVal>
+          <fieldDefVal fieldCode="IsLeaf">False</fieldDefVal>
+          <fieldDefVal fieldCode="nodeName">陌生人</fieldDefVal>
+          <fieldDefVal fieldCode="xs">55</fieldDefVal>
+          <fieldDefVal fieldCode="zs">66</fieldDefVal>
+          <fieldDefVal fieldCode="img">itop/common/images/start_icon_active.png</fieldDefVal>
+        </record>
+        <record>
+          <fieldDefVal fieldCode="id">6</fieldDefVal>
+          <fieldDefVal fieldCode="parentId">2</fieldDefVal>
+          <fieldDefVal fieldCode="cj">000010000100002</fieldDefVal>
+          <fieldDefVal fieldCode="xh">6</fieldDefVal>
+          <fieldDefVal fieldCode="IsLeaf">True</fieldDefVal>
+          <fieldDefVal fieldCode="nodeName">甘道夫</fieldDefVal>
+          <fieldDefVal fieldCode="xs">56</fieldDefVal>
+          <fieldDefVal fieldCode="zs">66</fieldDefVal>
+          <fieldDefVal fieldCode="img">itop/common/images/Under_construction2.jpg</fieldDefVal>
+        </record>
+        <record>
+          <fieldDefVal fieldCode="id">7</fieldDefVal>
+          <fieldDefVal fieldCode="parentId">2</fieldDefVal>
+          <fieldDefVal fieldCode="cj">000010000100003</fieldDefVal>
+          <fieldDefVal fieldCode="xh">7</fieldDefVal>
+          <fieldDefVal fieldCode="IsLeaf">True</fieldDefVal>
+          <fieldDefVal fieldCode="nodeName">魔寇斯</fieldDefVal>
+          <fieldDefVal fieldCode="xs">55</fieldDefVal>
+          <fieldDefVal fieldCode="zs">66</fieldDefVal>
+          <fieldDefVal fieldCode="img" />
+        </record>
+        <record>
+          <fieldDefVal fieldCode="id">8</fieldDefVal>
+          <fieldDefVal fieldCode="parentId">2</fieldDefVal>
+          <fieldDefVal fieldCode="cj">000010000100004</fieldDefVal>
+          <fieldDefVal fieldCode="xh">8</fieldDefVal>
+          <fieldDefVal fieldCode="IsLeaf">True</fieldDefVal>
+          <fieldDefVal fieldCode="nodeName">咕噜</fieldDefVal>
+          <fieldDefVal fieldCode="xs">55</fieldDefVal>
+          <fieldDefVal fieldCode="zs">55</fieldDefVal>
+          <fieldDefVal fieldCode="img">itop/common/images/Under_construction2.jpg</fieldDefVal>
+        </record>
+        <record>
+          <fieldDefVal fieldCode="id">9</fieldDefVal>
+          <fieldDefVal fieldCode="parentId">3</fieldDefVal>
+          <fieldDefVal fieldCode="cj">000010000200001</fieldDefVal>
+          <fieldDefVal fieldCode="xh">9</fieldDefVal>
+          <fieldDefVal fieldCode="IsLeaf">False</fieldDefVal>
+          <fieldDefVal fieldCode="nodeName">史塔克</fieldDefVal>
+          <fieldDefVal fieldCode="xs">33</fieldDefVal>
+          <fieldDefVal fieldCode="zs">33</fieldDefVal>
+          <fieldDefVal fieldCode="img">http://h.hiphotos.baidu.com/baike/c0%3Dbaike220%2C5%2C5%2C220%2C73/sign=bd291f77e2fe9925df01610255c135ba/94cad1c8a786c917f83e558bcb3d70cf3bc75746.jpg</fieldDefVal>
+        </record>
+        <record>
+          <fieldDefVal fieldCode="id">10</fieldDefVal>
+          <fieldDefVal fieldCode="parentId">9</fieldDefVal>
+          <fieldDefVal fieldCode="cj">00001000020000100001</fieldDefVal>
+          <fieldDefVal fieldCode="xh">10</fieldDefVal>
+          <fieldDefVal fieldCode="IsLeaf">True</fieldDefVal>
+          <fieldDefVal fieldCode="nodeName">艾莉亚·史塔克</fieldDefVal>
+          <fieldDefVal fieldCode="xs">33</fieldDefVal>
+          <fieldDefVal fieldCode="zs">22</fieldDefVal>
+          <fieldDefVal fieldCode="img">http://getimg.jrj.com.cn/images/2014/07/newsyouth/one_20140726131956930.jpg</fieldDefVal>
+        </record>
+        <record>
+          <fieldDefVal fieldCode="id">11</fieldDefVal>
+          <fieldDefVal fieldCode="parentId">9</fieldDefVal>
+          <fieldDefVal fieldCode="cj">00001000020000100002</fieldDefVal>
+          <fieldDefVal fieldCode="xh">11</fieldDefVal>
+          <fieldDefVal fieldCode="IsLeaf">True</fieldDefVal>
+          <fieldDefVal fieldCode="nodeName">布兰·史塔克</fieldDefVal>
+          <fieldDefVal fieldCode="xs">44</fieldDefVal>
+          <fieldDefVal fieldCode="zs">44</fieldDefVal>
+          <fieldDefVal fieldCode="img">http://h.hiphotos.baidu.com/baike/w%3D268/sign=70d63f277f310a55c424d9f28f474387/1e30e924b899a901cbe8fee21b950a7b0308f501.jpg</fieldDefVal>
+        </record>
+      </records>
+    </model>
+  </models>
+  <variants />
+  <options />
+  <querys />
+  <resourcePackages />
+  <expressions />
+  <menuItems />
+  <resources />
+  <manifest>
+    <bundle-info>
+      <symbolic-name>test_demo_tree</symbolic-name>
+      <bundle-name>test_demo_tree</bundle-name>
+      <bundle-version>1.0.0</bundle-version>
+      <bundle-type>RuntimeSchema</bundle-type>
+      <provider />
+      <description />
+      <lastModified>1464174309000</lastModified>
+    </bundle-info>
+    <interface />
+    <dependencies />
+    <imports>
+      <import componentCode="com.toone.v3.platform-Webrule_ShowMessage" componentName="显示设置的提示信息" />
+      <import componentCode="com.toone.v3.platform-Webrule_DataBaseDataToInterfaceEntity" componentName="从数据库获取数据到界面实体" />
+      <import componentCode="com.toone.v3.platform-Webrule_ClearInterfaceEntityData" componentName="清除界面实体中的数据" />
+      <import componentCode="com.toone.v3.platform-Webrule_DeleteListSelectRow" componentName="删除界面实体记录" />
+    </imports>
+  </manifest>
+</component>]]></LastDeployData>
+</Deploy>

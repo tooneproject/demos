@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Created: 2016-04-30 23:06:08-->
+<Methods>
+  <Method Code="JGMTreeView1_OnValueLoaded" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <MethodChain><![CDATA[
+  <evaluateRule code="BRCode1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnValueLoaded\"","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"OnValueLoaded"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGMTreeView1_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <MethodChain><![CDATA[
+  <evaluateRule code="BRCode1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnClick\"","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"OnClick"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGMTreeView1_OnDoubleClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <MethodChain><![CDATA[
+  <evaluateRule code="BRCode1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnDoubleClick\"","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"OnDoubleClick"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGMTreeView1_NodeCollapseEvent" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <MethodChain><![CDATA[]]></MethodChain>
+    <RuleInstances />
+  </Method>
+  <Method Code="JGMTreeView1_NodeExpandEvent" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <MethodChain><![CDATA[
+  <evaluateRule code="BRCode3" />
+  <evaluateRule code="BRCode4" />
+  <evaluateRule code="BRCode2" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="ClearInterfaceEntityData" ruleName="清除界面实体中的数据" instanceCode="BRCode3" instanceName="清除界面实体中的数据" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[True]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"dataSourceNames":[{"name":"autotest_gz39_tree_a"}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtColumn><Code>#E(autotest_gz39_tree_a)#</Code></dtColumn></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="DeleteListSelectRow" ruleName="删除界面实体记录" instanceCode="BRCode4" instanceName="删除界面实体记录" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"Condition":"True","deleteType":"1","DisplayColumn":"","ID":"","TableName":"autotest_gz39_tree_a","treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><Condition>True</Condition><DeleteType>1</DeleteType><TableName>#E(autotest_gz39_tree_a)#</TableName></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode2" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" isDebug="True">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":[{"columnType":"1","field":"autotest_gz39_tree_a.parentId","fieldType":"char","leftBracket":"(","logicOperation":null,"operation":"=","rightBracket":")","value":"BR_IN_PARENT.id","valueType":"9"}],"entityType":"window","entityName":"autotest_gz39_tree_a","itemqueryparam":null,"items":[{"destName":"autotest_gz39_tree_a.id","sourceName":"autotest_gz39_tree_a.id","type":"entityField"},{"destName":"autotest_gz39_tree_a.parentId","sourceName":"autotest_gz39_tree_a.parentId","type":"entityField"},{"destName":"autotest_gz39_tree_a.cj","sourceName":"autotest_gz39_tree_a.cj","type":"entityField"},{"destName":"autotest_gz39_tree_a.xh","sourceName":"autotest_gz39_tree_a.xh","type":"entityField"},{"destName":"autotest_gz39_tree_a.IsLeaf","sourceName":"autotest_gz39_tree_a.IsLeaf","type":"entityField"},{"destName":"autotest_gz39_tree_a.nodeName","sourceName":"autotest_gz39_tree_a.nodeName","type":"entityField"},{"destName":"autotest_gz39_tree_a.xs","sourceName":"autotest_gz39_tree_a.xs","type":"entityField"},{"destName":"autotest_gz39_tree_a.zs","sourceName":"autotest_gz39_tree_a.zs","type":"entityField"},{"destName":"autotest_gz39_tree_a.img","sourceName":"autotest_gz39_tree_a.img","type":"entityField"}],"orderBy":null,"sourceName":"autotest_gz39_tree_a","dataLoad":"","pager":null}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>window</EntityType><EntityName>#E(autotest_gz39_tree_a)#</EntityName><SourceType>Table</SourceType><SourceName>#T(autotest_gz39_tree_a)#</SourceName><dsWhere><![CDATA[<NewDataSet><dtWhere><columnType>1</columnType><field>#TF(autotest_gz39_tree_a.parentId)#</field><fieldType>char</fieldType><leftBracket>(</leftBracket><logicOperation /><operation>=</operation><rightBracket>)</rightBracket><value>BR_IN_PARENT.#MI(form1.JGMTreeView1_NodeExpandEvent.id)#</value><valueType>9</valueType></dtWhere></NewDataSet>]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>72026c852ee8499995c7f57bb04696d4</ID><DataLoad /></dtEntityRelation><dtEntityColumnRelation><MasterID>72026c852ee8499995c7f57bb04696d4</MasterID><DestName>#EF(autotest_gz39_tree_a.id)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.id)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>72026c852ee8499995c7f57bb04696d4</MasterID><DestName>#EF(autotest_gz39_tree_a.parentId)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.parentId)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>72026c852ee8499995c7f57bb04696d4</MasterID><DestName>#EF(autotest_gz39_tree_a.cj)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.cj)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>72026c852ee8499995c7f57bb04696d4</MasterID><DestName>#EF(autotest_gz39_tree_a.xh)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.xh)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>72026c852ee8499995c7f57bb04696d4</MasterID><DestName>#EF(autotest_gz39_tree_a.IsLeaf)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.IsLeaf)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>72026c852ee8499995c7f57bb04696d4</MasterID><DestName>#EF(autotest_gz39_tree_a.nodeName)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.nodeName)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>72026c852ee8499995c7f57bb04696d4</MasterID><DestName>#EF(autotest_gz39_tree_a.xs)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.xs)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>72026c852ee8499995c7f57bb04696d4</MasterID><DestName>#EF(autotest_gz39_tree_a.zs)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.zs)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>72026c852ee8499995c7f57bb04696d4</MasterID><DestName>#EF(autotest_gz39_tree_a.img)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.img)#</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+    <Inputs>
+      <Variable code="id" name="id" fieldType="char" initValue="" isMust="true" desc="" />
+    </Inputs>
+  </Method>
+  <Method Code="JGMTreeView1_OnSelectionChanged" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <MethodChain><![CDATA[
+  <evaluateRule code="BRCode1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","simpleChinesePrompt":{"msgnote":"\"OnSelectionChanged\"","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"OnSelectionChanged"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="form1_FormLoadAction" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <MethodChain><![CDATA[
+  <evaluateRule code="BRCode1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode1" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"autotest_gz39_tree_a","itemqueryparam":null,"items":[{"destName":"autotest_gz39_tree_a.id","sourceName":"autotest_gz39_tree_a.id","type":"entityField"},{"destName":"autotest_gz39_tree_a.parentId","sourceName":"autotest_gz39_tree_a.parentId","type":"entityField"},{"destName":"autotest_gz39_tree_a.cj","sourceName":"autotest_gz39_tree_a.cj","type":"entityField"},{"destName":"autotest_gz39_tree_a.xh","sourceName":"autotest_gz39_tree_a.xh","type":"entityField"},{"destName":"autotest_gz39_tree_a.IsLeaf","sourceName":"autotest_gz39_tree_a.IsLeaf","type":"entityField"},{"destName":"autotest_gz39_tree_a.nodeName","sourceName":"autotest_gz39_tree_a.nodeName","type":"entityField"},{"destName":"autotest_gz39_tree_a.xs","sourceName":"autotest_gz39_tree_a.xs","type":"entityField"},{"destName":"autotest_gz39_tree_a.zs","sourceName":"autotest_gz39_tree_a.zs","type":"entityField"},{"destName":"autotest_gz39_tree_a.img","sourceName":"autotest_gz39_tree_a.img","type":"entityField"}],"orderBy":null,"sourceName":"autotest_gz39_tree_a","dataLoad":"0","pager":null}],"treeStruct":[{"tableName":"autotest_gz39_tree_a","type":"1","pidField":"parentId","treeCodeField":"cj","orderField":"xh","isLeafField":"IsLeaf","leftField":"","rightField":"","bizCodeField":"","bizCodeFormat":"","busiFilterField":""}]}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>window</EntityType><EntityName>#E(autotest_gz39_tree_a)#</EntityName><SourceType>Table</SourceType><SourceName>#T(autotest_gz39_tree_a)#</SourceName><dsWhere><![CDATA[<NewDataSet />]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>9b379d4202054e2485f789133e8f028d</ID><DataLoad>0</DataLoad></dtEntityRelation><dtEntityColumnRelation><MasterID>9b379d4202054e2485f789133e8f028d</MasterID><DestName>#EF(autotest_gz39_tree_a.id)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.id)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>9b379d4202054e2485f789133e8f028d</MasterID><DestName>#EF(autotest_gz39_tree_a.parentId)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.parentId)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>9b379d4202054e2485f789133e8f028d</MasterID><DestName>#EF(autotest_gz39_tree_a.cj)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.cj)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>9b379d4202054e2485f789133e8f028d</MasterID><DestName>#EF(autotest_gz39_tree_a.xh)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.xh)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>9b379d4202054e2485f789133e8f028d</MasterID><DestName>#EF(autotest_gz39_tree_a.IsLeaf)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.IsLeaf)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>9b379d4202054e2485f789133e8f028d</MasterID><DestName>#EF(autotest_gz39_tree_a.nodeName)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.nodeName)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>9b379d4202054e2485f789133e8f028d</MasterID><DestName>#EF(autotest_gz39_tree_a.xs)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.xs)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>9b379d4202054e2485f789133e8f028d</MasterID><DestName>#EF(autotest_gz39_tree_a.zs)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.zs)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>9b379d4202054e2485f789133e8f028d</MasterID><DestName>#EF(autotest_gz39_tree_a.img)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(autotest_gz39_tree_a.img)#</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn><dtTreeStruct><TableName>#E(autotest_gz39_tree_a)#</TableName><Type>1</Type><PIDField>#EF(autotest_gz39_tree_a.parentId)#</PIDField><TreeCodeField>#EF(autotest_gz39_tree_a.cj)#</TreeCodeField><OrderField>#EF(autotest_gz39_tree_a.xh)#</OrderField><IsLeafField>#EF(autotest_gz39_tree_a.IsLeaf)#</IsLeafField><LeftField /><RightField /><BizCodeField /><BizCodeFormat /><BusiFilterField /><PID>9b379d4202054e2485f789133e8f028d</PID></dtTreeStruct></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="treenode_default_template1_OnAddonDomainClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <MethodChain><![CDATA[
+  <evaluateRule code="BRCode1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","simpleChinesePrompt":{"msgnote":"\"附加区域\"","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>"附加区域"</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+</Methods>
