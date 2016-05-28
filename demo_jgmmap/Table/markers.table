@@ -1,0 +1,59 @@
+﻿<Table id="Table72613228" code="markers" name="markers">
+  <Remark><![CDATA[]]></Remark>
+  <Creator><![CDATA[]]></Creator>
+  <CreationTime><![CDATA[2016-05-23 21:50:33]]></CreationTime>
+  <Modifier><![CDATA[seamankwok]]></Modifier>
+  <ModificationTime><![CDATA[2016-05-23 22:50:12]]></ModificationTime>
+  <Columns>
+    <Column id="Column_id" code="id" name="" domain="" dataType="char" length="64" precision="" isPrimaryKey="true" isMandratory="true">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="Column_1" code="lng" name="lng" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="Column_2" code="lat" name="lat" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="Column_3" code="address" name="address" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+  </Columns>
+  <Indexes />
+  <TreeTableStruct treeType="0" parentColumn="" innerCodeColumn="" orderNoColumn="" leafColumn="" />
+  <Data isInitialData="true" isReplaceDataById="true">
+    <RowData>
+      <ColumnData code="id"><![CDATA[1]]></ColumnData>
+      <ColumnData code="lng"><![CDATA[117.270314]]></ColumnData>
+      <ColumnData code="lat"><![CDATA[31.836783]]></ColumnData>
+      <ColumnData code="address"><![CDATA[包河区金寨路1号]]></ColumnData>
+    </RowData>
+    <RowData>
+      <ColumnData code="id"><![CDATA[2]]></ColumnData>
+      <ColumnData code="lng"><![CDATA[117.282201]]></ColumnData>
+      <ColumnData code="lat"><![CDATA[31.895706]]></ColumnData>
+      <ColumnData code="address"><![CDATA[庐阳区凤台路209号]]></ColumnData>
+    </RowData>
+    <RowData>
+      <ColumnData code="id"><![CDATA[3]]></ColumnData>
+      <ColumnData code="lng"><![CDATA[117.278131]]></ColumnData>
+      <ColumnData code="lat"><![CDATA[31.852094]]></ColumnData>
+      <ColumnData code="address"><![CDATA[蜀山区金寨路217号]]></ColumnData>
+    </RowData>
+    <RowData>
+      <ColumnData code="id"><![CDATA[4]]></ColumnData>
+      <ColumnData code="lng"><![CDATA[117.277572]]></ColumnData>
+      <ColumnData code="lat"><![CDATA[31.855833]]></ColumnData>
+      <ColumnData code="address"><![CDATA[蜀山区梅山路10号]]></ColumnData>
+    </RowData>
+    <RowData>
+      <ColumnData code="id"><![CDATA[5]]></ColumnData>
+      <ColumnData code="lng"><![CDATA[117.268163]]></ColumnData>
+      <ColumnData code="lat"><![CDATA[31.873496]]></ColumnData>
+      <ColumnData code="address"><![CDATA[蜀山区长丰南路159号铜锣湾广场312室]]></ColumnData>
+    </RowData>
+  </Data>
+</Table>

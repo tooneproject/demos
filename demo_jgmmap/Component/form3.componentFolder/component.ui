@@ -1,0 +1,21 @@
+﻿<form type="1003" mobiletype="Phone" code="form3" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[337]]></property>
+    <property name="Height"><![CDATA[600]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Name"><![CDATA[form3]]></property>
+    <property name="CustomGridValue"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGMPanel Code="JGMPanel2" DisplayScale="12" Dock="Fill" Height="600" LayoutDirection="horizontal" PercentHeight="100%" PercentWidth="100%" TabIndex="2" Width="337">
+      <JGMMap Code="JGMMap1" DisplayScale="6" Left="3" Top="3" />
+    </JGMPanel>
+  </controls>
+  <outputs />
+  <inputs />
+</form>

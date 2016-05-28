@@ -1,0 +1,45 @@
+﻿<Table id="Table56715478" code="gistable" name="gistable">
+  <Remark><![CDATA[]]></Remark>
+  <Creator><![CDATA[]]></Creator>
+  <CreationTime><![CDATA[2016-05-15 08:07:54]]></CreationTime>
+  <Modifier><![CDATA[seamankwok]]></Modifier>
+  <ModificationTime><![CDATA[2016-05-15 09:38:00]]></ModificationTime>
+  <Columns>
+    <Column id="Column_id" code="id" name="" domain="" dataType="char" length="64" precision="" isPrimaryKey="true" isMandratory="true">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="Column_1" code="target_longitude" name="target_longitude" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="Column_2" code="target_latitude" name="target_latitude" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="Column_3" code="target_address" name="target_address" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="Column_4" code="start_location" name="start_location" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="Column_5" code="end_location" name="end_location" domain="" dataType="char" length="255" precision="" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+  </Columns>
+  <Indexes />
+  <TreeTableStruct treeType="0" parentColumn="" innerCodeColumn="" orderNoColumn="" leafColumn="" />
+  <Data isInitialData="true" isReplaceDataById="true">
+    <RowData>
+      <ColumnData code="id"><![CDATA[1]]></ColumnData>
+      <ColumnData code="target_longitude"><![CDATA[113.565]]></ColumnData>
+      <ColumnData code="target_latitude"><![CDATA[22.395]]></ColumnData>
+      <ColumnData code="target_address"><![CDATA[同望]]></ColumnData>
+      <ColumnData code="start_location"><![CDATA[拱北口岸]]></ColumnData>
+      <ColumnData code="end_location"><![CDATA[同望]]></ColumnData>
+    </RowData>
+  </Data>
+</Table>

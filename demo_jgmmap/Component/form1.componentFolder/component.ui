@@ -1,0 +1,19 @@
+﻿<form type="1003" mobiletype="Phone" code="form1" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[337]]></property>
+    <property name="Height"><![CDATA[600]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[#E(maker)#]]></property>
+    <property name="FormLoadAction"><![CDATA[form1_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Name"><![CDATA[form1]]></property>
+    <property name="CustomGridValue"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGMMap AddressColumn="#EF(maker.address)#" Code="JGMMap1" HeightPercent="50" LatitudeColumn="#EF(maker.lat)#" Left="3" LongitudeColumn="#EF(maker.lng)#" OnClick="#M(form1.JGMMap1_OnClick)#" ReadOnly="True" TableName="#E(maker)#" Top="3" />
+  </controls>
+  <outputs />
+  <inputs />
+</form>

@@ -1,0 +1,560 @@
+<Deploy>
+  <LastDeployTime>2016-05-27 23:22:31</LastDeployTime>
+  <LastDeployData><![CDATA[<?xml version="1.0"?>
+<component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" code="demo_map" name="demo_map" desc="">
+  <windows>
+    <window type="2" code="form1" name="form1" desc="">
+      <propertys>
+        <property name="Width" code="Width">337</property>
+        <property name="Height" code="Height">600</property>
+        <property name="HeightSet" code="HeightSet">StaticHeight</property>
+        <property name="LayoutType" code="LayoutType">None</property>
+        <property name="BackColor" code="BackColor" />
+        <property name="Name" code="Name">form1</property>
+        <property name="CustomGridValue" code="CustomGridValue" />
+        <property name="Code" code="Code">form1</property>
+      </propertys>
+      <controls>
+        <control code="JGMMap1" name="地图控件" type="JGMMap" desc="Toone-1464352064000">
+          <propertys>
+            <property name="地址字段" code="AddressColumn">address</property>
+            <property name="控件编码" code="Code">JGMMap1</property>
+            <property name="当前位置纬度" code="CurrentLat" />
+            <property name="当前位置经度" code="CurrentLng" />
+            <property name="显示比例" code="DisplayScale">12</property>
+            <property name="终点地址" code="EndAddress" />
+            <property name="显示获取当前位置" code="GPSVisible">true</property>
+            <property name="高度百分比" code="HeightPercent">50</property>
+            <property name="默认显示标注信息" code="InfoVisible">true</property>
+            <property name="纬度字段" code="LatitudeColumn">lat</property>
+            <property name="左边距" code="Left">3</property>
+            <property name="经度字段" code="LongitudeColumn">lng</property>
+            <property name="只读" code="ReadOnly">True</property>
+            <property name="起点地址" code="StartAddress" />
+            <property name="实体名" code="TableName">maker</property>
+            <property name="目标位置地址" code="TargetAddress" />
+            <property name="目标位置纬度" code="TargetLat" />
+            <property name="目标位置经度" code="TargetLng" />
+            <property name="上边距" code="Top">3</property>
+            <property name="显示" code="Visible">true</property>
+            <property name="显示放大缩小键" code="ZoomVisible">true</property>
+          </propertys>
+          <controls />
+          <events>
+            <event code="OnClick" name="只读单击事件">
+              <evaluateRule code="demo_map.form1.JGMMap1_OnClick" />
+            </event>
+            <event code="OnMarkerClick" name="单击标注点事件">
+              <evaluateRule />
+            </event>
+            <event code="OnDrag" name="地图拖拽事件">
+              <evaluateRule />
+            </event>
+          </events>
+          <dataBindings>
+            <dataBinding>
+              <dataSource>maker</dataSource>
+              <dataMembers>
+                <dataMember name="地址字段" code="AddressColumn">address</dataMember>
+                <dataMember name="经度字段" code="LongitudeColumn">lng</dataMember>
+                <dataMember name="纬度字段" code="LatitudeColumn">lat</dataMember>
+              </dataMembers>
+            </dataBinding>
+          </dataBindings>
+        </control>
+      </controls>
+      <events>
+        <event code="FormLoadAction" name="窗体加载事件">
+          <evaluateRule code="demo_map.form1.form1_FormLoadAction" />
+        </event>
+        <event code="FormCloseAction" name="窗体关闭事件">
+          <evaluateRule />
+        </event>
+      </events>
+      <logics>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="form1_FormLoadAction" name="form1_窗体加载事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode1" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"maker","itemqueryparam":null,"items":[{"destName":"maker.id","sourceName":"markers.id","type":"entityField"},{"destName":"maker.lng","sourceName":"markers.lng","type":"entityField"},{"destName":"maker.lat","sourceName":"markers.lat","type":"entityField"},{"destName":"maker.address","sourceName":"markers.address","type":"entityField"}],"orderBy":null,"sourceName":"markers","dataLoad":"","pager":null}],"treeStruct":null}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="demo_map.form1.form1_FormLoadAction" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "demo_map","windowCode": "form1","ruleSetCode": "form1_FormLoadAction"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="JGMMap1_OnClick" name="JGMMap1_单击事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"showType":"0","simpleChinesePrompt":{"msgnote":"CC.JGMMap1.TargetLng","type":"1"}}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="demo_map.form1.JGMMap1_OnClick" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "demo_map","windowCode": "form1","ruleSetCode": "JGMMap1_OnClick"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+      </logics>
+      <entitys>
+        <entity code="gistable2" name="gistable2" chineseName="gistable2">
+          <entityFields>
+            <entityField code="id" name="id" chineseName="" type="char" length="64" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="target_longitude" name="target_longitude" chineseName="target_longitude" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="target_latitude" name="target_latitude" chineseName="target_latitude" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="target_address" name="target_address" chineseName="target_address" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="start_location" name="start_location" chineseName="start_location" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="end_location" name="end_location" chineseName="end_location" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+          </entityFields>
+          <entityDefRows>
+            <entityDefRow>
+              <entityFieldDefVal fieldCode="id">1</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="target_longitude">113.565</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="target_latitude">22.395</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="target_address">同望</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="start_location">拱北口岸</entityFieldDefVal>
+              <entityFieldDefVal fieldCode="end_location">同望</entityFieldDefVal>
+            </entityDefRow>
+          </entityDefRows>
+          <events>
+            <event code="OnLoaded" name="实体加载事件" />
+          </events>
+        </entity>
+        <entity code="maker" name="maker" chineseName="maker">
+          <entityFields>
+            <entityField code="id" name="id" chineseName="" type="char" length="64" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="lng" name="lng" chineseName="lng" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="lat" name="lat" chineseName="lat" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="address" name="address" chineseName="address" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+          </entityFields>
+          <events>
+            <event code="OnLoaded" name="实体加载事件" />
+          </events>
+        </entity>
+      </entitys>
+      <dataBindings>
+        <dataBinding>
+          <dataSource>#E(maker)#</dataSource>
+        </dataBinding>
+      </dataBindings>
+      <windowVariants>
+        <variables />
+        <dataTypes />
+      </windowVariants>
+      <windowOutputs>
+        <variables />
+        <dataTypes />
+      </windowOutputs>
+      <expressions>
+        <expression content="CC.JGMMap1.TargetLng" type="client" />
+      </expressions>
+    </window>
+    <window type="2" code="form2" name="form2" desc="">
+      <propertys>
+        <property name="Width" code="Width">337</property>
+        <property name="Height" code="Height">600</property>
+        <property name="HeightSet" code="HeightSet">StaticHeight</property>
+        <property name="LayoutType" code="LayoutType">None</property>
+        <property name="BackColor" code="BackColor" />
+        <property name="Name" code="Name">form2</property>
+        <property name="CustomGridValue" code="CustomGridValue" />
+        <property name="Code" code="Code">form2</property>
+      </propertys>
+      <controls>
+        <control code="JGMMap1" name="地图控件" type="JGMMap" desc="Toone-1464352064000">
+          <propertys>
+            <property name="地址字段" code="AddressColumn">address</property>
+            <property name="控件编码" code="Code">JGMMap1</property>
+            <property name="当前位置纬度" code="CurrentLat" />
+            <property name="当前位置经度" code="CurrentLng" />
+            <property name="显示比例" code="DisplayScale">12</property>
+            <property name="终点地址" code="EndAddress" />
+            <property name="显示获取当前位置" code="GPSVisible">False</property>
+            <property name="高度百分比" code="HeightPercent">100</property>
+            <property name="默认显示标注信息" code="InfoVisible">true</property>
+            <property name="纬度字段" code="LatitudeColumn">lat</property>
+            <property name="左边距" code="Left">26</property>
+            <property name="经度字段" code="LongitudeColumn">lng</property>
+            <property name="只读" code="ReadOnly">false</property>
+            <property name="起点地址" code="StartAddress" />
+            <property name="实体名" code="TableName">ms</property>
+            <property name="目标位置地址" code="TargetAddress" />
+            <property name="目标位置纬度" code="TargetLat" />
+            <property name="目标位置经度" code="TargetLng" />
+            <property name="上边距" code="Top">3</property>
+            <property name="显示" code="Visible">true</property>
+            <property name="显示放大缩小键" code="ZoomVisible">true</property>
+          </propertys>
+          <controls />
+          <events>
+            <event code="OnClick" name="只读单击事件">
+              <evaluateRule />
+            </event>
+            <event code="OnMarkerClick" name="单击标注点事件">
+              <evaluateRule />
+            </event>
+            <event code="OnDrag" name="地图拖拽事件">
+              <evaluateRule />
+            </event>
+          </events>
+          <dataBindings>
+            <dataBinding>
+              <dataSource>ms</dataSource>
+              <dataMembers>
+                <dataMember name="地址字段" code="AddressColumn">address</dataMember>
+                <dataMember name="经度字段" code="LongitudeColumn">lng</dataMember>
+                <dataMember name="纬度字段" code="LatitudeColumn">lat</dataMember>
+              </dataMembers>
+            </dataBinding>
+          </dataBindings>
+        </control>
+      </controls>
+      <events>
+        <event code="FormLoadAction" name="窗体加载事件">
+          <evaluateRule code="demo_map.form2.form2_FormLoadAction" />
+        </event>
+        <event code="FormCloseAction" name="窗体关闭事件">
+          <evaluateRule />
+        </event>
+      </events>
+      <logics>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="form2_FormLoadAction" name="form2_窗体加载事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode1" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"gist","itemqueryparam":null,"items":[{"destName":"gist.id","sourceName":"gistable.id","type":"entityField"},{"destName":"gist.target_longitude","sourceName":"gistable.target_longitude","type":"entityField"},{"destName":"gist.target_latitude","sourceName":"gistable.target_latitude","type":"entityField"},{"destName":"gist.target_address","sourceName":"gistable.target_address","type":"entityField"},{"destName":"gist.start_location","sourceName":"gistable.start_location","type":"entityField"},{"destName":"gist.end_location","sourceName":"gistable.end_location","type":"entityField"}],"orderBy":null,"sourceName":"gistable","dataLoad":"","pager":null},{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"ms","itemqueryparam":null,"items":[{"destName":"ms.id","sourceName":"markers.id","type":"entityField"},{"destName":"ms.lng","sourceName":"markers.lng","type":"entityField"},{"destName":"ms.lat","sourceName":"markers.lat","type":"entityField"},{"destName":"ms.address","sourceName":"markers.address","type":"entityField"}],"orderBy":null,"sourceName":"markers","dataLoad":"","pager":null}],"treeStruct":null}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="demo_map.form2.form2_FormLoadAction" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "demo_map","windowCode": "form2","ruleSetCode": "form2_FormLoadAction"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+      </logics>
+      <entitys>
+        <entity code="gist" name="gist" chineseName="gist">
+          <entityFields>
+            <entityField code="id" name="id" chineseName="" type="char" length="64" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="target_longitude" name="target_longitude" chineseName="target_longitude" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="target_latitude" name="target_latitude" chineseName="target_latitude" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="target_address" name="target_address" chineseName="target_address" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="start_location" name="start_location" chineseName="start_location" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="end_location" name="end_location" chineseName="end_location" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+          </entityFields>
+          <events>
+            <event code="OnLoaded" name="实体加载事件" />
+          </events>
+        </entity>
+        <entity code="ms" name="ms" chineseName="ms">
+          <entityFields>
+            <entityField code="id" name="id" chineseName="" type="char" length="64" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="lng" name="lng" chineseName="lng" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="lat" name="lat" chineseName="lat" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="address" name="address" chineseName="address" type="char" length="255" precision="" defaultValue="">
+              <expression />
+            </entityField>
+          </entityFields>
+          <events>
+            <event code="OnLoaded" name="实体加载事件" />
+          </events>
+        </entity>
+      </entitys>
+      <dataBindings>
+        <dataBinding>
+          <dataSource>#E(gist)#</dataSource>
+        </dataBinding>
+      </dataBindings>
+      <windowVariants>
+        <variables />
+        <dataTypes />
+      </windowVariants>
+      <windowOutputs>
+        <variables />
+        <dataTypes />
+      </windowOutputs>
+      <expressions />
+    </window>
+    <window type="2" code="form3" name="form3" desc="">
+      <propertys>
+        <property name="Width" code="Width">337</property>
+        <property name="Height" code="Height">600</property>
+        <property name="HeightSet" code="HeightSet">StaticHeight</property>
+        <property name="LayoutType" code="LayoutType">None</property>
+        <property name="BackColor" code="BackColor" />
+        <property name="Name" code="Name">form3</property>
+        <property name="CustomGridValue" code="CustomGridValue" />
+        <property name="Code" code="Code">form3</property>
+      </propertys>
+      <controls>
+        <control code="JGMPanel2" name="面板" type="JGMPanel" desc="Toone-1450149902000">
+          <propertys>
+            <property name="背景色" code="BackColor" />
+            <property name="控件编码" code="Code">JGMPanel2</property>
+            <property name="宽度比例" code="DisplayScale">12</property>
+            <property name="使能" code="Enabled">True</property>
+            <property name="高度" code="Height">600</property>
+            <property name="图片Code" code="ImageObject" />
+            <property name="背景图片" code="ImageValue" />
+            <property name="布局方向" code="LayoutDirection">horizontal</property>
+            <property name="左边距" code="Left">0</property>
+            <property name="百分比高度" code="PercentHeight">100%</property>
+            <property name="百分比宽度" code="PercentWidth">100%</property>
+            <property name="布局间距" code="Spacing">0, 0, 0, 0</property>
+            <property name="界面顺序号" code="TabIndex">2</property>
+            <property name="上边距" code="Top">0</property>
+            <property name="宽度" code="Width">337</property>
+          </propertys>
+          <controls>
+            <control code="JGMMap1" name="地图控件" type="JGMMap" desc="Toone-1464352064000">
+              <propertys>
+                <property name="地址字段" code="AddressColumn" />
+                <property name="控件编码" code="Code">JGMMap1</property>
+                <property name="当前位置纬度" code="CurrentLat" />
+                <property name="当前位置经度" code="CurrentLng" />
+                <property name="显示比例" code="DisplayScale">6</property>
+                <property name="终点地址" code="EndAddress" />
+                <property name="显示获取当前位置" code="GPSVisible">true</property>
+                <property name="高度百分比" code="HeightPercent">100</property>
+                <property name="默认显示标注信息" code="InfoVisible">true</property>
+                <property name="纬度字段" code="LatitudeColumn" />
+                <property name="左边距" code="Left">3</property>
+                <property name="经度字段" code="LongitudeColumn" />
+                <property name="只读" code="ReadOnly">false</property>
+                <property name="起点地址" code="StartAddress" />
+                <property name="实体名" code="TableName" />
+                <property name="目标位置地址" code="TargetAddress" />
+                <property name="目标位置纬度" code="TargetLat" />
+                <property name="目标位置经度" code="TargetLng" />
+                <property name="上边距" code="Top">3</property>
+                <property name="显示" code="Visible">true</property>
+                <property name="显示放大缩小键" code="ZoomVisible">true</property>
+              </propertys>
+              <controls />
+              <events>
+                <event code="OnClick" name="只读单击事件">
+                  <evaluateRule />
+                </event>
+                <event code="OnMarkerClick" name="单击标注点事件">
+                  <evaluateRule />
+                </event>
+                <event code="OnDrag" name="地图拖拽事件">
+                  <evaluateRule />
+                </event>
+              </events>
+              <dataBindings>
+                <dataBinding>
+                  <dataMembers>
+                    <dataMember name="地址字段" code="AddressColumn" />
+                    <dataMember name="经度字段" code="LongitudeColumn" />
+                    <dataMember name="纬度字段" code="LatitudeColumn" />
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+          </controls>
+          <events />
+          <dataBindings>
+            <dataBinding>
+              <dataMembers />
+            </dataBinding>
+          </dataBindings>
+        </control>
+      </controls>
+      <events>
+        <event code="FormLoadAction" name="窗体加载事件">
+          <evaluateRule />
+        </event>
+        <event code="FormCloseAction" name="窗体关闭事件">
+          <evaluateRule />
+        </event>
+      </events>
+      <logics />
+      <dataBindings>
+        <dataBinding>
+          <dataSource />
+        </dataBinding>
+      </dataBindings>
+      <windowVariants>
+        <variables />
+        <dataTypes />
+      </windowVariants>
+      <windowOutputs>
+        <variables />
+        <dataTypes />
+      </windowOutputs>
+      <expressions />
+    </window>
+  </windows>
+  <logics />
+  <models>
+    <model name="gistable" isDeleted="false" code="Table56715478" desc="" chineseName="gistable">
+      <fields>
+        <field type="char" precision="0" fieldName="id" length="64" code="Column_id" desc="" defaultvalue="" name="" />
+        <field type="char" precision="0" fieldName="target_longitude" length="255" code="Column_1" desc="" defaultvalue="" name="target_longitude" />
+        <field type="char" precision="0" fieldName="target_latitude" length="255" code="Column_2" desc="" defaultvalue="" name="target_latitude" />
+        <field type="char" precision="0" fieldName="target_address" length="255" code="Column_3" desc="" defaultvalue="" name="target_address" />
+        <field type="char" precision="0" fieldName="start_location" length="255" code="Column_4" desc="" defaultvalue="" name="start_location" />
+        <field type="char" precision="0" fieldName="end_location" length="255" code="Column_5" desc="" defaultvalue="" name="end_location" />
+      </fields>
+      <indexes>
+        <index name="PK_1509294361" isUnique="false" isPrimaryKey="true">
+          <indexFields>
+            <indexField isAsc="true" indexOrder="0" fieldName="id" />
+          </indexFields>
+        </index>
+      </indexes>
+      <records>
+        <record>
+          <fieldDefVal fieldCode="id">1</fieldDefVal>
+          <fieldDefVal fieldCode="target_longitude">113.565</fieldDefVal>
+          <fieldDefVal fieldCode="target_latitude">22.395</fieldDefVal>
+          <fieldDefVal fieldCode="target_address">同望</fieldDefVal>
+          <fieldDefVal fieldCode="start_location">拱北口岸</fieldDefVal>
+          <fieldDefVal fieldCode="end_location">同望</fieldDefVal>
+        </record>
+      </records>
+    </model>
+    <model name="markers" isDeleted="false" code="Table72613228" desc="" chineseName="markers">
+      <fields>
+        <field type="char" precision="0" fieldName="id" length="64" code="Column_id" desc="" defaultvalue="" name="" />
+        <field type="char" precision="0" fieldName="lng" length="255" code="Column_1" desc="" defaultvalue="" name="lng" />
+        <field type="char" precision="0" fieldName="lat" length="255" code="Column_2" desc="" defaultvalue="" name="lat" />
+        <field type="char" precision="0" fieldName="address" length="255" code="Column_3" desc="" defaultvalue="" name="address" />
+      </fields>
+      <indexes>
+        <index name="PK_1602948243" isUnique="false" isPrimaryKey="true">
+          <indexFields>
+            <indexField isAsc="true" indexOrder="0" fieldName="id" />
+          </indexFields>
+        </index>
+      </indexes>
+      <records>
+        <record>
+          <fieldDefVal fieldCode="id">1</fieldDefVal>
+          <fieldDefVal fieldCode="lng">117.270314</fieldDefVal>
+          <fieldDefVal fieldCode="lat">31.836783</fieldDefVal>
+          <fieldDefVal fieldCode="address">包河区金寨路1号</fieldDefVal>
+        </record>
+        <record>
+          <fieldDefVal fieldCode="id">2</fieldDefVal>
+          <fieldDefVal fieldCode="lng">117.282201</fieldDefVal>
+          <fieldDefVal fieldCode="lat">31.895706</fieldDefVal>
+          <fieldDefVal fieldCode="address">庐阳区凤台路209号</fieldDefVal>
+        </record>
+        <record>
+          <fieldDefVal fieldCode="id">3</fieldDefVal>
+          <fieldDefVal fieldCode="lng">117.278131</fieldDefVal>
+          <fieldDefVal fieldCode="lat">31.852094</fieldDefVal>
+          <fieldDefVal fieldCode="address">蜀山区金寨路217号</fieldDefVal>
+        </record>
+        <record>
+          <fieldDefVal fieldCode="id">4</fieldDefVal>
+          <fieldDefVal fieldCode="lng">117.277572</fieldDefVal>
+          <fieldDefVal fieldCode="lat">31.855833</fieldDefVal>
+          <fieldDefVal fieldCode="address">蜀山区梅山路10号</fieldDefVal>
+        </record>
+        <record>
+          <fieldDefVal fieldCode="id">5</fieldDefVal>
+          <fieldDefVal fieldCode="lng">117.268163</fieldDefVal>
+          <fieldDefVal fieldCode="lat">31.873496</fieldDefVal>
+          <fieldDefVal fieldCode="address">蜀山区长丰南路159号铜锣湾广场312室</fieldDefVal>
+        </record>
+      </records>
+    </model>
+  </models>
+  <variants />
+  <options />
+  <querys />
+  <resourcePackages />
+  <expressions />
+  <menuItems />
+  <resources />
+  <manifest>
+    <bundle-info>
+      <symbolic-name>demo_map</symbolic-name>
+      <bundle-name>demo_map</bundle-name>
+      <bundle-version>1.0.0</bundle-version>
+      <bundle-type>RuntimeSchema</bundle-type>
+      <provider />
+      <description />
+      <lastModified>1464362549000</lastModified>
+    </bundle-info>
+    <interface />
+    <dependencies />
+    <imports>
+      <import componentCode="com.toone.v3.platform-widget-bootstrap_mobile-JGMPanel" componentName="面板" />
+      <import componentCode="com.toone.v3.platform-Webrule_DataBaseDataToInterfaceEntity" componentName="从数据库获取数据到界面实体" />
+      <import componentCode="com.toone.v3.platform-Webrule_ShowMessage" componentName="显示设置的提示信息" />
+    </imports>
+  </manifest>
+</component>]]></LastDeployData>
+</Deploy>

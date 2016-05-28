@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Created: 2016-05-15 7:59:11-->
+<Methods>
+  <Method Remark="" Name="form1_窗体加载事件" FileName="form1_FormLoadAction.method" Code="form1_FormLoadAction" MethodDir="WindowMethod" />
+  <Method Remark="" Name="JGMMap1_单击事件" FileName="JGMMap1_OnClick.method" Code="JGMMap1_OnClick" MethodDir="ControlMethod" />
+</Methods>

@@ -1,0 +1,19 @@
+﻿<form type="1003" mobiletype="Phone" code="form2" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[337]]></property>
+    <property name="Height"><![CDATA[600]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[#E(gist)#]]></property>
+    <property name="FormLoadAction"><![CDATA[form2_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Name"><![CDATA[form2]]></property>
+    <property name="CustomGridValue"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGMMap AddressColumn="#EF(ms.address)#" Code="JGMMap1" GPSVisible="False" LatitudeColumn="#EF(ms.lat)#" Left="26" LongitudeColumn="#EF(ms.lng)#" TableName="#E(ms)#" Top="3" />
+  </controls>
+  <outputs />
+  <inputs />
+</form>

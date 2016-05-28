@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Created: 2016-05-15 8:15:15-->
+<Methods>
+  <Method Code="form1_FormLoadAction" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <MethodChain><![CDATA[
+  <evaluateRule code="BRCode1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode1" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"maker","itemqueryparam":null,"items":[{"destName":"maker.id","sourceName":"markers.id","type":"entityField"},{"destName":"maker.lng","sourceName":"markers.lng","type":"entityField"},{"destName":"maker.lat","sourceName":"markers.lat","type":"entityField"},{"destName":"maker.address","sourceName":"markers.address","type":"entityField"}],"orderBy":null,"sourceName":"markers","dataLoad":"","pager":null}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>window</EntityType><EntityName>#E(maker)#</EntityName><SourceType>Table</SourceType><SourceName>#T(markers)#</SourceName><dsWhere><![CDATA[<NewDataSet />]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>21301a0f25034256afa452f45cdae5d9</ID><DataLoad /></dtEntityRelation><dtEntityColumnRelation><MasterID>21301a0f25034256afa452f45cdae5d9</MasterID><DestName>#EF(maker.id)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(markers.id)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>21301a0f25034256afa452f45cdae5d9</MasterID><DestName>#EF(maker.lng)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(markers.lng)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>21301a0f25034256afa452f45cdae5d9</MasterID><DestName>#EF(maker.lat)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(markers.lat)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>21301a0f25034256afa452f45cdae5d9</MasterID><DestName>#EF(maker.address)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(markers.address)#</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+  <Method Code="JGMMap1_OnClick" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <MethodChain><![CDATA[
+  <evaluateRule code="BRCode1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="ShowMessage" ruleName="显示设置的提示信息" instanceCode="BRCode1" instanceName="显示设置的提示信息" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"showType":"0","simpleChinesePrompt":{"msgnote":"CC.JGMMap1.TargetLng","type":"1"}}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtMaster><MsgType>0</MsgType><SimpleChinese>CC.#WC(JGMMap1)#.TargetLng</SimpleChinese><SimpleChinesetype>1</SimpleChinesetype></dtMaster></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+</Methods>
