@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Created: 2016-05-14 12:11:49-->
+<Methods>
+  <Method Code="form3_FormLoadAction" Type="Client" InterfaceType="Local" RestrictType="Private">
+    <MethodChain><![CDATA[
+  <evaluateRule code="BRCode1" />
+]]></MethodChain>
+    <RuleInstances>
+      <RuleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode1" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" isDebug="False">
+        <Remark><![CDATA[]]></Remark>
+        <Condition><![CDATA[]]></Condition>
+        <DebugCondition><![CDATA[]]></DebugCondition>
+        <RuleConfig><![CDATA[{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"Rating","itemqueryparam":null,"items":[{"destName":"Rating.id","sourceName":"Rating.id","type":"entityField"},{"destName":"Rating.rating1","sourceName":"Rating.rating1","type":"entityField"},{"destName":"Rating.rating2","sourceName":"Rating.rating2","type":"entityField"},{"destName":"Rating.rating3","sourceName":"Rating.rating3","type":"entityField"}],"orderBy":null,"sourceName":"Rating","dataLoad":"","pager":null}],"treeStruct":null}]]></RuleConfig>
+        <XmlRuleConfig><![CDATA[<dsConfig><dtEntityRelation><EntityType>window</EntityType><EntityName>#E(Rating)#</EntityName><SourceType>Table</SourceType><SourceName>#T(Rating)#</SourceName><dsWhere><![CDATA[<NewDataSet />]]]]><![CDATA[></dsWhere><dsSort><![CDATA[<dsSort />]]]]><![CDATA[></dsSort><ID>46f05b0a5ae94c17a1a2745d138cbb86</ID><DataLoad /></dtEntityRelation><dtEntityColumnRelation><MasterID>46f05b0a5ae94c17a1a2745d138cbb86</MasterID><DestName>#EF(Rating.id)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(Rating.id)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>46f05b0a5ae94c17a1a2745d138cbb86</MasterID><DestName>#EF(Rating.rating1)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(Rating.rating1)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>46f05b0a5ae94c17a1a2745d138cbb86</MasterID><DestName>#EF(Rating.rating2)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(Rating.rating2)#</SourceName></dtEntityColumnRelation><dtEntityColumnRelation><MasterID>46f05b0a5ae94c17a1a2745d138cbb86</MasterID><DestName>#EF(Rating.rating3)#</DestName><SourceType>entityField</SourceType><SourceName>#TF(Rating.rating3)#</SourceName></dtEntityColumnRelation><dtIsAsyn><isAsyn>False</isAsyn></dtIsAsyn></dsConfig>]]></XmlRuleConfig>
+      </RuleInstance>
+    </RuleInstances>
+  </Method>
+</Methods>

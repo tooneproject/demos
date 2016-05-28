@@ -1,0 +1,22 @@
+﻿<form type="1003" mobiletype="Phone" code="form4" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[337]]></property>
+    <property name="Height"><![CDATA[600]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[]]></property>
+    <property name="FormLoadAction"><![CDATA[]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Name"><![CDATA[form4]]></property>
+    <property name="CustomGridValue"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGMPanel Code="JGMPanel1" DisplayScale="9,3" Dock="Fill" Height="600" LayoutDirection="horizontal" PercentHeight="100%" PercentWidth="100%" TabIndex="1" Width="337">
+      <JGMRaty Code="JGMRaty1" DisplayScale="9" Height="27" LabelText="物流速度：" Width="253" />
+      <JGMRaty Code="JGMRaty2" DisplayScale="3" LabelText="" Left="253" Width="84" />
+    </JGMPanel>
+  </controls>
+  <outputs />
+  <inputs />
+</form>

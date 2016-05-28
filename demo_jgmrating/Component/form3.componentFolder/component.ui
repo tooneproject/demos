@@ -1,0 +1,23 @@
+﻿<form type="1003" mobiletype="Phone" code="form3" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[337]]></property>
+    <property name="Height"><![CDATA[600]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[#E(Rating)#]]></property>
+    <property name="FormLoadAction"><![CDATA[form3_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[192, 192, 255]]></property>
+    <property name="Name"><![CDATA[form3]]></property>
+    <property name="CustomGridValue"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGMRaty Code="JGMRaty5" LabelText="测试标题" Left="38" TableName="#E(Rating)#" Top="274" Visible="False" />
+    <JGMRaty Code="JGMRaty4" Height="35" LabelText="" Left="15" ReadOnly="True" TableName="#E(Rating)#" Top="220" Width="314" />
+    <JGMRaty Code="JGMRaty3" Height="46" LabelText="" Left="4" Spacing="8, 8, 8, 8" TableName="#E(Rating)#" Top="145" Width="333" />
+    <JGMRaty Code="JGMRaty2" Height="79" LabelText="测试标题" LabelTextVisible="False" Left="4" TableName="#E(Rating)#" Top="57" Width="333" />
+    <JGMRaty Code="JGMRaty1" Height="53" LabelText="" TableName="#E(Rating)#" Width="337" />
+  </controls>
+  <outputs />
+  <inputs />
+</form>

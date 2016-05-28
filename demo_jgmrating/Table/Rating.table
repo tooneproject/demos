@@ -1,0 +1,35 @@
+﻿<Table id="Table38142290" code="Rating" name="Rating">
+  <Remark><![CDATA[]]></Remark>
+  <Creator><![CDATA[]]></Creator>
+  <CreationTime><![CDATA[2016-05-14 11:18:29]]></CreationTime>
+  <Modifier><![CDATA[seamankwok]]></Modifier>
+  <ModificationTime><![CDATA[2016-05-14 12:02:26]]></ModificationTime>
+  <Columns>
+    <Column id="Column_id" code="id" name="" domain="" dataType="char" length="64" precision="" isPrimaryKey="true" isMandratory="true">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="Column_1" code="rating1" name="rating1" domain="" dataType="number" length="50" precision="4" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="Column_2" code="rating2" name="rating2" domain="" dataType="number" length="50" precision="4" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+    <Column id="Column_3" code="rating3" name="rating3" domain="" dataType="number" length="50" precision="4" isPrimaryKey="false" isMandratory="false">
+      <DefaultValue><![CDATA[]]></DefaultValue>
+      <Remark><![CDATA[]]></Remark>
+    </Column>
+  </Columns>
+  <Indexes />
+  <TreeTableStruct treeType="0" parentColumn="" innerCodeColumn="" orderNoColumn="" leafColumn="" />
+  <Data isInitialData="true" isReplaceDataById="true">
+    <RowData>
+      <ColumnData code="id"><![CDATA[1]]></ColumnData>
+      <ColumnData code="rating1"><![CDATA[70]]></ColumnData>
+      <ColumnData code="rating2"><![CDATA[4.2]]></ColumnData>
+      <ColumnData code="rating3"><![CDATA[0.78]]></ColumnData>
+    </RowData>
+  </Data>
+</Table>

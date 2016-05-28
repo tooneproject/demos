@@ -1,0 +1,19 @@
+﻿<form type="1003" mobiletype="Phone" code="form2" IsLocked="False">
+  <propertys>
+    <property name="Width"><![CDATA[337]]></property>
+    <property name="Height"><![CDATA[600]]></property>
+    <property name="HeightSet"><![CDATA[StaticHeight]]></property>
+    <property name="LayoutType"><![CDATA[None]]></property>
+    <property name="TableName"><![CDATA[#E(Rating)#]]></property>
+    <property name="FormLoadAction"><![CDATA[form2_FormLoadAction]]></property>
+    <property name="FormCloseAction"><![CDATA[]]></property>
+    <property name="BackColor"><![CDATA[]]></property>
+    <property name="Name"><![CDATA[smile]]></property>
+    <property name="CustomGridValue"><![CDATA[]]></property>
+  </propertys>
+  <controls>
+    <JGMRaty Code="JGMRaty1" ColumnName="#EF(Rating.rating3)#" Height="53" HighlightStarIcon="iconfont icon-likefill" LabelPercentWidth="20" LabelText="服务态度：" StarAlign="center" StarIcon="iconfont icon-like" StarMax="9" StarVal="0.1" TableName="#E(Rating)#" Width="337" />
+  </controls>
+  <outputs />
+  <inputs />
+</form>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Component code="demo_rating" name="demo_rating" version="1.0.0.SNAPSHOT" type="Business" category="">
+  <Provider><![CDATA[]]></Provider>
+  <Description><![CDATA[]]></Description>
+  <References />
+</Component>

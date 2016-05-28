@@ -1,0 +1,660 @@
+<Deploy>
+  <LastDeployTime>2016-05-25 18:54:18</LastDeployTime>
+  <LastDeployData><![CDATA[<?xml version="1.0"?>
+<component xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" code="demo_rating" name="demo_rating" desc="">
+  <windows>
+    <window type="2" code="form1" name="form1" desc="">
+      <propertys>
+        <property name="Width" code="Width">337</property>
+        <property name="Height" code="Height">600</property>
+        <property name="HeightSet" code="HeightSet">StaticHeight</property>
+        <property name="LayoutType" code="LayoutType">None</property>
+        <property name="BackColor" code="BackColor" />
+        <property name="Name" code="Name">form1</property>
+        <property name="CustomGridValue" code="CustomGridValue" />
+        <property name="Code" code="Code">form1</property>
+      </propertys>
+      <controls>
+        <control code="JGMRaty1" name="服务态度：" type="JGMRaty" desc="Toone-1464173427000">
+          <propertys>
+            <property name="控件名称" code="Code">JGMRaty1</property>
+            <property name="字段名称" code="ColumnName">rating1</property>
+            <property name="显示比例" code="DisplayScale">12</property>
+            <property name="高度" code="Height">66</property>
+            <property name="高亮星星图标" code="HighlightStarIcon">iconfont icon-favorfill</property>
+            <property name="标题宽度(%)" code="LabelPercentWidth">30</property>
+            <property name="标题" code="LabelText">服务态度：</property>
+            <property name="显示标题" code="LabelTextVisible">true</property>
+            <property name="左边距" code="Left">0</property>
+            <property name="只读" code="ReadOnly">false</property>
+            <property name="外边距" code="Spacing">0,0,0,0</property>
+            <property name="星星对齐方式" code="StarAlign">right</property>
+            <property name="默认星星图标" code="StarIcon">iconfont icon-favorfill</property>
+            <property name="星数量" code="StarMax">5</property>
+            <property name="每颗星分数" code="StarVal">20</property>
+            <property name="实体名" code="TableName">Rating</property>
+            <property name="上边距" code="Top">0</property>
+            <property name="显示" code="Visible">true</property>
+            <property name="宽度" code="Width">337</property>
+          </propertys>
+          <controls />
+          <events />
+          <dataBindings>
+            <dataBinding>
+              <dataSource>Rating</dataSource>
+              <dataMembers>
+                <dataMember name="字段名称" code="ColumnName">rating1</dataMember>
+              </dataMembers>
+            </dataBinding>
+          </dataBindings>
+        </control>
+      </controls>
+      <events>
+        <event code="FormLoadAction" name="窗体加载事件">
+          <evaluateRule code="demo_rating.form1.form1_FormLoadAction" />
+        </event>
+        <event code="FormCloseAction" name="窗体关闭事件">
+          <evaluateRule />
+        </event>
+      </events>
+      <logics>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="form1_FormLoadAction" name="form1_窗体加载事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode1" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"Rating","itemqueryparam":null,"items":[{"destName":"Rating.id","sourceName":"Rating.id","type":"entityField"},{"destName":"Rating.rating1","sourceName":"Rating.rating1","type":"entityField"},{"destName":"Rating.rating2","sourceName":"Rating.rating2","type":"entityField"},{"destName":"Rating.rating3","sourceName":"Rating.rating3","type":"entityField"}],"orderBy":null,"sourceName":"Rating","dataLoad":"","pager":null}],"treeStruct":null}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="demo_rating.form1.form1_FormLoadAction" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "demo_rating","windowCode": "form1","ruleSetCode": "form1_FormLoadAction"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+      </logics>
+      <entitys>
+        <entity code="Rating" name="Rating" chineseName="Rating">
+          <entityFields>
+            <entityField code="id" name="id" chineseName="" type="char" length="64" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="rating1" name="rating1" chineseName="rating1" type="number" length="50" precision="4" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="rating2" name="rating2" chineseName="rating2" type="number" length="50" precision="4" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="rating3" name="rating3" chineseName="rating3" type="number" length="50" precision="4" defaultValue="">
+              <expression />
+            </entityField>
+          </entityFields>
+          <events>
+            <event code="OnLoaded" name="实体加载事件" />
+          </events>
+        </entity>
+      </entitys>
+      <dataBindings>
+        <dataBinding>
+          <dataSource>#E(Rating)#</dataSource>
+        </dataBinding>
+      </dataBindings>
+      <windowVariants>
+        <variables />
+        <dataTypes />
+      </windowVariants>
+      <windowOutputs>
+        <variables />
+        <dataTypes />
+      </windowOutputs>
+      <expressions />
+    </window>
+    <window type="2" code="form3" name="form3" desc="">
+      <propertys>
+        <property name="Width" code="Width">337</property>
+        <property name="Height" code="Height">600</property>
+        <property name="HeightSet" code="HeightSet">StaticHeight</property>
+        <property name="LayoutType" code="LayoutType">None</property>
+        <property name="BackColor" code="BackColor">192, 192, 255</property>
+        <property name="Name" code="Name">form3</property>
+        <property name="CustomGridValue" code="CustomGridValue" />
+        <property name="Code" code="Code">form3</property>
+      </propertys>
+      <controls>
+        <control code="JGMRaty5" name="测试标题" type="JGMRaty" desc="Toone-1464173427000">
+          <propertys>
+            <property name="控件名称" code="Code">JGMRaty5</property>
+            <property name="字段名称" code="ColumnName" />
+            <property name="显示比例" code="DisplayScale">12</property>
+            <property name="高度" code="Height">30</property>
+            <property name="高亮星星图标" code="HighlightStarIcon">iconfont icon-favorfill</property>
+            <property name="标题宽度(%)" code="LabelPercentWidth">30</property>
+            <property name="标题" code="LabelText">测试标题</property>
+            <property name="显示标题" code="LabelTextVisible">true</property>
+            <property name="左边距" code="Left">38</property>
+            <property name="只读" code="ReadOnly">false</property>
+            <property name="外边距" code="Spacing">0,0,0,0</property>
+            <property name="星星对齐方式" code="StarAlign">right</property>
+            <property name="默认星星图标" code="StarIcon">iconfont icon-favorfill</property>
+            <property name="星数量" code="StarMax">5</property>
+            <property name="每颗星分数" code="StarVal">20</property>
+            <property name="实体名" code="TableName">Rating</property>
+            <property name="上边距" code="Top">274</property>
+            <property name="显示" code="Visible">False</property>
+            <property name="宽度" code="Width">100</property>
+          </propertys>
+          <controls />
+          <events />
+          <dataBindings>
+            <dataBinding>
+              <dataSource>Rating</dataSource>
+              <dataMembers>
+                <dataMember name="字段名称" code="ColumnName" />
+              </dataMembers>
+            </dataBinding>
+          </dataBindings>
+        </control>
+        <control code="JGMRaty4" name="" type="JGMRaty" desc="Toone-1464173427000">
+          <propertys>
+            <property name="控件名称" code="Code">JGMRaty4</property>
+            <property name="字段名称" code="ColumnName" />
+            <property name="显示比例" code="DisplayScale">12</property>
+            <property name="高度" code="Height">35</property>
+            <property name="高亮星星图标" code="HighlightStarIcon">iconfont icon-favorfill</property>
+            <property name="标题宽度(%)" code="LabelPercentWidth">30</property>
+            <property name="标题" code="LabelText" />
+            <property name="显示标题" code="LabelTextVisible">true</property>
+            <property name="左边距" code="Left">15</property>
+            <property name="只读" code="ReadOnly">True</property>
+            <property name="外边距" code="Spacing">0,0,0,0</property>
+            <property name="星星对齐方式" code="StarAlign">right</property>
+            <property name="默认星星图标" code="StarIcon">iconfont icon-favorfill</property>
+            <property name="星数量" code="StarMax">5</property>
+            <property name="每颗星分数" code="StarVal">20</property>
+            <property name="实体名" code="TableName">Rating</property>
+            <property name="上边距" code="Top">220</property>
+            <property name="显示" code="Visible">true</property>
+            <property name="宽度" code="Width">314</property>
+          </propertys>
+          <controls />
+          <events />
+          <dataBindings>
+            <dataBinding>
+              <dataSource>Rating</dataSource>
+              <dataMembers>
+                <dataMember name="字段名称" code="ColumnName" />
+              </dataMembers>
+            </dataBinding>
+          </dataBindings>
+        </control>
+        <control code="JGMRaty3" name="" type="JGMRaty" desc="Toone-1464173427000">
+          <propertys>
+            <property name="控件名称" code="Code">JGMRaty3</property>
+            <property name="字段名称" code="ColumnName" />
+            <property name="显示比例" code="DisplayScale">12</property>
+            <property name="高度" code="Height">46</property>
+            <property name="高亮星星图标" code="HighlightStarIcon">iconfont icon-favorfill</property>
+            <property name="标题宽度(%)" code="LabelPercentWidth">30</property>
+            <property name="标题" code="LabelText" />
+            <property name="显示标题" code="LabelTextVisible">true</property>
+            <property name="左边距" code="Left">4</property>
+            <property name="只读" code="ReadOnly">false</property>
+            <property name="外边距" code="Spacing">8, 8, 8, 8</property>
+            <property name="星星对齐方式" code="StarAlign">right</property>
+            <property name="默认星星图标" code="StarIcon">iconfont icon-favorfill</property>
+            <property name="星数量" code="StarMax">5</property>
+            <property name="每颗星分数" code="StarVal">20</property>
+            <property name="实体名" code="TableName">Rating</property>
+            <property name="上边距" code="Top">145</property>
+            <property name="显示" code="Visible">true</property>
+            <property name="宽度" code="Width">333</property>
+          </propertys>
+          <controls />
+          <events />
+          <dataBindings>
+            <dataBinding>
+              <dataSource>Rating</dataSource>
+              <dataMembers>
+                <dataMember name="字段名称" code="ColumnName" />
+              </dataMembers>
+            </dataBinding>
+          </dataBindings>
+        </control>
+        <control code="JGMRaty2" name="测试标题" type="JGMRaty" desc="Toone-1464173427000">
+          <propertys>
+            <property name="控件名称" code="Code">JGMRaty2</property>
+            <property name="字段名称" code="ColumnName" />
+            <property name="显示比例" code="DisplayScale">12</property>
+            <property name="高度" code="Height">79</property>
+            <property name="高亮星星图标" code="HighlightStarIcon">iconfont icon-favorfill</property>
+            <property name="标题宽度(%)" code="LabelPercentWidth">30</property>
+            <property name="标题" code="LabelText">测试标题</property>
+            <property name="显示标题" code="LabelTextVisible">False</property>
+            <property name="左边距" code="Left">4</property>
+            <property name="只读" code="ReadOnly">false</property>
+            <property name="外边距" code="Spacing">0,0,0,0</property>
+            <property name="星星对齐方式" code="StarAlign">right</property>
+            <property name="默认星星图标" code="StarIcon">iconfont icon-favorfill</property>
+            <property name="星数量" code="StarMax">5</property>
+            <property name="每颗星分数" code="StarVal">20</property>
+            <property name="实体名" code="TableName">Rating</property>
+            <property name="上边距" code="Top">57</property>
+            <property name="显示" code="Visible">true</property>
+            <property name="宽度" code="Width">333</property>
+          </propertys>
+          <controls />
+          <events />
+          <dataBindings>
+            <dataBinding>
+              <dataSource>Rating</dataSource>
+              <dataMembers>
+                <dataMember name="字段名称" code="ColumnName" />
+              </dataMembers>
+            </dataBinding>
+          </dataBindings>
+        </control>
+        <control code="JGMRaty1" name="" type="JGMRaty" desc="Toone-1464173427000">
+          <propertys>
+            <property name="控件名称" code="Code">JGMRaty1</property>
+            <property name="字段名称" code="ColumnName" />
+            <property name="显示比例" code="DisplayScale">12</property>
+            <property name="高度" code="Height">53</property>
+            <property name="高亮星星图标" code="HighlightStarIcon">iconfont icon-favorfill</property>
+            <property name="标题宽度(%)" code="LabelPercentWidth">30</property>
+            <property name="标题" code="LabelText" />
+            <property name="显示标题" code="LabelTextVisible">true</property>
+            <property name="左边距" code="Left">0</property>
+            <property name="只读" code="ReadOnly">false</property>
+            <property name="外边距" code="Spacing">0,0,0,0</property>
+            <property name="星星对齐方式" code="StarAlign">right</property>
+            <property name="默认星星图标" code="StarIcon">iconfont icon-favorfill</property>
+            <property name="星数量" code="StarMax">5</property>
+            <property name="每颗星分数" code="StarVal">20</property>
+            <property name="实体名" code="TableName">Rating</property>
+            <property name="上边距" code="Top">0</property>
+            <property name="显示" code="Visible">true</property>
+            <property name="宽度" code="Width">337</property>
+          </propertys>
+          <controls />
+          <events />
+          <dataBindings>
+            <dataBinding>
+              <dataSource>Rating</dataSource>
+              <dataMembers>
+                <dataMember name="字段名称" code="ColumnName" />
+              </dataMembers>
+            </dataBinding>
+          </dataBindings>
+        </control>
+      </controls>
+      <events>
+        <event code="FormLoadAction" name="窗体加载事件">
+          <evaluateRule code="demo_rating.form3.form3_FormLoadAction" />
+        </event>
+        <event code="FormCloseAction" name="窗体关闭事件">
+          <evaluateRule />
+        </event>
+      </events>
+      <logics>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="form3_FormLoadAction" name="form3_窗体加载事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode1" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"Rating","itemqueryparam":null,"items":[{"destName":"Rating.id","sourceName":"Rating.id","type":"entityField"},{"destName":"Rating.rating1","sourceName":"Rating.rating1","type":"entityField"},{"destName":"Rating.rating2","sourceName":"Rating.rating2","type":"entityField"},{"destName":"Rating.rating3","sourceName":"Rating.rating3","type":"entityField"}],"orderBy":null,"sourceName":"Rating","dataLoad":"","pager":null}],"treeStruct":null}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="demo_rating.form3.form3_FormLoadAction" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "demo_rating","windowCode": "form3","ruleSetCode": "form3_FormLoadAction"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+      </logics>
+      <entitys>
+        <entity code="Rating" name="Rating" chineseName="Rating">
+          <entityFields>
+            <entityField code="id" name="id" chineseName="" type="char" length="64" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="rating1" name="rating1" chineseName="rating1" type="number" length="50" precision="4" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="rating2" name="rating2" chineseName="rating2" type="number" length="50" precision="4" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="rating3" name="rating3" chineseName="rating3" type="number" length="50" precision="4" defaultValue="">
+              <expression />
+            </entityField>
+          </entityFields>
+          <events>
+            <event code="OnLoaded" name="实体加载事件" />
+          </events>
+        </entity>
+      </entitys>
+      <dataBindings>
+        <dataBinding>
+          <dataSource>#E(Rating)#</dataSource>
+        </dataBinding>
+      </dataBindings>
+      <windowVariants>
+        <variables />
+        <dataTypes />
+      </windowVariants>
+      <windowOutputs>
+        <variables />
+        <dataTypes />
+      </windowOutputs>
+      <expressions />
+    </window>
+    <window type="2" code="form4" name="form4" desc="">
+      <propertys>
+        <property name="Width" code="Width">337</property>
+        <property name="Height" code="Height">600</property>
+        <property name="HeightSet" code="HeightSet">StaticHeight</property>
+        <property name="LayoutType" code="LayoutType">None</property>
+        <property name="BackColor" code="BackColor" />
+        <property name="Name" code="Name">form4</property>
+        <property name="CustomGridValue" code="CustomGridValue" />
+        <property name="Code" code="Code">form4</property>
+      </propertys>
+      <controls>
+        <control code="JGMPanel1" name="面板" type="JGMPanel" desc="Toone-1450149902000">
+          <propertys>
+            <property name="背景色" code="BackColor" />
+            <property name="控件编码" code="Code">JGMPanel1</property>
+            <property name="宽度比例" code="DisplayScale">9,3</property>
+            <property name="使能" code="Enabled">True</property>
+            <property name="高度" code="Height">600</property>
+            <property name="图片Code" code="ImageObject" />
+            <property name="背景图片" code="ImageValue" />
+            <property name="布局方向" code="LayoutDirection">horizontal</property>
+            <property name="左边距" code="Left">0</property>
+            <property name="百分比高度" code="PercentHeight">100%</property>
+            <property name="百分比宽度" code="PercentWidth">100%</property>
+            <property name="布局间距" code="Spacing">0, 0, 0, 0</property>
+            <property name="界面顺序号" code="TabIndex">1</property>
+            <property name="上边距" code="Top">0</property>
+            <property name="宽度" code="Width">337</property>
+          </propertys>
+          <controls>
+            <control code="JGMRaty1" name="物流速度：" type="JGMRaty" desc="Toone-1464173427000">
+              <propertys>
+                <property name="控件名称" code="Code">JGMRaty1</property>
+                <property name="字段名称" code="ColumnName" />
+                <property name="显示比例" code="DisplayScale">9</property>
+                <property name="高度" code="Height">27</property>
+                <property name="高亮星星图标" code="HighlightStarIcon">iconfont icon-favorfill</property>
+                <property name="标题宽度(%)" code="LabelPercentWidth">30</property>
+                <property name="标题" code="LabelText">物流速度：</property>
+                <property name="显示标题" code="LabelTextVisible">true</property>
+                <property name="左边距" code="Left">0</property>
+                <property name="只读" code="ReadOnly">false</property>
+                <property name="外边距" code="Spacing">0,0,0,0</property>
+                <property name="星星对齐方式" code="StarAlign">right</property>
+                <property name="默认星星图标" code="StarIcon">iconfont icon-favorfill</property>
+                <property name="星数量" code="StarMax">5</property>
+                <property name="每颗星分数" code="StarVal">20</property>
+                <property name="实体名" code="TableName" />
+                <property name="上边距" code="Top">0</property>
+                <property name="显示" code="Visible">true</property>
+                <property name="宽度" code="Width">253</property>
+              </propertys>
+              <controls />
+              <events />
+              <dataBindings>
+                <dataBinding>
+                  <dataMembers>
+                    <dataMember name="字段名称" code="ColumnName" />
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+            <control code="JGMRaty2" name="" type="JGMRaty" desc="Toone-1464173427000">
+              <propertys>
+                <property name="控件名称" code="Code">JGMRaty2</property>
+                <property name="字段名称" code="ColumnName" />
+                <property name="显示比例" code="DisplayScale">3</property>
+                <property name="高度" code="Height">30</property>
+                <property name="高亮星星图标" code="HighlightStarIcon">iconfont icon-favorfill</property>
+                <property name="标题宽度(%)" code="LabelPercentWidth">30</property>
+                <property name="标题" code="LabelText" />
+                <property name="显示标题" code="LabelTextVisible">true</property>
+                <property name="左边距" code="Left">253</property>
+                <property name="只读" code="ReadOnly">false</property>
+                <property name="外边距" code="Spacing">0,0,0,0</property>
+                <property name="星星对齐方式" code="StarAlign">right</property>
+                <property name="默认星星图标" code="StarIcon">iconfont icon-favorfill</property>
+                <property name="星数量" code="StarMax">5</property>
+                <property name="每颗星分数" code="StarVal">20</property>
+                <property name="实体名" code="TableName" />
+                <property name="上边距" code="Top">0</property>
+                <property name="显示" code="Visible">true</property>
+                <property name="宽度" code="Width">84</property>
+              </propertys>
+              <controls />
+              <events />
+              <dataBindings>
+                <dataBinding>
+                  <dataMembers>
+                    <dataMember name="字段名称" code="ColumnName" />
+                  </dataMembers>
+                </dataBinding>
+              </dataBindings>
+            </control>
+          </controls>
+          <events />
+          <dataBindings>
+            <dataBinding>
+              <dataMembers />
+            </dataBinding>
+          </dataBindings>
+        </control>
+      </controls>
+      <events>
+        <event code="FormLoadAction" name="窗体加载事件">
+          <evaluateRule />
+        </event>
+        <event code="FormCloseAction" name="窗体关闭事件">
+          <evaluateRule />
+        </event>
+      </events>
+      <logics />
+      <dataBindings>
+        <dataBinding>
+          <dataSource />
+        </dataBinding>
+      </dataBindings>
+      <windowVariants>
+        <variables />
+        <dataTypes />
+      </windowVariants>
+      <windowOutputs>
+        <variables />
+        <dataTypes />
+      </windowOutputs>
+      <expressions />
+    </window>
+    <window type="2" code="form2" name="smile" desc="">
+      <propertys>
+        <property name="Width" code="Width">337</property>
+        <property name="Height" code="Height">600</property>
+        <property name="HeightSet" code="HeightSet">StaticHeight</property>
+        <property name="LayoutType" code="LayoutType">None</property>
+        <property name="BackColor" code="BackColor" />
+        <property name="Name" code="Name">smile</property>
+        <property name="CustomGridValue" code="CustomGridValue" />
+        <property name="Code" code="Code">form2</property>
+      </propertys>
+      <controls>
+        <control code="JGMRaty1" name="服务态度：" type="JGMRaty" desc="Toone-1464173427000">
+          <propertys>
+            <property name="控件名称" code="Code">JGMRaty1</property>
+            <property name="字段名称" code="ColumnName">rating3</property>
+            <property name="显示比例" code="DisplayScale">12</property>
+            <property name="高度" code="Height">53</property>
+            <property name="高亮星星图标" code="HighlightStarIcon">iconfont icon-likefill</property>
+            <property name="标题宽度(%)" code="LabelPercentWidth">20</property>
+            <property name="标题" code="LabelText">服务态度：</property>
+            <property name="显示标题" code="LabelTextVisible">true</property>
+            <property name="左边距" code="Left">0</property>
+            <property name="只读" code="ReadOnly">false</property>
+            <property name="外边距" code="Spacing">0,0,0,0</property>
+            <property name="星星对齐方式" code="StarAlign">center</property>
+            <property name="默认星星图标" code="StarIcon">iconfont icon-like</property>
+            <property name="星数量" code="StarMax">9</property>
+            <property name="每颗星分数" code="StarVal">0.1</property>
+            <property name="实体名" code="TableName">Rating</property>
+            <property name="上边距" code="Top">0</property>
+            <property name="显示" code="Visible">true</property>
+            <property name="宽度" code="Width">337</property>
+          </propertys>
+          <controls />
+          <events />
+          <dataBindings>
+            <dataBinding>
+              <dataSource>Rating</dataSource>
+              <dataMembers>
+                <dataMember name="字段名称" code="ColumnName">rating3</dataMember>
+              </dataMembers>
+            </dataBinding>
+          </dataBindings>
+        </control>
+      </controls>
+      <events>
+        <event code="FormLoadAction" name="窗体加载事件">
+          <evaluateRule code="demo_rating.form2.form2_FormLoadAction" />
+        </event>
+        <event code="FormCloseAction" name="窗体关闭事件">
+          <evaluateRule />
+        </event>
+      </events>
+      <logics>
+        <logic type="client">
+          <ruleSets>
+            <ruleSet code="form2_FormLoadAction" name="form2_窗体加载事件" desc="">
+              <ruleRoute xsi:type="xsd:string">&lt;evaluateRule code="BRCode1" /&gt;</ruleRoute>
+              <ruleInstances>
+                <ruleInstance ruleCode="DataBaseDataToInterfaceEntity" ruleName="从数据库获取数据到界面实体" instanceCode="BRCode1" instanceName="从数据库获取数据到界面实体" isNeedLog="False" isEnabled="True" transactionType="none">
+                  <condition />
+                  <ruleConfig>{"isAsyn":false,"itemsConfig":[{"Istype":"Table","dsWhere":null,"entityType":"window","entityName":"Rating","itemqueryparam":null,"items":[{"destName":"Rating.id","sourceName":"Rating.id","type":"entityField"},{"destName":"Rating.rating1","sourceName":"Rating.rating1","type":"entityField"},{"destName":"Rating.rating2","sourceName":"Rating.rating2","type":"entityField"},{"destName":"Rating.rating3","sourceName":"Rating.rating3","type":"entityField"}],"orderBy":null,"sourceName":"Rating","dataLoad":"","pager":null}],"treeStruct":null}</ruleConfig>
+                </ruleInstance>
+              </ruleInstances>
+              <routeContext />
+              <inputs />
+              <outputs />
+            </ruleSet>
+          </ruleSets>
+          <ruleInstances>
+            <ruleInstance ruleCode="ExecuteRuleSet" ruleName="执行方法" instanceCode="demo_rating.form2.form2_FormLoadAction" instanceName="执行方法" isNeedLog="false" isEnabled="true" transactionType="none">
+              <condition />
+              <ruleConfig>{"filter": null,"invokeTarget": {"sourceType": "client-ruleSet","invokeType": "local","componentCode": "demo_rating","windowCode": "form2","ruleSetCode": "form2_FormLoadAction"},"invokeParams": null,"returnMapping": null}</ruleConfig>
+            </ruleInstance>
+          </ruleInstances>
+        </logic>
+      </logics>
+      <entitys>
+        <entity code="Rating" name="Rating" chineseName="Rating">
+          <entityFields>
+            <entityField code="id" name="id" chineseName="" type="char" length="64" precision="" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="rating1" name="rating1" chineseName="rating1" type="number" length="50" precision="4" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="rating2" name="rating2" chineseName="rating2" type="number" length="50" precision="4" defaultValue="">
+              <expression />
+            </entityField>
+            <entityField code="rating3" name="rating3" chineseName="rating3" type="number" length="50" precision="4" defaultValue="">
+              <expression />
+            </entityField>
+          </entityFields>
+          <events>
+            <event code="OnLoaded" name="实体加载事件" />
+          </events>
+        </entity>
+      </entitys>
+      <dataBindings>
+        <dataBinding>
+          <dataSource>#E(Rating)#</dataSource>
+        </dataBinding>
+      </dataBindings>
+      <windowVariants>
+        <variables />
+        <dataTypes />
+      </windowVariants>
+      <windowOutputs>
+        <variables />
+        <dataTypes />
+      </windowOutputs>
+      <expressions />
+    </window>
+  </windows>
+  <logics />
+  <models>
+    <model name="Rating" isDeleted="false" code="Table38142290" desc="" chineseName="Rating">
+      <fields>
+        <field type="char" precision="0" fieldName="id" length="64" code="Column_id" desc="" defaultvalue="" name="" />
+        <field type="number" precision="4" fieldName="rating1" length="50" code="Column_1" desc="" defaultvalue="" name="rating1" />
+        <field type="number" precision="4" fieldName="rating2" length="50" code="Column_2" desc="" defaultvalue="" name="rating2" />
+        <field type="number" precision="4" fieldName="rating3" length="50" code="Column_3" desc="" defaultvalue="" name="rating3" />
+      </fields>
+      <indexes>
+        <index name="PK_1578168137" isUnique="false" isPrimaryKey="true">
+          <indexFields>
+            <indexField isAsc="true" indexOrder="0" fieldName="id" />
+          </indexFields>
+        </index>
+      </indexes>
+      <records>
+        <record>
+          <fieldDefVal fieldCode="id">1</fieldDefVal>
+          <fieldDefVal fieldCode="rating1">70</fieldDefVal>
+          <fieldDefVal fieldCode="rating2">4.2</fieldDefVal>
+          <fieldDefVal fieldCode="rating3">0.78</fieldDefVal>
+        </record>
+      </records>
+    </model>
+  </models>
+  <variants />
+  <options />
+  <querys />
+  <resourcePackages />
+  <expressions />
+  <menuItems />
+  <resources />
+  <manifest>
+    <bundle-info>
+      <symbolic-name>demo_rating</symbolic-name>
+      <bundle-name>demo_rating</bundle-name>
+      <bundle-version>1.0.0.SNAPSHOT</bundle-version>
+      <bundle-type>RuntimeSchema</bundle-type>
+      <provider />
+      <description />
+      <lastModified>1464173658000</lastModified>
+    </bundle-info>
+    <interface />
+    <dependencies />
+    <imports>
+      <import componentCode="com.toone.v3.platform-widget-bootstrap_mobile-JGMPanel" componentName="面板" />
+      <import componentCode="com.toone.v3.platform-Webrule_DataBaseDataToInterfaceEntity" componentName="从数据库获取数据到界面实体" />
+    </imports>
+  </manifest>
+</component>]]></LastDeployData>
+</Deploy>

@@ -1,0 +1,49 @@
+<EntityConfig version="2.0">
+  <Entitys>
+    <Entity TemplateId="" TemplateCode="" Code="Rating" Name="Rating" EntityType="" TableOrQueryCode="">
+      <Columns>
+        <Column>
+          <Code>id</Code>
+          <Name></Name>
+          <DataType>char</DataType>
+          <Length>64</Length>
+          <Precision></Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>rating1</Code>
+          <Name>rating1</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>rating2</Code>
+          <Name>rating2</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+        <Column>
+          <Code>rating3</Code>
+          <Name>rating3</Name>
+          <DataType>number</DataType>
+          <Length>50</Length>
+          <Precision>4</Precision>
+          <DefaultValue></DefaultValue>
+          <Expression></Expression>
+        </Column>
+      </Columns>
+      <Datas />
+      <Events>
+        <EntityEvent Code="OnLoaded" Value="" />
+      </Events>
+    </Entity>
+  </Entitys>
+  <Relations />
+</EntityConfig>

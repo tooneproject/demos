@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Created: 2016-05-14 12:11:12-->
+<Methods>
+  <Method Remark="" Name="form3_窗体加载事件" FileName="form3_FormLoadAction.method" Code="form3_FormLoadAction" MethodDir="WindowMethod" />
+</Methods>
